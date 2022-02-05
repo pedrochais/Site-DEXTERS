@@ -1,0 +1,47 @@
+header {
+    /*border: 1px red solid;*/
+    background-color: rgba(118, 173, 255, 0.103);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.116);
+    display: flex;
+}
+
+header .logo {
+    width: 15%;
+}
+
+header nav {
+    margin: auto;
+}
+
+header img {
+    width: 100%;
+    min-width: 145px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    /*border: 1px red solid;*/
+    padding: 15px;
+    margin: 0 5px;
+    list-style: none;
+    display: inline;
+    border-radius: 3px;
+    align-items: center;
+    transition: 1s;
+}
+
+header li a {
+    text-decoration: none;
+    color: #6FA9B3;
+    width: 100%;
+    height: 100%;
+}
+
+header li:hover {
+    transition: 1s;
+    background-color: rgba(124, 124, 124, 0.219);
+    cursor: pointer;
+}

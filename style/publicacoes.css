@@ -1,0 +1,30 @@
+h2 {
+    color: rgb(54, 54, 54);
+    text-align: center;
+    margin: 50px 0;
+}
+
+section#buscar form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30%;
+}
+
+section#buscar input{
+    border:rgb(185, 185, 185) solid 2px;
+    border-radius: 2.5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button#buscar {
+    
+}
+
+
+
+@media (max-width: 750px){
+    section#buscar form{
+        padding: 0 20%;
+    }
+}
