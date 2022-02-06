@@ -30,27 +30,26 @@
         <hr>
         <section id="publicacoes">
             <div class="card-publicacao">
+                <h4>Título da publicação/artigo</h4>
                 <div class="infos">
-                    <div class="titulo">
-                        <h4 class="titulo-artigos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                    <div class="descricao">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="compartilhar">
-                        <p class="type">Compartilhe</p>
-                        <div class="redes">
-                            <img src="./images/svg/whatsapp.svg" alt>
-                            <img src="./images/svg/whatsapp.svg" alt>
-                            <img src="./images/svg/whatsapp.svg" alt>
-                            
+                        <p>Compartilhe</p>
+                        <div class="redes-sociais">
+                            <img src="./images/svg/whatsapp.svg" alt="Whatsapp ícone">
+                            <img src="./images/svg/whatsapp.svg" alt="Instagram ícone">
+                            <img src="./images/svg/whatsapp.svg" alt="Facebook ícone">
                         </div>
                     </div>
                     <div class="autores">
-                        <p class="autores-nomes">Autores </p>
-                        <p class="lista-autores">
+                        <!-- <p class="autores-nomes">Autores </p> -->
+                        <p>
                                 Arthur Passos, André Barreto, Brenno Nascimento, Felipe Silva, Gabriel Costa, Yandson Costa, Davi Viana, Luis Rivero
                         </p>
                     </div>
                 </div>
-                
             </div>
         </section>
     </main>

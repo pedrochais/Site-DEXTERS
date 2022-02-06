@@ -9,13 +9,13 @@ hr {
     color: antiquewhite;
 }
 
-section#buscar form{
+section#buscar form {
     display: flex;
     flex-direction: column;
     padding: 0 30%;
 }
 
-section#buscar input{
+section#buscar input {
     border:rgb(185, 185, 185) solid 2px;
     border-radius: 2.5px;
     padding: 10px;
@@ -27,9 +27,6 @@ button#buscar {
     height: 40px;
     margin-bottom: 30px;
     border-radius: 10px;
-
-
-
     
 }
 
@@ -53,48 +50,51 @@ button#buscar {
 .infos {
     display: flex;
     flex-direction: row;
-    
 }
 
-.titulo {
-    font-weight: 700;
-    margin: -1px 0;
+.descricao {
+    margin: 0;
     width: 55%;
+    text-align: justify;
 }
 
 .compartilhar {
     font-weight: 700;
-    margin: -15px 0;
     text-align: center;
     text-transform: uppercase;
     width: 25%;
 
 }
-.compartilhar img{
-    
+
+.compartilhar img {
     height: 20px;
     width: 20px;
     width: 20%;
 }
 
 .autores {
-    margin: -15px 0;
     width: 40%;
 }
-.separador{
-    height: 1px;
-    margin: 10px 0;
-    margin-top: 10px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    background: #9d9dc4;
-}
 
-
-
-@media (max-width: 800px){s
+@media (max-width: 1000px){
     section#buscar form{
         padding: 0 20%;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descricao{
+        width: 100%;
+    }
+
+    .compartilhar {
+        width: 100%;
+    }
+
+    .autores { 
+        width: 100%;
     }
 }
