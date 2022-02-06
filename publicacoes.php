@@ -27,12 +27,30 @@
                 <button type="submit" id="buscar">Buscar</button>
             </form>
         </section>
-        </hr>
+        <hr>
         <section id="publicacoes">
             <div class="card-publicacao">
-                <div class="imagem"></div>
-                <div class="titulo"></div>
-                <div class="autores"></div>
+                <div class="infos">
+                    <div class="titulo">
+                        <h4 class="titulo-artigos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                    </div>
+                    <div class="compartilhar">
+                        <p class="type">Compartilhe</p>
+                        <div class="redes">
+                            <img src="./images/svg/whatsapp.svg" alt>
+                            <img src="./images/svg/whatsapp.svg" alt>
+                            <img src="./images/svg/whatsapp.svg" alt>
+                            
+                        </div>
+                    </div>
+                    <div class="autores">
+                        <p class="autores-nomes">Autores </p>
+                        <p class="lista-autores">
+                                Arthur Passos, André Barreto, Brenno Nascimento, Felipe Silva, Gabriel Costa, Yandson Costa, Davi Viana, Luis Rivero
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </section>
     </main>

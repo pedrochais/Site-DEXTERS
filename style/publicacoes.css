@@ -4,6 +4,11 @@ h2 {
     margin: 50px 0;
 }
 
+hr {
+    margin: 25px 10%;
+    color: antiquewhite;
+}
+
 section#buscar form{
     display: flex;
     flex-direction: column;
@@ -18,12 +23,77 @@ section#buscar input{
 }
 
 button#buscar {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+
+
     
+}
+
+.card-publicacao {
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.527);
+    /*border: red 1px solid;*/
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.card-publicacao h4 {
+    color: rgb(54, 54, 54);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.titulo {
+    font-weight: 700;
+    margin: -1px 0;
+    width: 55%;
+}
+
+.compartilhar {
+    font-weight: 700;
+    margin: -15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25%;
+
+}
+.compartilhar img{
+    
+    height: 20px;
+    width: 20px;
+    width: 20%;
+}
+
+.autores {
+    margin: -15px 0;
+    width: 40%;
+}
+.separador{
+    height: 1px;
+    margin: 10px 0;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    background: #9d9dc4;
 }
 
 
 
-@media (max-width: 750px){
+@media (max-width: 800px){s
     section#buscar form{
         padding: 0 20%;
     }
