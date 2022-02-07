@@ -4,6 +4,11 @@ body{
     background-color: #eeeeee70;
     max-width: 1920px;
     font-size: 18px;
+    color: rgb(54, 54, 54);
+}
+
+main {
+    margin-bottom: 60px;
 }
 
 button {
@@ -18,4 +23,10 @@ button {
 button:hover {
     background-color: rgb(101, 144, 151);
     cursor: pointer;
+}
+
+h2.titulo{
+    color: rgb(34, 34, 34);
+    text-align: center;
+    margin: 50px 0;
 }

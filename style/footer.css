@@ -39,18 +39,33 @@ footer .redes-sociais img {
 
 footer .localizacao {
     width: 30%;
+    padding: 20px;
 }
 
 footer .localizacao img {
     width: 25px;
 }
 
-footer .localizacao {
-    padding: 20px;
-}
+@media (max-width: 1000px){
+    footer {
+        padding-bottom: 0;
+    }
 
-@media (max-width: 800px){
+    footer .logos {
+        width: 50%;
+    }
+
     footer .localizacao {
         width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    footer .redes-sociais li{
+        padding-bottom: 0;
+    }
+
+    footer .redes-sociais p{
+        margin-bottom: 0;
     }
 }

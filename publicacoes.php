@@ -13,7 +13,7 @@
     <?php include('cabecalho.html'); ?>
     
     <main>
-        <h2>TRABALHOS PUBLICADOS</h2>
+        <h2 class="titulo">TRABALHOS PUBLICADOS</h2>
         <section id="buscar">
             <form>
                 <label for="titulo">Título</label>

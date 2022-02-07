@@ -1,28 +1,21 @@
 main .espaço {
-  margin: 0 auto;
-  width: 70%;
+    margin: 0 auto;
+    width: 70%;
 }
-
-.titulosobre {
-  font-size: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
 
 main .espaco p {
-  text-align: justify;
+    text-align: justify;
 }
 
-
-
 .galeria{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  text-align: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.galeria img {
+    margin: 5px;
 }
 
 

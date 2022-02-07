@@ -17,7 +17,6 @@ section#banner .banner-info{
 }
 
 section#conheca-dexters {
-    color: rgb(54, 54, 54);
     display: inline-block;
     text-align: center;
     padding: 5%;
@@ -27,8 +26,6 @@ section#conheca-dexters p {
     padding: 0 2%;
     text-justify: inter-word;
 }
-
-
 
 @media (max-width: 1150px){
     section#banner {

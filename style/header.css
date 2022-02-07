@@ -1,5 +1,4 @@
 header {
-    /*border: 1px red solid;*/
     background-color: rgba(118, 173, 255, 0.103);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.116);
     display: flex;
@@ -23,7 +22,6 @@ header ul {
 }
 
 header li {
-    /*border: 1px red solid;*/
     padding: 15px;
     margin: 0 5px;
     list-style: none;
