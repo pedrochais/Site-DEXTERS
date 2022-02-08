@@ -8,7 +8,8 @@ footer {
     padding-top: 20px;
     padding-bottom: 40px;
     border-top: 2px solid rgba(80, 80, 80, 0.651);
-    border-bottom: 2px solid rgba(44, 44, 44, 0.651); 
+    border-bottom: 2px solid rgba(44, 44, 44, 0.651);
+    /*font-size: 20px;*/
 }
 
 footer ul {
@@ -26,6 +27,8 @@ footer p {
 }
 
 footer .logos {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -44,6 +47,21 @@ footer .localizacao {
 
 footer .localizacao img {
     width: 25px;
+}
+
+.logo_1 > img {
+    margin: 10px 0;
+    width: 40%;
+}
+
+.logo_2 > img {
+    margin: 10px 0;
+    width: 35%;
+}
+
+.logo_3 > img {
+    margin: 10px 0;
+    width: 30%;
 }
 
 @media (max-width: 1000px){

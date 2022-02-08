@@ -14,7 +14,17 @@ section#banner .banner-info{
     width: 100%;
     height: 100%;
     text-align: center;
+    opacity: 1 !important;
 }
+
+.fundo-banner {
+    background: rgb(25, 86, 95, .5);
+    /*opacity: .5;*/
+}
+
+/*.fundo-banner > h3, .fundo-banner > p {
+    
+}*/
 
 section#conheca-dexters {
     display: inline-block;

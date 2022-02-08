@@ -15,8 +15,10 @@
     <main>
         <section id="banner">
             <div class="banner-info">
+                <div class="fundo-banner">
                 <h3>DEXTERS um Espaço de Pesquisa e Inovação em Engenharia de Software</h3>
                 <p>O nosso objetivo é ser o melhor laboratório de Engenharia de Software do Brasil</p>
+                </div>
             </div>
         </section>
         <section id="conheca-dexters">
