@@ -9,6 +9,7 @@ main {
     align-content: space-between;
     align-items:flex-start;
     margin: 0 10%;
+    justify-content: center;
 }
 
 .card-integrante {

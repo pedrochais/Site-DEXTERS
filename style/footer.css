@@ -51,11 +51,11 @@ footer .localizacao img {
 
 .logo_1 > img {
     margin: 10px 0;
-    width: 40%;
+    width: 60%;
 }
 
 .logo_2 > img {
-    margin: 10px 0;
+    margin: 10px 5px;
     width: 35%;
 }
 

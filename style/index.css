@@ -7,18 +7,17 @@ section#banner .banner-info{
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    background-image: url('../images/banner.png');
+    background-image: url('../images/banner_v02.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     color: white;
     width: 100%;
     height: 100%;
     text-align: center;
-    opacity: 1 !important;
 }
 
 .fundo-banner {
-    background: rgb(25, 86, 95, .5);
+    background: rgb(111, 169, 179, .6);
     /*opacity: .5;*/
 }
 
@@ -35,6 +34,50 @@ section#conheca-dexters {
 section#conheca-dexters p {
     padding: 0 2%;
     text-justify: inter-word;
+}
+
+#atividades {
+    background: #EEEEEE;
+}
+
+#atividades > .atividades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.atividades > .atividades-desenvolvidas {
+    text-align: center;
+}
+
+#atividades > .atividades > .images-atividades{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*background: ;*/
+}
+
+#atividades > .atividades > .images-atividades > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    margin: 0 10px;
+    border-radius: 6px;
+    background: linear-gradient(233.07deg, #6FA9B3 21.5%, rgba(243, 210, 72, 0.94) 84.78%);
+    box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.14);
+}
+
+.texto {
+    width:230px;
+}
+
+.texto > h3 {
+    text-align: center;
 }
 
 @media (max-width: 1150px){

@@ -31,7 +31,7 @@ header li {
     transition: 1s;
 }
 
-header li a {
+header a {
     text-decoration: none;
     color: #6FA9B3;
     width: 100%;
