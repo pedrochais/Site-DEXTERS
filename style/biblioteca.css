@@ -1,0 +1,69 @@
+#biblioteca{
+    padding:60px;
+    padding-top:10px ;
+    
+}
+
+details {
+    margin: 20px 0;
+    background:  rgba(118, 173, 255, 0.103);
+    
+    
+  }
+
+
+
+.descricao ul li{
+    display: inline-block;
+    max-width: 50%;
+    
+    text-align: justify;
+    padding: 5%;
+    padding-top:5%;
+}
+
+
+details summary {
+    display: flex;
+    color: rgb(161, 161, 161);
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 14px;
+  }
+
+
+.resumo{
+   margin-left: 25px;
+   margin-right: 10px;
+}
+
+  
+  details summary .nome {
+    display: flex;
+    justify-content: space-between;
+    color: #545457;
+    font-size: 24px;
+    padding: 14px;
+  }
+  
+  details summary span {
+    background: #58858d;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+  }
+  
+  details summary span:hover {
+    background: #71c0ce;
+  }
+  
+  .descricao li h3 {
+            text-align: center;
+  }
+
+
+
+
+
