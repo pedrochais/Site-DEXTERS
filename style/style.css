@@ -18,11 +18,13 @@ button {
     height: 50px;
     background-color: #6FA9B3;
     color: white;
+    transition: 0.5s;
 }
 
 button:hover {
     background-color: rgb(101, 144, 151);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 h2.titulo{
