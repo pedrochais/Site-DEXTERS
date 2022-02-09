@@ -31,7 +31,7 @@
           </p>
         </div>
         <div class="images-atividades">
-          <div class="card-atividade-1">
+          <div class="card-atividade-1" id="es">
             <div class="texto">
               <h3>Engenharia de Software</h3>
             </div>
@@ -58,6 +58,23 @@
           </div>
         </div>
       </div>
+      <div class="texto-area">
+        <p class="texto-explicativo">
+          
+        </p>
+        <!--<p id="msc">
+          Lorem Ipsum kk
+        </p>
+        <p id="ihc">
+          Lorem Ipsum kk
+        </p>
+        <p id="si">
+          Lorem Ipsum kk
+        </p>
+        <p id="ec">
+          Lorem Ipsum kk
+        </p>-->
+      </div>
     </section>
 
         <section id="conheca-dexters">
@@ -67,6 +84,7 @@
         </section>
     </main>
     
+    <script src="js/index.js"></script>
     <?php include('rodape.html'); ?>
 </body>
 </html>

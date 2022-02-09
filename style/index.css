@@ -70,7 +70,21 @@ section#conheca-dexters p {
     border-radius: 6px;
     background: linear-gradient(233.07deg, #6FA9B3 21.5%, rgba(243, 210, 72, 0.94) 84.78%);
     box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.14);
+    transition: .2s;
 }
+
+#atividades > .atividades > .images-atividades > div:hover {
+    height: 260px;
+    width: 260px;
+}
+
+/*#atividades > .texto-area > p{
+    visibility: hidden;
+}
+
+#atividades > .texto-area > p:hover{
+    visibility: visible;
+}*/
 
 .texto {
     width:230px;
