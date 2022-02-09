@@ -18,12 +18,7 @@ section#banner .banner-info{
 
 .fundo-banner {
     background: rgb(111, 169, 179, .6);
-    /*opacity: .5;*/
 }
-
-/*.fundo-banner > h3, .fundo-banner > p {
-    
-}*/
 
 section#conheca-dexters {
     display: inline-block;
@@ -37,7 +32,11 @@ section#conheca-dexters p {
 }
 
 #atividades {
-    background: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e2e2e2;
+    height: 650px;
 }
 
 #atividades > .atividades {
@@ -56,7 +55,7 @@ section#conheca-dexters p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /*background: ;*/
+    height: 250px;
 }
 
 #atividades > .atividades > .images-atividades > div{
@@ -73,18 +72,75 @@ section#conheca-dexters p {
     transition: .2s;
 }
 
+#atividades > .atividades > .images-atividades > .card-atividade-1:before{
+    content: "Engenharia de Software";
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#atividades > .atividades > .images-atividades > .card-atividade-2:before{
+    content: "Modelagem de Sistemas Complexos";
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#atividades > .atividades > .images-atividades > .card-atividade-3:before{
+    content: "Interação Humano Computador";
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#atividades > .atividades > .images-atividades > .card-atividade-4:before{
+    content: "Sistemas de Informação";
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#atividades > .atividades > .images-atividades > .card-atividade-5:before{
+    content: "Ensino de Computação";
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#atividades > .atividades > .images-atividades > .card-atividade-1:hover{
+    font-size: 21px;
+}
+
 #atividades > .atividades > .images-atividades > div:hover {
     height: 260px;
     width: 260px;
+    font-size: 19px;
 }
 
-/*#atividades > .texto-area > p{
-    visibility: hidden;
+#atividades > .texto-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 1000px;
+    margin-top: 15px;
 }
-
-#atividades > .texto-area > p:hover{
-    visibility: visible;
-}*/
 
 .texto {
     width:230px;
