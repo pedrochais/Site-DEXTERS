@@ -81,7 +81,7 @@
     <?php include('rodape.html'); ?>
 
     <!-- MODAL -->
-    <div id="modal-integrantes" class="modal-background show">
+    <div id="modal-integrantes" class="modal-background">
         <div class="modal">
             <button onclick="fechaModal()" class="btn-fechar">x</button>
             <div class="bg-titulo">
