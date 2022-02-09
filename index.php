@@ -33,30 +33,31 @@
         <div class="images-atividades">
           <div class="card-atividade-1">
             <div class="texto">
-              <h3>Engenharia de Software</h3>
             </div>
           </div>
           <div class="card-atividade-2">
             <div class="texto">
-              <h3>Modelagem de Sistemas Complexos</h3>
             </div>
           </div>
           <div class="card-atividade-3">
             <div class="texto">
-              <h3>Interação Humano Computador</h3>
             </div>
           </div>
           <div class="card-atividade-4">
             <div class="texto">
-              <h3>Sistemas de Informação</h3>
             </div>
           </div>
           <div class="card-atividade-5">
             <div class="texto">
-              <h3>Ensino de Computação</h3>
             </div>
           </div>
         </div>
+      </div>
+      <div class="texto-area">
+        <h1 class="titulo-texto-explicativo" align="center"></h1>
+        <p class="texto-explicativo">
+          
+        </p>
       </div>
     </section>
 
@@ -67,6 +68,7 @@
         </section>
     </main>
     
+    <script src="js/index.js"></script>
     <?php include('rodape.html'); ?>
 </body>
 </html>
