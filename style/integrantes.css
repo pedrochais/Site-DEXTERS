@@ -7,9 +7,10 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start; /*alinhamento vertical*/
     margin: 0 10%;
-    justify-content: center;
+    justify-content: center; /*alinhamento horizontal*/
+    
 }
 
 .card-integrante {
@@ -19,7 +20,7 @@ main {
     padding: 10px;
     border-radius: 5px;
     width: 230px;
-    height: 280px;
+    
     margin: 20px;
 }
 
@@ -31,3 +32,116 @@ section .imagem {
     margin-top: 5px;
 }
 
+h4 {
+    margin: 10px;
+}
+
+.btn-detalhes {
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+.btn-fechar {
+    width: 30px;
+    height: 30px;
+    background: rgb(223, 223, 223);
+    color: grey;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+}
+
+.btn-fechar:hover {
+    background: rgba(206, 206, 206, 0.425);
+    color: rgb(80, 80, 80);
+}
+
+.modal-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-background.show {
+    display: flex;
+}
+
+.modal {
+    min-width: 250px;
+    position: relative;
+    width: 30%;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid ;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
+}
+
+@keyframes modal-background{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.show .modal-background {
+    animation: modal-background 3s;
+}
+
+.show .modal {
+    animation: modal 0.5s;
+}
+
+.modal {
+    animation: modal 0.5s;
+}
+
+.bg-titulo {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 25px;
+    width: 100%;
+    height: 50px;
+    background: rgb(223, 223, 223);
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+}
+
+hr {
+    margin: 0;
+}
+
+p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.infos {
+    padding: 15px 25px;
+}
