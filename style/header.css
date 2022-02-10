@@ -2,19 +2,25 @@ header {
     background-color: rgba(118, 173, 255, 0.103);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.116);
     display: flex;
+    align-items: center;
 }
+
+/* LOGO */
 
 header .logo {
     width: 15%;
+    min-width: 145px;
 }
 
-header .menu {
-    margin: auto;
-}
-
-header img {
+header .logo img {
     width: 100%;
     min-width: 145px;
+}
+
+/* NAVBAR */
+
+header .navbar {
+    margin: auto;
 }
 
 header ul {
@@ -44,14 +50,37 @@ header li:hover {
     cursor: pointer;
 }
 
+/* RESPONSIVIDADE MOBILE */
+
+#btn-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1020px){
+    header .navbar {
+        margin-right: 20px;
+    }
+
+    #btn-mobile {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+
 header > .menu-mobile {
     display: none;
 }
-
+/*
 header > .icone-menu-mobile {
     display: none;
 }
-
+*/
 /*
 MEDIA QUERIES
 */

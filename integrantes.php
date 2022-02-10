@@ -98,6 +98,6 @@
         </div>
     </div>
 
-    <script src="script/integrantes.js"></script>
+    <script src="js/integrantes.js"></script>
 </body>
 </html>

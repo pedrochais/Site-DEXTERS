@@ -10,7 +10,6 @@ main {
     align-items: flex-start; /*alinhamento vertical*/
     margin: 0 10%;
     justify-content: center; /*alinhamento horizontal*/
-    
 }
 
 .card-integrante {
@@ -20,7 +19,6 @@ main {
     padding: 10px;
     border-radius: 5px;
     width: 230px;
-    
     margin: 20px;
 }
 
@@ -72,6 +70,15 @@ h4 {
     align-items: center;
 }
 
+@keyframes modal-background{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .modal-background.show {
     display: flex;
 }
@@ -82,17 +89,7 @@ h4 {
     width: 30%;
     background: white;
     border-radius: 5px;
-    border: 2px solid ;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
-}
-
-@keyframes modal-background{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }
 
 @keyframes modal {
