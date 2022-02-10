@@ -34,8 +34,9 @@ details summary {
 
 
 .resumo{
-   margin-left: 25px;
-   margin-right: 10px;
+
+   padding-right: 7px;
+   padding-left: 19px;
 }
 
   
@@ -63,7 +64,34 @@ details summary {
             text-align: center;
   }
 
+.descricao{
+  display: flex;
+  flex-direction: row;
+  padding: 28px;
 
+ 
+}
 
+.descricao div{
+ 
+  display: flex;
+  margin: auto;
+  display: flex;
+ align-items: center;
+ justify-content:center ;
+}
+
+#imagem{
+
+  width: 20%;
+  overflow: hidden;
+}
+#text{
+ width: 80%;
+ text-indent:10px;
+ text-align: justify;
+
+ 
+}
 
 
