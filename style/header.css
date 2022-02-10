@@ -8,7 +8,7 @@ header .logo {
     width: 15%;
 }
 
-header nav {
+header .menu {
     margin: auto;
 }
 
@@ -43,3 +43,29 @@ header li:hover {
     background-color: rgba(124, 124, 124, 0.219);
     cursor: pointer;
 }
+
+header > .menu-mobile {
+    display: none;
+}
+
+header > .icone-menu-mobile {
+    display: none;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+/*@media (max-width: 937px) {
+    header > .menu {
+        display:none;
+    }
+
+    header > .icone-menu-mobile {
+        display: block;
+    }
+    
+    header > .menu-mobile {
+        display: flex;
+    }
+}*/
