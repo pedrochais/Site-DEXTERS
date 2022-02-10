@@ -283,37 +283,74 @@ MEDIA QUERIES
 }
 
 @media (max-width: 545px) {
-    #atividades {
-        height: 1450px;
-    }
-
-    #atividades > .atividades > .images-atividades {
+    /*#atividades > .atividades > .images-atividades {
         flex-direction: column;
-    }
-}
+    }*/
 
-@media (max-width: 512px) {
-    #atividades {
-        height: 1650px;
-    }
-}
-
-@media (max-width: 481px) {
-    #atividades > .atividades > .images-atividades {
-        width: 250px;
-    }
-}
-
-@media (max-width: 400px) {
     #atividades > .atividades > .images-atividades > div {
-        width: 195px;
+        width: 210px;
     }
 
     #atividades > .atividades > .images-atividades > div:hover {
-        width: 200px;
+        width: 215px;
+    }
+}
+
+/*@media (max-width: 512px) {
+    #atividades {
+        height: 1650px;
+    }
+}*/
+
+@media (max-width: 481px) {
+    #atividades {
+        height:700px;
+    }
+
+    #atividades > .atividades > .images-atividades > div {
+        width: 125px;
+        height: 125px;
+    }
+
+    /*#atividades > .atividades > .images-atividades {
+        width: 350px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }*/
+
+    #atividades > .atividades > .images-atividades > div:hover {
+        width: 130px;
+        height: 130px;
+    }
+
+    #atividades > .atividades > .images-atividades > .card-atividade-1:before{
+        content: "Engenharia de Software";
+        font-size: 15px;
+    }
+    #atividades > .atividades > .images-atividades > .card-atividade-2:before{
+        content: "Modelagem de Sistemas Complexos";
+        font-size: 15px;
+    }
+    #atividades > .atividades > .images-atividades > .card-atividade-3:before{
+        content: "Interação Humano Computador";
+        font-size: 15px;
+    }
+    #atividades > .atividades > .images-atividades > .card-atividade-4:before{
+        content: "sistemas de Informação";
+        font-size: 15px;
+    }
+    #atividades > .atividades > .images-atividades > .card-atividade-5:before{
+        content: "Ensino de Computação";
+        font-size: 15px;
     }
 
     #atividades > .atividades > .images-atividades{
         align-items: center;
+    }
+}
+
+@media (max-width: 435px) {
+    #atividades {
+        height:1000px;
     }
 }

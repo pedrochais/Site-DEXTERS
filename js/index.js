@@ -96,6 +96,7 @@ function home() {
     }
 
     areas.addEventListener('mouseover', exibeTexto);
+    areas.addEventListener('click', exibeTexto);
     //areas.addEventListener('mouseout', removeTexto);
     /*onsole.log(areas);
     console.log(areaDoTexto);
