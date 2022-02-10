@@ -1,4 +1,4 @@
-main .espaço {
+main .espaco {
     margin: 0 auto;
     width: 70%;
 }
@@ -19,6 +19,17 @@ main .espaco p {
 }
 
 
-
+@media (max-width: 1200px){
+    section#sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1920px;
+        width: 100%;
+        
+        
+    }
+    
+}
 
 
