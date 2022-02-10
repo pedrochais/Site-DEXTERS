@@ -27,11 +27,15 @@
               </div>
           </summary>
           <div class="descricao">
-            <ul>
-                <li><img src="images/logo_UFMA.png" alt=""></li>
-                <li><h3>Descrição do projeto</h3>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste.</li>
-            </ul>
+           
+            <div id="imagem">
+                <img src="images/logo_ufma.png" alt="">
+            </div>
+            <div id="text">
+              
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+            </div>
+           
           </div>
       </details>
 
@@ -46,11 +50,15 @@
               </div>
           </summary>
           <div class="descricao">
-            <ul>
-                <li><img src="images/logo_UFMA.png" alt=""></li>
-                <li><h3>Descrição do projeto</h3>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste.</li>
-            </ul>
+           
+            <div id="imagem">
+                <img src="images/logo_ufma.png" alt="">
+            </div>
+            <div id="text">
+              
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+            </div>
+           
           </div>
       </details>
 
@@ -65,11 +73,15 @@
               </div>
           </summary>
           <div class="descricao">
-            <ul>
-                <li><img src="images/logo_UFMA.png" alt=""></li>
-                <li><h3>Descrição do projeto</h3>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste.</li>
-            </ul>
+           
+            <div id="imagem">
+                <img src="images/logo_ufma.png" alt="">
+            </div>
+            <div id="text">
+              
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+            </div>
+           
           </div>
       </details>
 
@@ -84,13 +96,42 @@
               </div>
           </summary>
           <div class="descricao">
-            <ul>
-                <li><img src="images/logo_dexters_header.png" alt=""></li>
-                <li><h3>Descrição do projeto</h3>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste.</li>
-            </ul>
+           
+            <div id="imagem">
+                <img src="images/logo_ufma.png" alt="">
+            </div>
+            <div id="text">
+              
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+            </div>
+           
           </div>
       </details>
+
+      <details>
+          <summary>
+              <div class="nome">
+                  Projeto 5
+                  <span>Detalhes</span>
+              </div>
+              <div class="resumo">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias, explicabo itaque quia minus expedita quam qui fuga doloremque veniam necessitatibus sint repellendus vero, adipisci placeat ratione, aut recusandae beatae.
+              </div>
+          </summary>
+          <div class="descricao">
+           
+            <div id="imagem">
+                <img src="images/logo_ufma.png" alt="">
+            </div>
+            <div id="text">
+              
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+            </div>
+           
+          </div>
+      </details>
+
+    
 
 
     </section>
