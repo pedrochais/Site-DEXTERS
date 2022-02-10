@@ -19,19 +19,20 @@ header .logo img {
 
 /* NAVBAR */
 
-header .navbar {
+#navbar {
     margin: auto;
 }
 
 header ul {
     padding: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 header li {
     padding: 15px;
     margin: 0 5px;
     list-style: none;
-    display: inline;
     border-radius: 3px;
     align-items: center;
     transition: 1s;
@@ -59,8 +60,13 @@ header li:hover {
 }
 
 @media (max-width: 1020px){
-    header .navbar {
+    header #navbar {
         margin-right: 20px;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin: 20px;
     }
 
     #btn-mobile {
@@ -68,13 +74,36 @@ header li:hover {
     }
 
     .menu {
-        display: none;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        right: 0;
+        background-color: #eaf0f8;
+        visibility: hidden;
+        height: 0;
+        transition: .6s;
+        overflow-y: hidden;
+    }
+
+    
+
+    #navbar.show .menu{
+        
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
     }
 }
 
+@keyframe menu{
+    from {
+        opacity: 0;
 
-header > .menu-mobile {
-    display: none;
+    }
+    to {
+        opacity: 1;
+    }
 }
 /*
 header > .icone-menu-mobile {

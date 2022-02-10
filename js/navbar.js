@@ -1,8 +1,8 @@
-var btnMobile = document.getElementsByClassName('btn-mobile')
+var botao = document.getElementById('btn-mobile')
 
 function toggleMenu(){
-    var nav = document.getElementsByClassName('menu')
-    nav.classList.toggle('active')
+    var menu = document.getElementById('navbar')
+    menu.classList.toggle('show')
 }
 
-btnMobile.addEventListener('click', toggleMenu)
+//botao.addEventListener('click', toggleMenu)
