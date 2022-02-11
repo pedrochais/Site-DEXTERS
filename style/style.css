@@ -32,3 +32,10 @@ h2.titulo{
     text-align: center;
     margin: 50px 0;
 }
+
+@media (max-width: 400px) {
+    body {
+        font-size: 16px;
+        color: rgb(10, 10, 10);
+    }
+}

@@ -1,6 +1,6 @@
 footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: rgb(51, 51, 51);
     justify-content: space-around;
     color: white;
@@ -23,26 +23,38 @@ footer li {
 }
 
 footer p {
-    margin-left: 20px;
+    text-align: justify;
+    margin: 0 10px;
 }
 
 footer .logos {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 10px 0;
 }
 
-footer .redes-sociais li{
+footer > .redes-sociais{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .redes-sociais .rede{
     line-height: 50px;
+    display: flex;
 }
 
 footer .redes-sociais img {
     width: 25px;
 }
 
+footer .redes-sociais > div {
+    display: flex;
+}
+
 footer .localizacao {
     width: 30%;
-    padding: 20px;
 }
 
 footer .localizacao img {
@@ -51,39 +63,92 @@ footer .localizacao img {
 
 .logo_1 > img {
     margin: 10px 0;
-    width: 60%;
+    width: 315px;
 }
 
 .logo_2 > img {
     margin: 10px 5px;
-    width: 35%;
+    width: 183px;
 }
 
-.logo_3 > img {
-    margin: 10px 0;
-    width: 30%;
+#logo-ufma {
+    width: 78px;
 }
+
+
+/*
+MEDIA QUERIES
+*/
 
 @media (max-width: 1000px){
     footer {
         padding-bottom: 0;
+        flex-wrap: nowrap;
     }
 
     footer .logos {
-        width: 50%;
+       /* width: 50%;*/
     }
 
     footer .localizacao {
-        width: 100%;
+       /* width: 100%;*/
         padding-top: 0;
         padding-bottom: 0;
     }
 
-    footer .redes-sociais li{
+    /*footer .redes-sociais li{
         padding-bottom: 0;
+    }*/
+
+    /*footer .redes-sociais p{
+        margin-bottom: 0;
+    }*/
+}
+
+@media (max-width: 831px) {
+    footer > .localizacao {
+        /*font-size: 15px;*/
+        width: 100%;
     }
 
-    footer .redes-sociais p{
-        margin-bottom: 0;
+    footer > .redes-sociais {
+        /*font-size: 15px;*/
+        margin: 10px 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer > .redes-sociais > .rede {
+        /*font-size: 15px;*/
+        flex-direction: row;
+        margin: 0 10px;
+    }
+
+    footer > .redes-sociais > .rede {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /*footer > .redes-sociais > ul > li,*/ footer > .localizacao > ul > li {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 321px) {
+    .logo_1 > img {
+        width: 235px;
+    }
+    
+    .logo_2 > img {
+        width: 103px;
+    }
+
+    #logo-ufma {
+        width: 70px;
     }
 }

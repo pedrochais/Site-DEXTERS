@@ -8,6 +8,9 @@ main .espaco p {
 }
 
 .galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -15,10 +18,22 @@ main .espaco p {
 }
 
 .galeria img {
+    width: 387px;
     margin: 5px;
 }
 
+/*
+MEDIA QUERIES
+*/
 
+@media (max-width: 571px) {
+    .galeria img {
+        width: 327px;
+    }
+}
 
-
-
+@media (max-width: 483px) {
+    .galeria img {
+        width: 267px;
+    }
+}
