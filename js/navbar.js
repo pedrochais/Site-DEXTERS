@@ -4,5 +4,3 @@ function toggleMenu(){
     var menu = document.getElementById('navbar')
     menu.classList.toggle('show')
 }
-
-//botao.addEventListener('click', toggleMenu)

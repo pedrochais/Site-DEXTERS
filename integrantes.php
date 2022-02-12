@@ -19,31 +19,31 @@
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="iniciaModal()" class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
             </div>
 
         </section>
@@ -83,11 +83,10 @@
     <!-- MODAL -->
     <div id="modal-integrantes" class="modal-background">
         <div class="modal">
-            <button onclick="fechaModal()" class="btn-fechar">x</button>
+            <button onclick="toggleModal()" class="btn-fechar">x</button>
             <div class="bg-titulo">
                 <h3>Informações do integrante</h3>
             </div>
-            
             <div class="infos">
                 <p>Nome: </p>
                 <p>Cargo: </p>

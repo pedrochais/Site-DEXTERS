@@ -27,8 +27,20 @@ button:hover {
     transition: 0.5s;
 }
 
+button:active {
+    background-color: white;
+    border: 2px rgb(101, 144, 151) solid;
+    color: rgb(101, 144, 151);
+    transition: 0.1s;
+}
+
 h2.titulo{
     color: rgb(34, 34, 34);
     text-align: center;
     margin: 50px 0;
+}
+
+hr {
+    margin: 25px 10%;
+    color: rgba(109, 109, 109, 0.5);
 }

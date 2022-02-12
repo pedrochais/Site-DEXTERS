@@ -1,20 +1,27 @@
 header {
-    background-color: rgba(118, 173, 255, 0.103);
+    background-color: #eaf0f8;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.116);
     display: flex;
     align-items: center;
+    z-index: 1000;
+    padding: 10px;
 }
 
-/* LOGO */
+/* LOGOS */
 
 header .logo {
-    width: 15%;
-    min-width: 145px;
+    align-items: center;
+    width: 25%;
+    min-width: 250px;
+    max-width: 300px;
 }
 
-header .logo img {
-    width: 100%;
-    min-width: 145px;
+img#lg-ufma-navbar{
+    width: 25%;
+}
+
+img#lg-dexters-navbar{
+    width: 65%;
 }
 
 /* NAVBAR */
@@ -55,29 +62,43 @@ header li:hover {
 
 #btn-mobile {
     display: none;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#btn-mobile:active {
+    height: 51px;
 }
 
 @media (max-width: 1020px){
+    header {
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        transition: 1s;
+    }
+
     header #navbar {
         margin-right: 20px;
     }
 
     header ul {
         flex-direction: column;
-        margin: 20px;
+        transition: 1s;
     }
 
     #btn-mobile {
         display: block;
     }
-
+    
     .menu {
+        z-index: 999;
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
-        top: 50px;
+        top: 60px;
         right: 0;
         background-color: #eaf0f8;
         visibility: hidden;
@@ -85,45 +106,14 @@ header li:hover {
         transition: .6s;
         overflow-y: hidden;
     }
-
     
-
     #navbar.show .menu{
-        
         height: 100vh;
         visibility: visible;
         overflow-y: auto;
     }
-}
 
-@keyframe menu{
-    from {
-        opacity: 0;
-
-    }
-    to {
-        opacity: 1;
+    main {
+        margin-top: 130px;
     }
 }
-/*
-header > .icone-menu-mobile {
-    display: none;
-}
-*/
-/*
-MEDIA QUERIES
-*/
-
-/*@media (max-width: 937px) {
-    header > .menu {
-        display:none;
-    }
-
-    header > .icone-menu-mobile {
-        display: block;
-    }
-    
-    header > .menu-mobile {
-        display: flex;
-    }
-}*/

@@ -1,11 +1,16 @@
-main .espaco {
+/* TEXTO SOBRE */
+
+#sobre {
     margin: 0 auto;
     width: 70%;
 }
 
-main .espaco p {
+#espaco p {
     text-align: justify;
+
 }
+
+/* IMAGENS */
 
 .galeria{
     width: 100%;
@@ -17,19 +22,4 @@ main .espaco p {
 .galeria img {
     margin: 5px;
 }
-
-
-@media (max-width: 1200px){
-    section#sobre{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        max-width: 1920px;
-        width: 100%;
-        
-        
-    }
-    
-}
-
 

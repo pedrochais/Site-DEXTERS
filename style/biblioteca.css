@@ -1,97 +1,81 @@
 #biblioteca{
-    padding:60px;
-    padding-top:10px ;
-    
+  margin: 0 40px;
 }
 
 details {
-    margin: 20px 0;
-    background:  rgba(118, 173, 255, 0.103);
-    
-    
-  }
-
-
+  margin: 20px 0;
+  background: rgba(118, 173, 255, 0.103);
+}
 
 .descricao ul li{
-    display: inline-block;
-    max-width: 50%;
-    
-    text-align: justify;
-    padding: 5%;
-    padding-top:5%;
+  display: inline-block;
+  max-width: 50%;
+  text-align: justify;
+  padding: 5%;
+  padding-top:5%;
 }
-
 
 details summary {
-    display: flex;
-    color: rgb(161, 161, 161);
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 20px;
-    padding: 14px;
-  }
-
-
-.resumo{
-
-   padding-right: 7px;
-   padding-left: 19px;
+  display: flex;
+  color: rgb(161, 161, 161);
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 14px;
 }
 
-  
-  details summary .nome {
-    display: flex;
-    justify-content: space-between;
-    color: #545457;
-    font-size: 24px;
-    padding: 14px;
-  }
-  
-  details summary span {
-    background: #58858d;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 8px;
-  }
-  
-  details summary span:hover {
-    background: #71c0ce;
-  }
-  
-  .descricao li h3 {
-            text-align: center;
-  }
+.resumo{
+  padding-right: 7px;
+  padding-left: 19px;
+}
+
+details summary .nome {
+  display: flex;
+  justify-content: space-between;
+  color: #545457;
+  font-size: 24px;
+  padding: 14px;
+}
+
+details summary span {
+  background: #58858d;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px;
+}
+
+details summary span:hover {
+  background: #71c0ce;
+}
+
+.descricao li h3 {
+  text-align: center;
+}
 
 .descricao{
   display: flex;
   flex-direction: row;
   padding: 28px;
-
- 
 }
 
 .descricao div{
- 
   display: flex;
   margin: auto;
   display: flex;
- align-items: center;
- justify-content:center ;
+  align-items: center;
+  justify-content:center ;
 }
 
 #imagem{
-
   width: 20%;
   overflow: hidden;
 }
-#text{
- width: 80%;
- text-indent:10px;
- text-align: justify;
 
- 
+#text{
+  width: 80%;
+  text-indent:10px;
+  text-align: justify;
 }
 
 

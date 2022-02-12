@@ -1,7 +1,4 @@
-hr {
-    margin: 25px 10%;
-    color: antiquewhite;
-}
+/* FORMULÁRIO DE BUSCA */
 
 section#buscar form {
     display: flex;
@@ -23,12 +20,30 @@ section#buscar input {
 }
 
 button#buscar {
-    width: 100px;
-    height: 40px;
+    margin: 0 auto;
+    border:rgb(185, 185, 185) solid 2px;
+    background-color: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    border-radius: 10px;
-    
 }
+
+button#buscar:active {
+    border:rgb(255, 255, 255);
+    background-color: rgb(185, 185, 185);
+}
+
+#buscar img:active {
+    width: 55px;
+}
+
+#buscar img {
+    width: 50px;
+}
+
+/* CARD DE PUBLICAÇÃO */
 
 .card-publicacao {
     background-color: rgba(255, 255, 255, 0.514);

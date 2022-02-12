@@ -1,3 +1,5 @@
+/* BANNER */
+
 section#banner{
     height: 400px;
 }
@@ -20,6 +22,8 @@ section#banner .banner-info{
     background: rgb(111, 169, 179, .6);
 }
 
+/* CONHEÇA O DEXTERS */
+
 section#conheca-dexters {
     display: inline-block;
     text-align: center;
@@ -30,6 +34,8 @@ section#conheca-dexters p {
     padding: 0 2%;
     text-justify: inter-word;
 }
+
+/* ATIVIDADES */
 
 #atividades {
     display: flex;

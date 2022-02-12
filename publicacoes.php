@@ -24,7 +24,9 @@
                 <input type="text" id="palavra-chave">
                 <label for="ano-publicacao">Ano de publicação</label>
                 <input type="text" id="ano-publicacao">
-                <button type="submit" id="buscar">Buscar</button>
+                <button type="submit" id="buscar">
+                    <img src="images/lupa.png" alt="Botão buscar">
+                </button>
             </form>
         </section>
         <hr>
