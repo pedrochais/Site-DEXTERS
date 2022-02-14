@@ -68,7 +68,7 @@ header li:hover {
 }
 
 #btn-mobile:active {
-    height: 51px;
+    transform: scale(.95);
 }
 
 @media (max-width: 1020px){

@@ -84,16 +84,24 @@
     <div id="modal-integrantes" class="modal-background">
         <div class="modal">
             <button onclick="toggleModal()" class="btn-fechar">x</button>
-            <div class="bg-titulo">
-                <h3>Informações do integrante</h3>
-            </div>
-            <div class="infos">
-                <p>Nome: </p>
-                <p>Cargo: </p>
-                <p>Lattes: </p>
-                <p>Contato: </p>
-            </div>
-            
+            <div id="infos">
+                <p>
+                <span class="info">Nome:</span>
+                <span>Pedro Rocha Boucinhas Pacheco</span>
+                </p>
+                <p>
+                <span class="info">Cargo:</span>
+                <span>Estudante</span>
+                </p>
+                <p>
+                <span class="info">Lattes:</span>
+                <span><a>lattes.cnpq.br/6144884845294658</a></span>
+                </p>
+                <p>
+                <span class="info">Contato:</span>
+                <span>pedro.pacheco@discente.ufma.br</span>
+                </p>
+            </div> 
         </div>
     </div>
 
