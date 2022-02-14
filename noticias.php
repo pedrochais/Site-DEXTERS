@@ -16,7 +16,6 @@
         <section id="noticias">
     		<div class="card-item">
         		<h4>TÍTULO DA NOTÍCIA</h4>
-        		<h4>Descricao da Noticia:</h4>
         		<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</h4>
                 <div class="imagem"></div>
                 <div class="btn-novo">
@@ -26,7 +25,6 @@
         	
             <div class="card-item">
         		<h4>TÍTULO DA NOTÍCIA</h4>
-        		<h4>Descricao da Noticia:</h4>
         		<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</h4>
                 <div class="imagem"></div>
                 <div class="btn-novo">
@@ -35,7 +33,6 @@
             </div>
             <div class="card-item">
         		<h4>TÍTULO DA NOTÍCIA</h4>
-        		<h4>Descricao da Noticia:</h4>
         		<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</h4>
                 <div class="imagem"></div>
                 <div class="btn-novo">
