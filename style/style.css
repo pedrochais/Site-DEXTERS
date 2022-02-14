@@ -1,7 +1,14 @@
+:root {
+    --azul: #6FA9B3;
+    --amarelo: rgba(243, 210, 72, 0.94);
+    --cinza: #eeeeee70;
+    --btn-hover-azul: rgb(101, 144, 151);
+}
+
 body{
     margin: auto;
     font-family: sans-serif;
-    background-color: #eeeeee70;
+    background-color: var(--cinza);
     max-width: 1920px;
     font-size: 18px;
     color: rgb(54, 54, 54);
@@ -16,13 +23,13 @@ button {
     border-radius: 5px;
     width: 100px;
     height: 50px;
-    background-color: #6FA9B3;
+    background-color: var(--azul);
     color: white;
     transition: 0.5s;
 }
 
 button:hover {
-    background-color: rgb(101, 144, 151);
+    background-color: var(--btn-hover-azul);
     cursor: pointer;
     transition: 0.5s;
 }
