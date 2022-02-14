@@ -35,7 +35,6 @@
             <div class="texto">
             </div>
           </div>
-          <div class="images-atividades">
             <div class="card-atividade-1">
               <div class="texto">
               </div>
@@ -56,7 +55,6 @@
               <div class="texto">
               </div>
             </div>
-          </div>
         </div>
       </div>
       <div class="texto-area">
@@ -66,7 +64,6 @@
         </p>
       </div>
     </section>
->>>>>>> responsivo
 
       <section id="conheca-dexters">
           <h2>Quem somos?</h2>

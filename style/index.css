@@ -163,7 +163,8 @@ main > .atividades-desenvolvidas {
 MEDIA QUERIES
 */
 
-@media (max-width: 1345px){
+/*1345px*/
+@media (max-width: 1630px){
     main > .atividades-desenvolvidas {
         border-bottom: 2px solid rgb(124, 124, 124, 0.219);
     }
@@ -276,23 +277,9 @@ MEDIA QUERIES
     #atividades {
         height: 1030px;
     }
-
-    /*#atividades > .atividades > .images-atividades > div {
-        width: 220px; 
-    }*/
-
-    /*#atividades > .atividades > .images-atividades > div:hover {
-        height: 225px;
-        width: 225px;
-        font-size: 19px;
-    }*/
 }
 
-@media (max-width: 545px) {
-    /*#atividades > .atividades > .images-atividades {
-        flex-direction: column;
-    }*/
-
+@media (max-width: 555px) {
     #atividades > .atividades > .images-atividades > div {
         width: 210px;
     }
@@ -302,31 +289,19 @@ MEDIA QUERIES
     }
 }
 
-/*@media (max-width: 512px) {
-    #atividades {
-        height: 1650px;
-    }
-}*/
-
 @media (max-width: 481px) {
     #atividades {
         height:700px;
     }
 
     #atividades > .atividades > .images-atividades > div {
-        width: 125px;
-        height: 125px;
+        width: 117px;
+        height: 117px;
     }
 
-    /*#atividades > .atividades > .images-atividades {
-        width: 350px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }*/
-
     #atividades > .atividades > .images-atividades > div:hover {
-        width: 130px;
-        height: 130px;
+        width: 122px;
+        height: 122px;
     }
 
     #atividades > .atividades > .images-atividades > .card-atividade-1:before{
@@ -356,6 +331,12 @@ MEDIA QUERIES
 }
 
 @media (max-width: 435px) {
+    #atividades {
+        height:1000px;
+    }
+}
+
+@media (max-width: 335px) {
     #atividades {
         height:1000px;
     }
