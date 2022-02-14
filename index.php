@@ -22,13 +22,18 @@
           </div>
       </section>
 
-      <section id="atividades">
-        <div class="atividades">
-          <div class="atividades-desenvolvidas">
-            <h1>Áreas de Atuação</h1>
-            <p>
-              O nosso laboratório trabalha com as mais diversas áreas dentro da Engenharia de Software 
-            </p>
+        <div class="atividades-desenvolvidas">
+          <h1>Áreas de Atuação</h1>
+          <p>
+            O nosso laboratório trabalha com as mais diversas áreas dentro da Engenharia de Software 
+          </p>
+        </div>
+    <section id="atividades">
+      <div class="atividades">
+        <div class="images-atividades">
+          <div class="card-atividade-1">
+            <div class="texto">
+            </div>
           </div>
           <div class="images-atividades">
             <div class="card-atividade-1">
@@ -53,13 +58,15 @@
             </div>
           </div>
         </div>
-        <div class="texto-area">
-          <h1 class="titulo-texto-explicativo" align="center"></h1>
-          <p class="texto-explicativo">
-            
-          </p>
-        </div>
-      </section>
+      </div>
+      <div class="texto-area">
+        <h1 class="titulo-texto-explicativo" align="center">Engenharia de Software</h1>
+        <p class="texto-explicativo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nibh mi. Nulla ut scelerisque libero, eget porta risus.
+        </p>
+      </div>
+    </section>
+>>>>>>> responsivo
 
       <section id="conheca-dexters">
           <h2>Quem somos?</h2>

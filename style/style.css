@@ -44,3 +44,10 @@ hr {
     margin: 25px 10%;
     color: rgba(109, 109, 109, 0.5);
 }
+
+@media (max-width: 400px) {
+    body {
+        font-size: 16px;
+        color: rgb(10, 10, 10);
+    }
+}
