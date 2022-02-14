@@ -144,10 +144,20 @@ h4 {
     animation: modal 0.5s;
 }
 
-@media (max-width: 1000px){
+/*@media (max-width: 1000px){
     .card-integrante {
         width: 200px;
         margin: 10px;
         transition: .5s;
+    }
+}*/
+
+@media (max-width: 381px) {
+    .card-integrante {
+        width: 159px;
+    }
+
+    .card-integrante > .imagem{
+        height: 142px;
     }
 }
