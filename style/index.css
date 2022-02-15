@@ -153,6 +153,7 @@ main > .atividades-desenvolvidas {
 #atividades > .atividades > .images-atividades > div:hover {
     height: 260px;
     width: 260px;
+    /*transform: scale(1.005);*/
     font-size: 19px;
 }
 

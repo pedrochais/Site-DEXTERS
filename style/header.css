@@ -9,6 +9,60 @@ header {
     padding: 10px;
 }
 
+header a {
+    text-decoration: none;
+    color: #6FA9B3;
+    width: 100%;
+    height: 100%;
+}
+
+/*#navbar > .menu {
+    overflow: hidden;
+}*/
+
+/* Dropdown */
+
+ul > .dropdown-sobre-li {
+    position: relative;
+    display: inline-block;
+    color: #6FA9B3;    
+}
+
+ul > .dropdown-sobre-li > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85px;
+    margin-bottom: 5px;
+}
+
+ul > .dropdown-sobre-li > .dropdown-sobre {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 125px;
+    transition: .2s;
+    z-index: 1001;
+    border-radius: 5px;
+}
+
+ul > .dropdown-sobre-li > .dropdown-sobre > a {
+    text-align: center;
+    line-height: 50px;
+    transition: .2s;
+}
+
+ul > .dropdown-sobre-li > .dropdown-sobre > a:hover {
+    background-color: rgba(124, 124, 124, 0.219);
+}
+
+.show {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* LOGOS */
 
 header .logo {
@@ -44,14 +98,7 @@ header li {
     list-style: none;
     border-radius: 3px;
     align-items: center;
-    transition: 1s;
-}
-
-header a {
-    text-decoration: none;
-    color: #6FA9B3;
-    width: 100%;
-    height: 100%;
+    transition: .2s;
 }
 
 header li:hover {
@@ -119,6 +166,12 @@ header li:hover {
     main {
         margin-top: 90px;
     }
+
+    ul > .dropdown-sobre-li > div {
+        width: 75px;
+        justify-content: space-between;
+    }
+
 }
 
 @media (max-width: 335px) {

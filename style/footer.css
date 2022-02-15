@@ -9,6 +9,7 @@ footer {
     padding-bottom: 40px;
     border-top: 2px solid rgba(80, 80, 80, 0.651);
     border-bottom: 2px solid rgba(44, 44, 44, 0.651);
+    height: 200px;
 }
 
 footer ul {
@@ -81,6 +82,7 @@ MEDIA QUERIES
 
 @media (max-width: var(--width-md)){
     footer {
+        height: 300px;
         padding-bottom: 0;
         flex-wrap: nowrap;
     }
@@ -118,6 +120,7 @@ MEDIA QUERIES
     }
 
     footer {
+        height: 600px;
         flex-direction: column;
     }
 }
