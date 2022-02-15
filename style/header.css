@@ -1,3 +1,5 @@
+@import url(style.css);
+
 header {
     background-color: #eaf0f8;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.116);
@@ -65,13 +67,14 @@ header li:hover {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    transition: 1s;
 }
 
 #btn-mobile:active {
     transform: scale(.95);
 }
 
-@media (max-width: 1020px){
+@media (max-width: 1280px){
     header {
         width: 100%;
         height: 70px;
@@ -114,14 +117,14 @@ header li:hover {
     }
 
     main {
-        margin-top: 130px;
+        margin-top: 90px;
     }
 }
 
-
 @media (max-width: 335px) {
     #btn-mobile {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+        transition: 1s;
     }
 }

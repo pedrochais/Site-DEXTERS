@@ -2,6 +2,7 @@
 
 section#banner{
     height: 400px;
+    transition: 1s;
 }
 
 section#banner .banner-info{
@@ -16,10 +17,14 @@ section#banner .banner-info{
     width: 100%;
     height: 100%;
     text-align: center;
+
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .fundo-banner {
-    background: rgb(111, 169, 179, .6);
+    background: rgba(111, 169, 179, 0.911);
+    transition: 1s;
 }
 
 /* CONHEÇA O DEXTERS */
@@ -215,9 +220,16 @@ MEDIA QUERIES
         width: 400px;
     }
 
-    section #banner {
-        height: 600px;
+    section#banner {
+        height: 300px;
+        transition: 1s;
     }
+    /*
+    .fundo-banner {
+        font-size: 13px;
+        transition: 1s;
+    }
+    */
 }
 
 @media (max-width: 991px){
@@ -251,6 +263,13 @@ MEDIA QUERIES
 
     .atividades-desenvolvidas > p{
         margin: 0 20px;
+    }
+}
+
+@media (max-width: 795px){
+    section#banner {
+        height: 200px;
+        transition: 1s;
     }
 }
 
@@ -295,6 +314,11 @@ MEDIA QUERIES
 
     #atividades > .atividades > .images-atividades > div:hover {
         width: 215px;
+    }
+
+    section#banner {
+        height: 100px;
+        transition: 1s;
     }
 }
 

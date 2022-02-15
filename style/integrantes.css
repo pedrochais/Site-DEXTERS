@@ -75,6 +75,7 @@ h4 {
     display: none;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
 
 .modal-background.show {
@@ -97,6 +98,7 @@ h4 {
 }
 
 #infos p {
+    display: inline-block;
     margin-bottom: 15px;
 }
 
@@ -144,13 +146,21 @@ h4 {
     animation: modal 0.5s;
 }
 
-/*@media (max-width: 1000px){
-    .card-integrante {
-        width: 200px;
-        margin: 10px;
-        transition: .5s;
+@media (max-width: 1280px){
+    .modal {
+        width: 420px;
+        height: 300px;
+        transition: 1s;
     }
-}*/
+}
+
+@media (max-width: 640px){
+    .modal {
+        width: 380px;
+        height: 220px;
+        transition: 1s;
+    }
+}
 
 @media (max-width: 381px) {
     .card-integrante {

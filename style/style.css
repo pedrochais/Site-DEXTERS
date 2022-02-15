@@ -3,6 +3,15 @@
     --amarelo: rgba(243, 210, 72, 0.94);
     --cinza: #eeeeee70;
     --btn-hover-azul: rgb(101, 144, 151);
+
+    --font-size-lg: 18px;
+    --font-size-md: 16px;
+    --font-size-sm: 14px;
+    
+    /*
+    --width-md: 1280px;
+    --width-sm: 640px;
+    */
 }
 
 body{
@@ -10,7 +19,7 @@ body{
     font-family: sans-serif;
     background-color: var(--cinza);
     max-width: 1920px;
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     color: rgb(54, 54, 54);
 }
 
@@ -44,6 +53,7 @@ button:active {
 h2.titulo{
     color: rgb(34, 34, 34);
     text-align: center;
+    
     margin: 50px 0;
 }
 
@@ -52,9 +62,20 @@ hr {
     color: rgba(109, 109, 109, 0.5);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1280px) {
     body {
-        font-size: 16px;
-        color: rgb(10, 10, 10);
+        font-size: var(--font-size-md);
+        transition: 1s;
+    }
+
+    h2.titulo {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: var(--font-size-sm);
+        transition: 1s;
     }
 }

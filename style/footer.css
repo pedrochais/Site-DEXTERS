@@ -79,39 +79,24 @@ footer .localizacao img {
 MEDIA QUERIES
 */
 
-@media (max-width: 1000px){
+@media (max-width: var(--width-md)){
     footer {
         padding-bottom: 0;
         flex-wrap: nowrap;
     }
 
-    footer .logos {
-       /* width: 50%;*/
-    }
-
     footer .localizacao {
-       /* width: 100%;*/
         padding-top: 0;
         padding-bottom: 0;
     }
-
-    /*footer .redes-sociais li{
-        padding-bottom: 0;
-    }*/
-
-    /*footer .redes-sociais p{
-        margin-bottom: 0;
-    }*/
 }
 
 @media (max-width: 831px) {
     footer > .localizacao {
-        /*font-size: 15px;*/
         width: 100%;
     }
 
     footer > .redes-sociais {
-        /*font-size: 15px;*/
         margin: 10px 0;
         width: 100%;
         flex-direction: row;
@@ -119,7 +104,6 @@ MEDIA QUERIES
     }
 
     footer > .redes-sociais > .rede {
-        /*font-size: 15px;*/
         flex-direction: row;
         margin: 0 10px;
     }
@@ -129,7 +113,7 @@ MEDIA QUERIES
         justify-content: center;
     }
 
-    /*footer > .redes-sociais > ul > li,*/ footer > .localizacao > ul > li {
+    footer > .localizacao > ul > li {
         justify-content: center;
     }
 
