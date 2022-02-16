@@ -1,30 +1,23 @@
-#noticias{
-    padding:70px;
-    padding-top:0px ;
-    
-}
-
 .card-item{
-
-    
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.514);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.527);
-    padding: 10px;
-    width: 1000px;
-    margin: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 20px;
+    margin: 30px auto;
 }
 
 h4 {
-    margin: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
 }
 
 .btn-detalhes {
     height: 35px;
-    margin-bottom: 5px;
-    margin: 10px;
 }
 
 .btn-novo{
@@ -32,16 +25,7 @@ h4 {
     justify-content: flex-end;
 }
 
-@media (max-width: 1200px){
-    .card-item{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        max-width: 1920px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media (max-width: 1280px){
 }
 
 
