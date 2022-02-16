@@ -3,7 +3,9 @@
 section#buscar form {
     display: flex;
     flex-direction: column;
-    padding: 0 30%;
+    width: 550px;
+    transition: 1s;
+    margin: auto;
 }
 
 section#buscar label {
@@ -53,6 +55,7 @@ button#buscar:active {
     margin: auto;
     margin-bottom: 30px;
     padding: 15px;
+    
 }
 
 .card-publicacao h4 {
@@ -66,6 +69,10 @@ button#buscar:active {
     flex-direction: row;
 }
 
+.descricao, .compartilhar, .autores {
+    transition: 1s;
+}
+
 .descricao {
     margin: 0;
     width: 55%;
@@ -77,7 +84,6 @@ button#buscar:active {
     text-align: center;
     text-transform: uppercase;
     width: 25%;
-
 }
 
 .compartilhar img {
@@ -90,9 +96,10 @@ button#buscar:active {
     width: 40%;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1280px){
     section#buscar form{
-        padding: 0 20%;
+        width: 400px;
+        transition: 1s;
     }
 
     .infos {
@@ -102,5 +109,13 @@ button#buscar:active {
 
     .descricao, .compartilhar, .autores {
         width: 100%;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 640px){
+    section#buscar form{
+        width: 300px;
+        transition: 1s;
     }
 }

@@ -111,8 +111,8 @@ header li:hover {
 
 #btn-mobile {
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
     transition: 1s;
 }
@@ -161,6 +161,17 @@ header li:hover {
         height: 100vh;
         visibility: visible;
         overflow-y: auto;
+    }
+
+    .dropdown-sobre-li {
+        display: flex;
+        margin: auto;
+    }
+
+    .menu li {
+        width: 100px;
+        margin: auto;
+        text-align: center;
     }
 
     main {

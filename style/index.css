@@ -10,7 +10,7 @@ section#banner .banner-info{
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    background-image: url('../images/banner_v02.jpg');
+    background-image: url('../images/bg_banner_md.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     color: white;
@@ -18,8 +18,8 @@ section#banner .banner-info{
     height: 100%;
     text-align: center;
 
-    object-fit: cover;
-    object-position: bottom;
+    
+    
 }
 
 .fundo-banner {
@@ -318,8 +318,17 @@ MEDIA QUERIES
     }
 
     section#banner {
-        height: 100px;
+        height: 200px;
         transition: 1s;
+    }
+
+    section#banner .banner-info {
+        background-image: url('../images/bg_banner_sm.png');
+        background-size: cover;
+    }
+
+    .fundo-banner p{
+        display: none;
     }
 }
 
@@ -372,6 +381,6 @@ MEDIA QUERIES
 
 @media (max-width: 335px) {
     #atividades {
-        height:1000px;
+        height: 1000px;
     }
 }

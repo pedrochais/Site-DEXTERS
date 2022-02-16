@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/icone.png">
+    <link rel="icon" href="images/ic_dexters.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/publicacoes.css">
     <title>DEXTERS | Publicações</title>
@@ -25,7 +25,7 @@
                 <label for="ano-publicacao">Ano de publicação</label>
                 <input type="text" id="ano-publicacao">
                 <button type="submit" id="buscar">
-                    <img src="images/lupa.png" alt="Botão buscar">
+                    <img src="images/bt_lupa.png" alt="Botão buscar">
                 </button>
             </form>
         </section>
@@ -40,15 +40,15 @@
                     <div class="compartilhar">
                         <p>Compartilhe</p>
                         <div class="redes-sociais">
-                            <img src="./images/svg/whatsapp.svg" alt="Whatsapp ícone">
-                            <img src="./images/svg/whatsapp.svg" alt="Instagram ícone">
-                            <img src="./images/svg/whatsapp.svg" alt="Facebook ícone">
+                            <img src="images/svg/ic_whatsapp.svg" alt="Whatsapp ícone">
+                            <img src="images/svg/ic_whatsapp.svg" alt="Instagram ícone">
+                            <img src="images/svg/ic_whatsapp.svg" alt="Facebook ícone">
                         </div>
                     </div>
                     <div class="autores">
                         <!-- <p class="autores-nomes">Autores </p> -->
                         <p>
-                                Arthur Passos, André Barreto, Brenno Nascimento, Felipe Silva, Gabriel Costa, Yandson Costa, Davi Viana, Luis Rivero
+                            Arthur Passos, André Barreto, Brenno Nascimento, Felipe Silva, Gabriel Costa, Yandson Costa, Davi Viana, Luis Rivero
                         </p>
                     </div>
                 </div>
