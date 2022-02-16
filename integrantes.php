@@ -86,20 +86,20 @@
             <button onclick="toggleModal()" class="btn-fechar">x</button>
             <div id="infos">
                 <p>
-                <span class="info">Nome:</span>
-                <span>Pedro Rocha Boucinhas Pacheco</span>
+                    <span class="info">Nome:</span>
+                    <span>Pedro Rocha Boucinhas Pacheco</span>
                 </p>
                 <p>
-                <span class="info">Cargo:</span>
-                <span>Estudante</span>
+                    <span class="info">Cargo:</span>
+                    <span>Estudante</span>
                 </p>
                 <p>
-                <span class="info">Lattes:</span>
-                <span><a>lattes.cnpq.br/6144884845294658</a></span>
+                    <span class="info">Lattes:</span>
+                    <span><a>lattes.cnpq.br/6144884845294658</a></span>
                 </p>
                 <p>
-                <span class="info">Contato:</span>
-                <span>pedro.pacheco@discente.ufma.br</span>
+                    <span class="info">Contato:</span>
+                    <span>pedro.pacheco@discente.ufma.br</span>
                 </p>
             </div> 
         </div>
