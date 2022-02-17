@@ -19,31 +19,31 @@
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-default btn-detalhes">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-default btn-detalhes">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-default btn-detalhes">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-default btn-detalhes">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-detalhes">Detalhes</button>
+                <button onclick="toggleModal()" class="btn-default btn-detalhes">Detalhes</button>
             </div>
 
         </section>

@@ -58,11 +58,13 @@ h4 {
     border-radius: 0px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    border: none;
 }
 
 .btn-fechar:hover {
     background: rgba(206, 206, 206, 0.425);
     color: rgb(80, 80, 80);
+    cursor: pointer;
 }
 
 .modal-background {

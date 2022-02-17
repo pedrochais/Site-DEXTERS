@@ -1,4 +1,54 @@
+/* FORMULÁRIO DE BUSCA */
+
+section#buscar form {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    transition: 1s;
+    margin: auto;
+}
+
+section#buscar label {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+section#buscar input {
+    border:rgb(185, 185, 185) solid 2px;
+    border-radius: 2.5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+button#buscar {
+    margin: 0 auto;
+    border:rgb(185, 185, 185) solid 2px;
+    background-color: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+button#buscar:active {
+    border:rgb(255, 255, 255);
+    background-color: rgb(185, 185, 185);
+}
+
+#buscar img:active {
+    width: 55px;
+}
+
+#buscar img {
+    width: 50px;
+}
+
+/* CARD */
+
 .card-item{
+    animation: card-intro .5s;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.514);
     border-radius: 10px;
@@ -26,7 +76,15 @@ p {
 }
 
 @media (max-width: 1280px){
+    section#buscar form{
+        width: 400px;
+        transition: 1s;
+    }
 }
 
-
-
+@media (max-width: 640px){
+    section#buscar form{
+        width: 300px;
+        transition: 1s;
+    }
+}

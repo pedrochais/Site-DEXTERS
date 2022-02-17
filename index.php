@@ -64,7 +64,7 @@
       <section id="conheca-dexters">
           <h2>Quem somos?</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit elit ligula, et gravida massa eleifend non. Vestibulum tempus feugiat justo, ornare ornare ex auctor vel. Curabitur interdum nisi ut augue tempus consequat. Phasellus nec tempus tortor. Nullam erat risus, consectetur accumsan orci sit amet, hendrerit egestas ante. Pellentesque est lectus, rutrum sit amet tincidunt a, dictum in enim. Sed commodo risus neque, sed commodo mi ultricies ultrices. Sed vitae elementum est. Duis nec lectus mauris. Nam sed orci neque.</p>
-          <a href="integrantes.php"><button>Integrantes</button></a>
+          <a href="integrantes.php"><button class="btn-default">Integrantes</button></a>
       </section>
     </main>
     

@@ -7,7 +7,7 @@ function toggleModal(){
 */
 function toggleModal(evento) {
     let target = evento.target;
-    if (target.className === 'btn-detalhes'){
+    if (target.className === 'btn-default btn-detalhes'){
         modal.classList.add('show');
     }
     if (target.className === 'modal-background show' || target.className === 'btn-fechar'){

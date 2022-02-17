@@ -1,3 +1,5 @@
+/* VARIÁVEIS */
+
 :root {
     --azul: #6FA9B3;
     --amarelo: rgba(243, 210, 72, 0.94);
@@ -14,6 +16,8 @@
     */
 }
 
+/* CONFIGURAÇÃO GERAL DO CORPO */
+
 body{
     margin: auto;
     font-family: sans-serif;
@@ -24,10 +28,13 @@ body{
 }
 
 main {
+    animation: fade-in .5s;
     margin-bottom: 60px;
 }
 
-button {
+/* BOTÃO */
+
+.btn-default {
     border-style: none;
     border-radius: 5px;
     width: 100px;
@@ -37,29 +44,48 @@ button {
     transition: 0.5s;
 }
 
-button:hover {
+.btn-default:hover {
     background-color: var(--btn-hover-azul);
     cursor: pointer;
     transition: 0.5s;
 }
 
-button:active {
+.btn-default:active {
     background-color: white;
     border: 2px rgb(101, 144, 151) solid;
     color: rgb(101, 144, 151);
     transition: 0.1s;
 }
 
+/* TÍTULO */
+
 h2.titulo{
+    animation: titulo-intro .5s;
     color: rgb(34, 34, 34);
     text-align: center;
-    
     margin: 50px 0;
 }
 
+/* DIVISÓRIA HORIZONTAL */
+
 hr {
+    animation: increase .5s;
     margin: 25px 10%;
     color: rgba(109, 109, 109, 0.5);
+}
+
+/* FORM */
+
+/* CARD */
+
+.card-default {
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.527);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 15px;
 }
 
 @media (max-width: 1280px) {
@@ -77,5 +103,49 @@ hr {
     body {
         font-size: var(--font-size-sm);
         transition: 1s;
+    }
+}
+
+/* ANIMAÇÕES */
+
+@keyframes increase {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes card-intro {
+    from {
+        opacity: 0.5;
+        transform: translate3d(0, 25px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes titulo-intro {
+    from {
+        opacity: 0.5;
+        transform: translate3d(0, -10px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }

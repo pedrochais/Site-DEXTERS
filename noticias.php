@@ -13,30 +13,42 @@
     <?php include('cabecalho.html'); ?>
     <main>
         <h2 class="titulo">NOTÍCIAS</h2>
+        <section id="buscar">
+            <form>
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" placeholder="Digite o título da notícia">
+                <label for="autor">Texto</label>
+                <input type="text" id="texto" placeholder="Digite uma parte do texto">
+                <button type="submit" id="buscar" class="btn-default">
+                    <img src="images/bt_lupa.png" alt="Botão buscar">
+                </button>
+            </form>
+        </section>
+        <hr>
         <section id="noticias">
     		<div class="card-item">
-        		<h4>TÍTULO DA NOTÍCIA</h4>
+        		<h4>Título da notícia</h4>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
-                	<button onclick="iniciaModal()" class="btn-detalhes">Abrir notícia</button>
+                	<button class="btn-default btn-detalhes">Abrir notícia</button>
                 </div>
             </div>
         	
             <div class="card-item">
-        		<h4>TÍTULO DA NOTÍCIA</h4>
+        		<h4>Título da notícia</h4>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
-                	<button onclick="iniciaModal()" class="btn-detalhes">Abrir notícia</button>
+                	<button class="btn-default btn-detalhes">Abrir notícia</button>
                 </div>
             </div>
             <div class="card-item">
-        		<h4>TÍTULO DA NOTÍCIA</h4>
+        		<h4>Título da notícia</h4>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
-                	<button onclick="iniciaModal()" class="btn-detalhes">Abrir notícia</button>
+                	<button class="btn-default btn-detalhes">Abrir notícia</button>
                 </div>
             </div>
 

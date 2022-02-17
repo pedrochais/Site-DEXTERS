@@ -57,10 +57,15 @@ ul > .dropdown-sobre-li > .dropdown-sobre > a:hover {
 }
 
 .show {
+
     display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.dropdown-sobre.show {
+    animation: fade-in .5s;
 }
 
 /* LOGOS */
@@ -192,3 +197,4 @@ header li:hover {
         transition: 1s;
     }
 }
+

@@ -17,14 +17,14 @@
         <section id="buscar">
             <form>
                 <label for="titulo">Título</label>
-                <input type="text" id="titulo">
+                <input type="text" id="titulo" placeholder="Digite o título da publicação">
                 <label for="autor">Autor(es)</label>
-                <input type="text" id="autor">
+                <input type="text" id="autor" placeholder="Digite o nome de um ou mais autores">
                 <label for="palavra-chave">Palavra-chave</label>
-                <input type="text" id="palavra-chave">
+                <input type="text" id="palavra-chave" placeholder="Digite uma ou mais chaves">
                 <label for="ano-publicacao">Ano de publicação</label>
-                <input type="text" id="ano-publicacao">
-                <button type="submit" id="buscar">
+                <input type="text" id="ano-publicacao" placeholder="Digite o ano da publicação">
+                <button type="submit" id="buscar" class="btn-default">
                     <img src="images/bt_lupa.png" alt="Botão buscar">
                 </button>
             </form>
