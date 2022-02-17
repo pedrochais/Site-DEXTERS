@@ -56,7 +56,7 @@
         <div class="texto-area">
           <h1 class="titulo-texto-explicativo" align="center">Engenharia de Software</h1>
           <p class="texto-explicativo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nibh mi. Nulla ut scelerisque libero, eget porta risus.
+          Engenharia de software é uma área da computação dedicada à concepção, especificação, desenvolvimento e manutenção de sistemas de software, aplicando tecnologias e práticas de gerências de projetos e outras disciplinas.
           </p>
         </div>
       </section>

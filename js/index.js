@@ -2,7 +2,7 @@ function home() {
     const areaDoTexto = document.querySelector('#atividades > .texto-area');
     const areas = document.querySelector('.images-atividades');
     let tituloAnterior = `Engenharia de Software`;
-    let textoAnterior = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nibh mi. Nulla ut scelerisque libero, eget porta risus.`;
+    let textoAnterior = `Engenharia de software é uma área da computação dedicada à concepção, especificação, desenvolvimento e manutenção de sistemas de software, aplicando tecnologias e práticas de gerências de projetos e outras disciplinas.`;
 
     function fadeIn (elemento) {
         let opacidade = 0.1;
@@ -28,7 +28,7 @@ function home() {
         switch(elementoAlvo.className){
             case 'card-atividade-1':
                 tituloAnterior = `Engenharia de Software`;
-                textoAnterior = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nibh mi. Nulla ut scelerisque libero, eget porta risus.`;
+                textoAnterior = `Engenharia de software é uma área da computação dedicada à concepção, especificação, desenvolvimento e manutenção de sistemas de software, aplicando tecnologias e práticas de gerências de projetos e outras disciplinas.`;
                 titulo.innerHTML = tituloAnterior;
                 texto.innerHTML = textoAnterior;
                 fadeIn(titulo);
@@ -36,15 +36,15 @@ function home() {
                 break;
             case 'card-atividade-2':
                 tituloAnterior = `Modelagem de Sistemas Complexos`;
-                textoAnterior = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nibh mi. Nulla ut scelerisque libero, eget porta risus. Suspendisse a risus vel massa molestie consequat id ut enim. Nulla facilisi. Vestibulum risus lorem, porttitor nec faucibus vitae, feugiat in lorem. Sed vulputate urna eget orci maximus blandit. Pellentesque ex quam, cursus eget eros sit amet, finibus porttitor eros. Aenean ut bibendum leo. Sed tempus fringilla nisi, in molestie enim tincidunt id. Etiam ut eleifend risus, vel auctor magna.`;
+                textoAnterior = `Um sistema complexo pode ser definido como situações nas quais “agentes interagem com o ambiente e entre si, e cujas ações geram estruturas emergentes observáveis, em escalas diferenciadas, a partir de regras, usualmente simples, que permitem a adaptação e a evolução do próprio sistema.`;
                 titulo.innerHTML = tituloAnterior;
                 texto.innerHTML = textoAnterior;
                 fadeIn(titulo);
                 fadeIn(texto);
                 break;
             case 'card-atividade-3':
-                tituloAnterior = `Interação Humano Computador`;
-                textoAnterior = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nibh mi. Nulla ut scelerisque libero, eget porta risus. Suspendisse a risus vel massa molestie consequat id ut enim.`;
+                tituloAnterior = `Interação Humano-Computador`;
+                textoAnterior = `A área de Interação Humano-Computador (IHC) se dedica a estudar os fenômenos de comunicação entre pessoas e sistemas computacionais que está na interseção das ciências da computação e informação e ciências sociais e comportamentais. A pesquisa em IHC tem por objetivo fornecer explicações e previsões para fenômenos de interação usuário-sistema e resultados práticos para o projeto da interação.                `;
                 titulo.innerHTML = tituloAnterior;
                 texto.innerHTML = textoAnterior;
                 fadeIn(titulo);
@@ -52,7 +52,7 @@ function home() {
                 break;
             case 'card-atividade-4':
                 tituloAnterior = `Sistemas de Informação`;
-                textoAnterior = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nibh mi. Nulla ut scelerisque libero, eget porta risus. Suspendisse a risus vel massa molestie consequat id ut enim. Nulla facilisi. Vestibulum risus lorem, porttitor nec faucibus vitae, feugiat in lorem.`;
+                textoAnterior = `Sistema de informação é o modelo, automatizado ou manual, de processos responsáveis por coletar e transmitir dados que sejam úteis ao desenvolvimento de produtos ou serviços das empresas, organizações e de demais projetos.`;
                 titulo.innerHTML = tituloAnterior;
                 texto.innerHTML = textoAnterior;
                 fadeIn(titulo);
@@ -60,7 +60,7 @@ function home() {
                 break;
             case 'card-atividade-5':
                 tituloAnterior = `Ensino de Computação`;
-                textoAnterior = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nibh mi. Nulla ut scelerisque libero, eget porta risus. Suspendisse a risus vel massa molestie consequat id ut enim. Nulla facilisi. Vestibulum risus lorem, porttitor nec faucibus vitae, feugiat in lorem. Sed vulputate urna eget orci maximus blandit. Pellentesque ex quam, cursus eget eros sit amet, finibus porttitor eros.`;
+                textoAnterior = `A Computação investiga processos de informação, desenvolvendo linguagens e técnicas para descrever processos existentes e também e métodos de resolução e análise de problemas, gerando novos processos.`;
                 titulo.innerHTML = tituloAnterior;
                 texto.innerHTML = textoAnterior;
                 fadeIn(titulo);
