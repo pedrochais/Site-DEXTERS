@@ -88,68 +88,46 @@ main > .atividades-desenvolvidas {
     transition: .2s;
 }
 
-#atividades > .atividades > .images-atividades .texto {
+/*#atividades > .atividades > .images-atividades .texto {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.5);
-}
+}*/
 
-.card-atividade-1, .card-atividade-2, .card-atividade-3, .card-atividade-4, .card-atividade-5 {
+.card-atividade-1:before, .card-atividade-2:before, .card-atividade-3:before, .card-atividade-4:before, .card-atividade-5:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     animation: card-area-intro 1s;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
 }
 
-#atividades > .atividades > .images-atividades > .card-atividade-1 > .texto:before{
+#atividades > .atividades > .images-atividades > .card-atividade-1:before{
     content: "Engenharia de Software";
-    font-size: 20px;
-    font-weight: 600;
-    transition: .2s;
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: center;
 }
-#atividades > .atividades > .images-atividades > .card-atividade-2 > .texto:before{
+#atividades > .atividades > .images-atividades > .card-atividade-2:before{
     content: "Modelagem de Sistemas Complexos";
-    font-size: 20px;
-    font-weight: 600;
-    transition: .2s;
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: center;
 }
-#atividades > .atividades > .images-atividades > .card-atividade-3 > .texto:before{
+#atividades > .atividades > .images-atividades > .card-atividade-3:before{
     content: "Interação Humano Computador";
-    font-size: 20px;
-    font-weight: 600;
-    transition: .2s;
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: center;
 }
-#atividades > .atividades > .images-atividades > .card-atividade-4 > .texto:before{
+#atividades > .atividades > .images-atividades > .card-atividade-4:before{
     content: "Sistemas de Informação";
-    font-size: 20px;
-    font-weight: 600;
-    transition: .2s;
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: center;
 }
-#atividades > .atividades > .images-atividades > .card-atividade-5 > .texto:before{
+#atividades > .atividades > .images-atividades > .card-atividade-5:before{
     content: "Ensino de Computação";
-    font-size: 20px;
-    font-weight: 600;
-    transition: .2s;
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: center;
 }
 
 #atividades > .atividades > .images-atividades > .card-atividade-1:hover{
@@ -295,7 +273,7 @@ MEDIA QUERIES
         flex-direction: column;
         justify-content:flex-start;
         align-items: center;
-        height: 930px;
+        height: 900px;
     }
 
     #atividades > .atividades > .images-atividades {
@@ -308,11 +286,11 @@ MEDIA QUERIES
     }
 }
 
-@media (max-width: 710px) {
+/*@media (max-width: 710px) {
     #atividades {
-        height: 1030px;
+        height: 930px;
     }
-}
+}*/
 
 @media (max-width: 555px) {
     #atividades > .atividades > .images-atividades > div {
@@ -340,7 +318,7 @@ MEDIA QUERIES
 
 @media (max-width: 481px) {
     #atividades {
-        height:700px;
+        height:500px;
     }
 
     #atividades > .atividades > .images-atividades > div {
@@ -353,24 +331,7 @@ MEDIA QUERIES
         height: 122px;
     }
 
-    #atividades > .atividades > .images-atividades > .card-atividade-1 > .texto:before{
-        content: "Engenharia de Software";
-        font-size: 15px;
-    }
-    #atividades > .atividades > .images-atividades > .card-atividade-2 > .texto:before{
-        content: "Modelagem de Sistemas Complexos";
-        font-size: 15px;
-    }
-    #atividades > .atividades > .images-atividades > .card-atividade-3 > .texto:before{
-        content: "Interação Humano Computador";
-        font-size: 15px;
-    }
-    #atividades > .atividades > .images-atividades > .card-atividade-4 > .texto:before{
-        content: "sistemas de Informação";
-        font-size: 15px;
-    }
-    #atividades > .atividades > .images-atividades > .card-atividade-5 > .texto:before{
-        content: "Ensino de Computação";
+    .card-atividade-1:before, .card-atividade-2:before, .card-atividade-3:before, .card-atividade-4:before, .card-atividade-5:before {
         font-size: 15px;
     }
 
@@ -379,15 +340,15 @@ MEDIA QUERIES
     }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 410px) {
     #atividades {
-        height:1000px;
+        height:700px;
     }
 }
 
 @media (max-width: 335px) {
     #atividades {
-        height: 1000px;
+        height: 750px;
     }
 }
 
