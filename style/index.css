@@ -6,7 +6,6 @@ section#banner{
 }
 
 section#banner .banner-info{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,7 +136,6 @@ main > .atividades-desenvolvidas {
 #atividades > .atividades > .images-atividades > div:hover {
     height: 260px;
     width: 260px;
-    /*transform: scale(1.005);*/
     font-size: 19px;
 }
 
@@ -158,9 +156,7 @@ main > .atividades-desenvolvidas {
     text-align: center;
 }
 
-/*
-MEDIA QUERIES
-*/
+/* MEDIA QUERIES */
 
 /*1345px*/
 @media (max-width: 1630px){

@@ -75,10 +75,7 @@ footer .localizacao img {
     width: 78px;
 }
 
-
-/*
-MEDIA QUERIES
-*/
+/* MEDIA QUERIES */
 
 @media (max-width: var(--width-md)){
     footer {

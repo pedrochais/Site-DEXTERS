@@ -27,9 +27,7 @@
     margin: 5px;
 }
 
-/*
-MEDIA QUERIES
-*/
+/* MEDIA QUERIES */
 
 @media (max-width: 571px) {
     .galeria img {

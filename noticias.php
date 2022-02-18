@@ -27,35 +27,35 @@
         </section>
         <hr>
         <section id="noticias">
-    		<div class="card-item">
+    		<div class="card-default">
         		<h4>Título da notícia</h4>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
                     <a href="noticia.php">
-                        <button class="btn-default btn-detalhes">Abrir notícia</button>
+                        <button class="btn-default">Abrir notícia</button>
                     </a>
                 </div>
             </div>
         	
-            <div class="card-item">
+            <div class="card-default">
         		<h4>Título da notícia</h4>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
                     <a href="noticia.php">
-                        <button class="btn-default btn-detalhes">Abrir notícia</button>
+                        <button class="btn-default">Abrir notícia</button>
                     </a>
                 </div>
             </div>
 
-            <div class="card-item">
+            <div class="card-default">
         		<h4>Título da notícia</h4>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
                     <a href="noticia.php">
-                        <button class="btn-default btn-detalhes">Abrir notícia</button>
+                        <button class="btn-default">Abrir notícia</button>
                     </a>
                 </div>
             </div>

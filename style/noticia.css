@@ -31,6 +31,8 @@
     margin-bottom: 20px;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 1280px) {
     #cabecalho-noticia, #conteudo {
         width: 600px;
@@ -44,6 +46,8 @@
         transition: 1s;
     }
 }
+
+/* ANIMAÇÕES */
 
 @keyframes conteudo-intro {
     from {

@@ -47,18 +47,7 @@ button#buscar:active {
 
 /* CARD DE PUBLICAÇÃO */
 
-.card-publicacao {
-    animation: card-intro .5s;
-    background-color: rgba(255, 255, 255, 0.514);
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.527);
-    width: 80%;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 15px;
-}
-
-.card-publicacao h4 {
+.card-default h4 {
     color: rgb(54, 54, 54);
     margin: 0;
     margin-bottom: 10px;
@@ -95,6 +84,8 @@ button#buscar:active {
 .autores {
     width: 40%;
 }
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1280px){
     section#buscar form{

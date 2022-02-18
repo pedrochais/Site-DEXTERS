@@ -31,7 +31,7 @@
         </section>
         <hr>
         <section id="publicacoes">
-            <div class="card-publicacao">
+            <div class="card-default">
                 <h4>Título da publicação/artigo</h4>
                 <div class="infos">
                     <div class="descricao">
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="card-publicacao">
+            <div class="card-default">
                 <h4>Título da publicação/artigo</h4>
                 <div class="infos">
                     <div class="descricao">
@@ -77,7 +77,7 @@
                 </div>
             </div>
 
-            <div class="card-publicacao">
+            <div class="card-default">
                 <h4>Título da publicação/artigo</h4>
                 <div class="infos">
                     <div class="descricao">
