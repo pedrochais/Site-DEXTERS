@@ -11,6 +11,7 @@
 </head>
 <body>
     <?php include('cabecalho.html'); ?>
+    
     <main>
         <h2 class="titulo">NOTÍCIAS</h2>
         <section id="buscar">
@@ -31,7 +32,9 @@
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
-                	<button class="btn-default btn-detalhes">Abrir notícia</button>
+                    <a href="noticia.php">
+                        <button class="btn-default btn-detalhes">Abrir notícia</button>
+                    </a>
                 </div>
             </div>
         	
@@ -40,24 +43,26 @@
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
-                	<button class="btn-default btn-detalhes">Abrir notícia</button>
+                    <a href="noticia.php">
+                        <button class="btn-default btn-detalhes">Abrir notícia</button>
+                    </a>
                 </div>
             </div>
+
             <div class="card-item">
         		<h4>Título da notícia</h4>
         		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
-                	<button class="btn-default btn-detalhes">Abrir notícia</button>
+                    <a href="noticia.php">
+                        <button class="btn-default btn-detalhes">Abrir notícia</button>
+                    </a>
                 </div>
             </div>
-
      	</section>
     </main>
 
     <?php include('rodape.html'); ?>
-
-
 </body>
 </html>
 
