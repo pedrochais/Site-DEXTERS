@@ -47,6 +47,10 @@ button#buscar:active {
 
 /* CARD DE PUBLICAÇÃO */
 
+.card-default {
+    animation: card-intro .5s;
+}
+
 .card-default h4 {
     color: rgb(54, 54, 54);
     margin: 0;

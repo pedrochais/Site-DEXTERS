@@ -12,109 +12,65 @@
 <body>
     <?php include('cabecalho.html'); ?>
     <main>
+        <h2 class="titulo">BIBLIOTECA</h2>
         <section id="biblioteca">
-            <div class="section-header">
-                <h2 class="titulo">BIBLIOTECA</h2>
-            </div>
+
             <div class="card-default">
                 <div class="sumario">
-                    <div class="nome">
-                        Projeto 1
-                    </div>
-                    <div class="resumo">
+                    <h4>Projeto 1</h4>
+                    <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias, explicabo itaque quia minus expedita quam qui fuga doloremque veniam necessitatibus sint repellendus vero, adipisci placeat ratione, aut recusandae beatae.
-                    </div>
+                    </p>
                     <button class="btn-default">Detalhes</button>
                 </div>
                 <div class="descricao">
-                    <img class="imagem" src="images/lg_UFMA.png" alt="">
-                    <div id="text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+                    <div class="imagem">
+                        <div id="img"></div>
                     </div>
-                
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+                    </p>
                 </div>
             </div>
 
             <div class="card-default">
                 <div class="sumario">
-                    <div class="nome">
-                        Projeto 2
-                    </div>
-                    <div class="resumo">
+                    <h4>Projeto 2</h4>
+                    <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias, explicabo itaque quia minus expedita quam qui fuga doloremque veniam necessitatibus sint repellendus vero, adipisci placeat ratione, aut recusandae beatae.
-                    </div>
+                    </p>
                     <button class="btn-default">Detalhes</button>
                 </div>
                 <div class="descricao">
-                    <img class="imagem" src="images/lg_UFMA.png" alt="">
-                    <div id="text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+                    <div class="imagem">
+                        <div id="img"></div>
                     </div>
-                
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+                    </p>
                 </div>
             </div>
 
             <div class="card-default">
                 <div class="sumario">
-                    <div class="nome">
-                        Projeto 3
-                    </div>
-                    <div class="resumo">
+                    <h4>Projeto 3</h4>
+                    <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias, explicabo itaque quia minus expedita quam qui fuga doloremque veniam necessitatibus sint repellendus vero, adipisci placeat ratione, aut recusandae beatae.
-                    </div>
+                    </p>
                     <button class="btn-default">Detalhes</button>
                 </div>
                 <div class="descricao">
-                    <img class="imagem" src="images/lg_UFMA.png" alt="">
-                    <div id="text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+                    <div class="imagem">
+                        <div id="img"></div>
                     </div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
+                    </p>
                 </div>
             </div>
-
-            <!--<details>
-                <summary>
-                    <div class="nome">
-                        Projeto 4
-                        <span>Detalhes</span>
-                    </div>
-                    <div class="resumo">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias, explicabo itaque quia minus expedita quam qui fuga doloremque veniam necessitatibus sint repellendus vero, adipisci placeat ratione, aut recusandae beatae.
-                    </div>
-                </summary>
-                <div class="descricao">
-                    <div id="imagem">
-                        <img src="images/lg_UFMA.png" alt="">
-                    </div>
-                    <div id="text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
-                    </div>
-                
-                </div>
-            </details>
-
-            <details>
-                <summary>
-                    <div class="nome">
-                        Projeto 5
-                        <span>Detalhes</span>
-                    </div>
-                    <div class="resumo">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias, explicabo itaque quia minus expedita quam qui fuga doloremque veniam necessitatibus sint repellendus vero, adipisci placeat ratione, aut recusandae beatae.
-                    </div>
-                </summary>
-                <div class="descricao">
-                    <div id="imagem">
-                        <img src="images/lg_UFMA.png" alt="">
-                    </div>
-                    <div id="text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
-                    </div>
-                
-                </div>
-            </details> -->
         </section>                       
     </main> 
+
     <?php include('rodape.html'); ?>
 
     <script src="js/biblioteca.js"></script>

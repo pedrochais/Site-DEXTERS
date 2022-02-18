@@ -61,12 +61,12 @@ footer .localizacao img {
     width: 25px;
 }
 
-.logo_1 > img {
+.logo_1 img {
     margin: 10px 0;
     width: 315px;
 }
 
-.logo_2 > img {
+.logo_2 img {
     margin: 10px 5px;
     width: 183px;
 }
@@ -123,11 +123,11 @@ footer .localizacao img {
 }
 
 @media (max-width: 321px) {
-    .logo_1 > img {
+    .logo_1 img {
         width: 235px;
     }
     
-    .logo_2 > img {
+    .logo_2 img {
         width: 103px;
     }
 

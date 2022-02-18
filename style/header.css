@@ -51,7 +51,6 @@ ul > .dropdown-sobre-li > .dropdown-sobre > a:hover {
 }
 
 .show {
-
     display: flex !important;
     flex-direction: column;
     align-items: center;
@@ -137,7 +136,6 @@ header li:hover {
 
     header ul {
         flex-direction: column;
-        transition: 1s;
     }
 
     #btn-mobile {
@@ -153,9 +151,9 @@ header li:hover {
         right: 0;
         background-color: #eaf0f8;
         visibility: hidden;
-        height: 0;
-        transition: .6s;
         overflow-y: hidden;
+        height: 0;
+        transition: .5s;
     }
     
     #navbar.show .menu{

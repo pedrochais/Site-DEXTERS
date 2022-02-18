@@ -87,20 +87,14 @@ main > .atividades-desenvolvidas {
     transition: .2s;
 }
 
-/*#atividades > .atividades > .images-atividades .texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-}*/
+.card-atividade-1, .card-atividade-2, .card-atividade-3, .card-atividade-4, .card-atividade-5{
+    animation: card-inc-intro 1s;
+}
 
 .card-atividade-1:before, .card-atividade-2:before, .card-atividade-3:before, .card-atividade-4:before, .card-atividade-5:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: card-area-intro 1s;
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     height: 50px;

@@ -1,121 +1,55 @@
-#biblioteca{
-  margin: 0 40px;
+.sumario h4 {
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .card-default {
-  margin: 20px 0;
-  background: rgba(118, 173, 255, 0.103);
+    height: auto;
 }
 
-.descricao ul li{
-  display: inline-block;
-  max-width: 50%;
-  text-align: justify;
-  padding: 5%;
-  padding-top:5%;
-}
-
-.card-default .sumario {
-  display: flex;
-  color: rgb(161, 161, 161);
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 20px;
-  padding: 14px;
-}
-
-.resumo{
-  padding-right: 7px;
-  padding-left: 7px;
-  text-align: justify;
-  margin-bottom: 10px;
-}
-
-.card-default .sumario .nome {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #545457;
-  font-size: 24px;
-  padding: 14px 7px;
-}
-
-.card-default .sumario span {
-  background: #58858d;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 8px;
-}
-
-.card-default .sumario span:hover {
-  background: #71c0ce;
-}
-
-.descricao li h3 {
-  text-align: center;
-}
-
-.descricao{
-  display: none;
-  padding: 28px;
+.descricao {
+    display: none;
+    margin-top: 15px;
 }
 
 .show-desc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    visibility: visible;
+    overflow-y: auto;
+    height: auto;
 }
 
-.descricao .sumario{
-  display: flex;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content:center ;
+.imagem {
+    margin: auto;
+    width: 150px;
+    height: 150px;
 }
 
-.imagem{
-  width: 100px;
-  margin: 0 10px;
-  /*overflow: hidden;*/
-}
-
-#text{
-  width: 80%;
-  text-indent:10px;
-  text-align: justify;
-}
-
-
-@media (max-width: 875px){
- .descricao {
-      
-      flex-direction: column;
-      
-  }
-
-  .descricao .imagem{
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 500px) {
-  #text {
+#img {
     width: 100%;
-  }
+    height: 100%;
+    background-color: rgb(189, 189, 189);
 }
 
-@media (max-width: 410px){
-  .card-default .sumario .nome{  
-     font-size: 19px;
-  }
-  .card-default .sumario .nome span{  
-    font-size: 15px;
-  }
-
- .resumo{
-   font-size: 16px;
- }
+.descricao p{
+    width: 80%;
+    text-indent: 50px;
+    text-align: justify;
+    margin: 0 20px;
 }
 
+@media (max-width: 1280px){
+    .imagem {
+        margin-bottom: 10px;
+    }
+    
+    .descricao{
+        flex-direction: column;
+    }
+    
+    .descricao p{
+        width: 100%;
+        transition: 1s;
+        margin: 0;
+    }
+}
