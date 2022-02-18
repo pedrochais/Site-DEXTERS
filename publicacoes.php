@@ -53,6 +53,52 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card-publicacao">
+                <h4>Título da publicação/artigo</h4>
+                <div class="infos">
+                    <div class="descricao">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="compartilhar">
+                        <p>Compartilhe</p>
+                        <div class="redes-sociais">
+                            <img src="images/svg/ic_whatsapp.svg" alt="Whatsapp ícone">
+                            <img src="images/svg/ic_whatsapp.svg" alt="Instagram ícone">
+                            <img src="images/svg/ic_whatsapp.svg" alt="Facebook ícone">
+                        </div>
+                    </div>
+                    <div class="autores">
+                        <!-- <p class="autores-nomes">Autores </p> -->
+                        <p>
+                            Arthur Passos, André Barreto, Brenno Nascimento, Felipe Silva, Gabriel Costa, Yandson Costa, Davi Viana, Luis Rivero
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-publicacao">
+                <h4>Título da publicação/artigo</h4>
+                <div class="infos">
+                    <div class="descricao">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="compartilhar">
+                        <p>Compartilhe</p>
+                        <div class="redes-sociais">
+                            <img src="images/svg/ic_whatsapp.svg" alt="Whatsapp ícone">
+                            <img src="images/svg/ic_whatsapp.svg" alt="Instagram ícone">
+                            <img src="images/svg/ic_whatsapp.svg" alt="Facebook ícone">
+                        </div>
+                    </div>
+                    <div class="autores">
+                        <!-- <p class="autores-nomes">Autores </p> -->
+                        <p>
+                            Arthur Passos, André Barreto, Brenno Nascimento, Felipe Silva, Gabriel Costa, Yandson Costa, Davi Viana, Luis Rivero
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     
