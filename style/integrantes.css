@@ -7,11 +7,13 @@
     align-items: flex-start;
     margin: 0 10%;
     justify-content: center;
+    transition: 1s;
 }
 
 /* CARD */
 
 .card-integrante {
+    animation: card-inc-intro 1s;
     background-color: rgba(255, 255, 255, 0.507);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.527);
@@ -171,6 +173,7 @@ h4 {
 
     .card-integrante {
         width: 159px;
+        transition: 1s;
     }
 
     .card-integrante > .imagem{

@@ -353,6 +353,7 @@ MEDIA QUERIES
 }
 
 /* ANIMAÇÕES */
+
 @keyframes banner-stripe-intro {
     from {
         opacity: 0;
