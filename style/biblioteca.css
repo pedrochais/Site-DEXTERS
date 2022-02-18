@@ -2,7 +2,7 @@
   margin: 0 40px;
 }
 
-details {
+.card-default {
   margin: 20px 0;
   background: rgba(118, 173, 255, 0.103);
 }
@@ -15,7 +15,7 @@ details {
   padding-top:5%;
 }
 
-details summary {
+.card-default .sumario {
   display: flex;
   color: rgb(161, 161, 161);
   flex-direction: column;
@@ -26,18 +26,21 @@ details summary {
 
 .resumo{
   padding-right: 7px;
-  padding-left: 19px;
+  padding-left: 7px;
+  text-align: justify;
+  margin-bottom: 10px;
 }
 
-details summary .nome {
+.card-default .sumario .nome {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #545457;
   font-size: 24px;
-  padding: 14px;
+  padding: 14px 7px;
 }
 
-details summary span {
+.card-default .sumario span {
   background: #58858d;
   color: #fff;
   cursor: pointer;
@@ -45,7 +48,7 @@ details summary span {
   padding: 8px;
 }
 
-details summary span:hover {
+.card-default .sumario span:hover {
   background: #71c0ce;
 }
 
@@ -54,12 +57,17 @@ details summary span:hover {
 }
 
 .descricao{
-  display: flex;
-  flex-direction: row;
+  display: none;
   padding: 28px;
 }
 
-.descricao div{
+.show-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descricao .sumario{
   display: flex;
   margin: auto;
   display: flex;
@@ -67,8 +75,9 @@ details summary span:hover {
   justify-content:center ;
 }
 
-#imagem{
-  width: 20%;
+.imagem{
+  width: 100px;
+  margin: 0 10px;
   /*overflow: hidden;*/
 }
 
@@ -79,27 +88,31 @@ details summary span:hover {
 }
 
 
-@media (max-width: 740px){
+@media (max-width: 875px){
  .descricao {
       
       flex-direction: column;
       
   }
 
-  .descricao #imagem{
+  .descricao .imagem{
     margin-bottom: 15px;
   }
-
-  
-
 }
-@media (max-width: 400px){
-  details summary .nome{  
+
+@media (max-width: 500px) {
+  #text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 410px){
+  .card-default .sumario .nome{  
      font-size: 19px;
   }
-  details summary .nome span{  
+  .card-default .sumario .nome span{  
     font-size: 15px;
- }
+  }
 
  .resumo{
    font-size: 16px;
