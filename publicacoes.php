@@ -41,8 +41,8 @@
                         <p>Compartilhe</p>
                         <div class="redes-sociais">
                             <img src="images/svg/ic_whatsapp.svg" alt="Whatsapp ícone">
-                            <img src="images/svg/ic_whatsapp.svg" alt="Instagram ícone">
-                            <img src="images/svg/ic_whatsapp.svg" alt="Facebook ícone">
+                            <img src="images/svg/ic_facebook.svg" alt="Facebook ícone">
+                            <img src="images/svg/ic_twitter_blue.svg" alt="Twitter ícone">
                         </div>
                     </div>
                     <div class="autores">
@@ -64,8 +64,8 @@
                         <p>Compartilhe</p>
                         <div class="redes-sociais">
                             <img src="images/svg/ic_whatsapp.svg" alt="Whatsapp ícone">
-                            <img src="images/svg/ic_whatsapp.svg" alt="Instagram ícone">
-                            <img src="images/svg/ic_whatsapp.svg" alt="Facebook ícone">
+                            <img src="images/svg/ic_facebook.svg" alt="Facebook ícone">
+                            <img src="images/svg/ic_twitter_blue.svg" alt="Twitter ícone">
                         </div>
                     </div>
                     <div class="autores">
@@ -87,8 +87,8 @@
                         <p>Compartilhe</p>
                         <div class="redes-sociais">
                             <img src="images/svg/ic_whatsapp.svg" alt="Whatsapp ícone">
-                            <img src="images/svg/ic_whatsapp.svg" alt="Instagram ícone">
-                            <img src="images/svg/ic_whatsapp.svg" alt="Facebook ícone">
+                            <img src="images/svg/ic_facebook.svg" alt="Facebook ícone">
+                            <img src="images/svg/ic_twitter_blue.svg" alt="Twitter ícone">
                         </div>
                     </div>
                     <div class="autores">
