@@ -61,6 +61,10 @@ footer .localizacao img {
     width: 25px;
 }
 
+.logo_1 img, .logo_2 img, #logo-ufma {
+    transition: 1s;
+}
+
 .logo_1 img {
     margin: 10px 0;
     width: 315px;
@@ -77,7 +81,7 @@ footer .localizacao img {
 
 /* MEDIA QUERIES */
 
-@media (max-width: var(--width-md)){
+@media (max-width: 1280px){
     footer {
         height: 300px;
         padding-bottom: 0;
@@ -119,6 +123,24 @@ footer .localizacao img {
     footer {
         height: 600px;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 640px){
+    .logo_1 img, .logo_2 img, #logo-ufma {
+        transition: 1s;
+    }
+
+    .logo_1 img {
+        width: 235px;
+    }
+    
+    .logo_2 img {
+        width: 103px;
+    }
+
+    #logo-ufma {
+        width: 70px;
     }
 }
 
