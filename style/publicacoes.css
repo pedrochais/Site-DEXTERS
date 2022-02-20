@@ -106,11 +106,34 @@ button#buscar:active {
         width: 100%;
         transition: 1s;
     }
+    .compartilhar img {
+        height: 20px;
+        width: 5%;
+    }
+}
+
+@media (max-width: 800px){
+    section#buscar form{
+        width: 300px;
+        transition: 1s;
+    }
+
+
+
+    
+    .compartilhar img {
+        height: 20px;
+        width: 7%;
+    }
 }
 
 @media (max-width: 640px){
     section#buscar form{
         width: 300px;
         transition: 1s;
+    }
+    .compartilhar img {
+        height: 20px;
+        width: 9%;
     }
 }
