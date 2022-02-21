@@ -16,8 +16,8 @@
 
     <main>
         <h2 class="titulo">INTEGRANTES</h2>
-        <section id="integrantes">
-
+        <h3 class="titulo">Líderes</h2>
+        <section id="integrantes-lideres">
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
@@ -29,30 +29,93 @@
                 <h4>Nome Sobrenome</h4>
                 <button onclick="toggleModal()" class="btn-default">Detalhes</button>
             </div>
-
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
-            </div>
-
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
-            </div>
-
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
-            </div>
-
         </section>
+
+        <h3 class="titulo">Mestrado</h2>
+        <section id="integrantes-mestrado">
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+        </section>
+
+        <h3 class="titulo">Doutorado</h2>
+        <section id="integrantes-doutorado">
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+        </section>
+
+        <h3 class="titulo">Graduação</h2>
+        <section id="integrantes-graduacao">
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+
+            <div class="card-integrante">
+                <div class="imagem"></div>
+                <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+            </div>
+        </section>
+
         <h2 class="titulo">EX-INTEGRANTES</h2>
         <section id="ex-integrantes">
 
-        <div class="card-integrante">
+            <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
                 <button onclick="toggleModal()" class="btn-default">Detalhes</button>
@@ -102,7 +165,7 @@
                 </p>
                 <p>
                     <span class="info">Lattes:</span>
-                    <span><a>lattes.cnpq.br/6144884845294658</a></span>
+                    <span><a href="https://lattes.cnpq.br/6144884845294658">Clique aqui para acessar</a></span>
                 </p>
                 <p>
                     <span class="info">Contato:</span>

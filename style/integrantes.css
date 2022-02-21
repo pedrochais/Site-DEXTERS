@@ -1,11 +1,11 @@
-#integrantes, #ex-integrantes {
-    text-align: center;
+#integrantes-lideres, #integrantes-mestrado, #integrantes-doutorado, #integrantes-graduacao, #ex-integrantes {    text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: space-between;
     align-items: flex-start;
     margin: 0 10%;
+    margin-bottom: 50px;
     justify-content: center;
     transition: 1s;
 }

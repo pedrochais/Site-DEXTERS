@@ -57,6 +57,10 @@ main {
     transition: 0.1s;
 }
 
+/* LINK */
+
+
+
 /* TÍTULO */
 
 h2.titulo {
@@ -64,6 +68,11 @@ h2.titulo {
     color: rgb(34, 34, 34);
     text-align: center;
     margin: 50px 0;
+}
+
+h3.titulo {
+    animation: titulo-intro .5s;
+    text-align: center;
 }
 
 /* DIVISÓRIA HORIZONTAL */
