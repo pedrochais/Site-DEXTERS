@@ -1,3 +1,11 @@
+/* TRANSIÇÕES */
+
+#btn-mobile, header li:hover{
+    transition: 1s;
+}
+
+/* CABEÇALHO */
+
 header {
     background-color: #eaf0f8;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.116);
@@ -100,7 +108,6 @@ header li {
 }
 
 header li:hover {
-    transition: 1s;
     background-color: rgba(124, 124, 124, 0.219);
     cursor: pointer;
 }
@@ -112,7 +119,6 @@ header li:hover {
     width: 45px;
     height: 45px;
     cursor: pointer;
-    transition: 1s;
 }
 
 #btn-mobile:active {
@@ -127,7 +133,6 @@ header li:hover {
         height: 70px;
         position: fixed;
         top: 0;
-        transition: 1s;
     }
 
     header #navbar {
@@ -193,12 +198,23 @@ header li:hover {
     ul>.dropdown-sobre-li>div>div {
         justify-content: space-evenly;
     }
+
+    /* TRANSIÇÕES */
+
+    header {
+        transition: 1s;
+    }
 }
 
 @media (max-width: 335px) {
     #btn-mobile {
         width: 40px;
         height: 40px;
+    }
+
+    /* TRANSIÇÕES */
+
+    #btn-mobile {
         transition: 1s;
     }
 }

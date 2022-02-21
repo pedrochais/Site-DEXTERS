@@ -1,10 +1,15 @@
+/* TRANSIÇÕES */
+
+#buscar form, .descricao, .compartilhar, .autores {
+    transition: 1s;
+}
+
 /* FORMULÁRIO DE BUSCA */
 
 section#buscar form {
     display: flex;
     flex-direction: column;
     width: 550px;
-    transition: 1s;
     margin: auto;
 }
 
@@ -63,10 +68,6 @@ button#buscar:active {
     flex-direction: row;
 }
 
-.descricao, .compartilhar, .autores {
-    transition: 1s;
-}
-
 .descricao {
     margin: 0;
     width: 55%;
@@ -112,6 +113,13 @@ button#buscar:active {
         height: 20px;
         width: 5%;
     }
+
+    /* TRANSIÇÕES */
+
+    #buscar form, .descricao, .compartilhar, .autores {
+        transition: 1s;
+    }
+    
 }
 
 @media (max-width: 800px) {
@@ -129,11 +137,16 @@ button#buscar:active {
 @media (max-width: 640px) {
     section#buscar form {
         width: 300px;
-        transition: 1s;
     }
 
     .compartilhar img {
         height: 20px;
         width: 9%;
+    }
+
+    /* TRANSIÇÕES */
+
+    #buscar form {
+        transition: 1s;
     }
 }

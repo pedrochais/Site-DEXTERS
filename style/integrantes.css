@@ -1,4 +1,11 @@
-#integrantes-lideres, #integrantes-mestrado, #integrantes-doutorado, #integrantes-graduacao, #ex-integrantes {    text-align: center;
+/* TRANSIÇÕES */
+
+#integrantes-lideres, #integrantes-mestrado, #integrantes-doutorado, 
+#integrantes-graduacao, #ex-integrantes, .card-integrante, .modal{    
+    transition: 1s;
+}
+#integrantes-lideres, #integrantes-mestrado, #integrantes-doutorado, #integrantes-graduacao, #ex-integrantes {    
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -7,7 +14,6 @@
     margin: 0 10%;
     margin-bottom: 50px;
     justify-content: center;
-    transition: 1s;
 }
 
 /* CARD */
@@ -21,7 +27,6 @@
     border-radius: 5px;
     width: 230px;
     margin: 20px;
-    transition: 1s;
 }
 
 .card-integrante:hover {
@@ -74,7 +79,6 @@ h4 {
     display: none;
     justify-content: center;
     align-items: center;
-    transition: 1s;
     z-index: 1001;
 }
 
@@ -91,7 +95,6 @@ h4 {
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
     align-items: center;
-    transition: 1s;
     z-index: 1002;
 }
 
@@ -129,6 +132,11 @@ h4 {
     .modal {
         width: 420px;
         height: 260px;
+    }
+
+    /* TRANSIÇÕES */
+
+    .modal {
         transition: 1s;
     }
 }
@@ -137,6 +145,11 @@ h4 {
     .modal {
         width: 380px;
         height: 220px;
+    }
+
+    /* TRANSIÇÕES */
+
+    .modal {
         transition: 1s;
     }
 }
@@ -148,11 +161,17 @@ h4 {
 
     .card-integrante {
         width: 159px;
-        transition: 1s;
+        
     }
 
     .card-integrante>.imagem {
         height: 142px;
+    }
+
+    /* TRANSIÇÕES */
+
+    .card-integrante {
+        transition: 1s;
     }
 }
 

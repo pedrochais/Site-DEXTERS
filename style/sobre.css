@@ -33,6 +33,7 @@
 }
 
 #galeria {
+    
     display: grid;
     width: 1020px;
     height: 700px;
@@ -40,6 +41,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
+}
+
+.img-1, .img-2, .img-3, .img-4{
+    animation: card-inc-intro .5s;
 }
 
 .imagem.img-1 {
