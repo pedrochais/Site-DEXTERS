@@ -32,6 +32,7 @@ button#buscar {
     height: 75px;
     margin-top: 20px;
     margin-bottom: 30px;
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.25);
 }
 
 button#buscar:active {
@@ -39,12 +40,12 @@ button#buscar:active {
     background-color: rgb(185, 185, 185);
 }
 
-#buscar img:active {
-    width: 55px;
+#buscar img {
+    width: 40px;
 }
 
-#buscar img {
-    width: 50px;
+#buscar img:active {
+    width: 45px;
 }
 
 /* CARD */
