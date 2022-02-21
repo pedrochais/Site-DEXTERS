@@ -15,7 +15,7 @@ section#buscar label {
 
 section#buscar input {
     border: rgb(185, 185, 185) solid 2px;
-    border-radius: 2.5px;
+    border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
     font-size: 18px;
@@ -119,9 +119,6 @@ button#buscar:active {
         width: 300px;
         transition: 1s;
     }
-
-
-
 
     .compartilhar img {
         height: 20px;

@@ -5,6 +5,7 @@
 
 .card-default {
     height: auto;
+    animation: card-intro .5s;
 }
 
 .descricao {

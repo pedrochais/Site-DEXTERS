@@ -52,29 +52,34 @@
         <h2 class="titulo">EX-INTEGRANTES</h2>
         <section id="ex-integrantes">
 
-            <div class="card-integrante">
+        <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
+                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
             </div>
 
         </section>

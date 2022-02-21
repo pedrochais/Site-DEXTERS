@@ -4,6 +4,7 @@
 }
 
 .card-evento {
+    animation: card-inc-intro .5s;
     box-shadow: 5px 5px 20px 0px #cccccc;
     display: flex;
     flex-direction: row;
