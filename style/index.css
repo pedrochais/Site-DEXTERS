@@ -1,11 +1,11 @@
 /* BANNER */
 
-section#banner{
+section#banner {
     height: 400px;
     transition: 1.5s;
 }
 
-section#banner .banner-info{
+section#banner .banner-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,20 +52,20 @@ section#conheca-dexters p {
     height: 650px;
 }
 
-#atividades > .atividades {
+#atividades>.atividades {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main > .atividades-desenvolvidas {
+main>.atividades-desenvolvidas {
     background-color: #e2e2e2;
     text-align: center;
     padding: 20px 0;
 }
 
-#atividades > .atividades > .images-atividades{
+#atividades>.atividades>.images-atividades {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -73,7 +73,7 @@ main > .atividades-desenvolvidas {
     height: 250px;
 }
 
-#atividades > .atividades > .images-atividades > div{
+#atividades>.atividades>.images-atividades>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,11 +83,11 @@ main > .atividades-desenvolvidas {
     margin: 0 10px;
     border-radius: 6px;
     background: linear-gradient(to bottom, var(--azul), white);
-    box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.14);
+    box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.14);
     transition: .2s;
 }
 
-.card-atividade-1, .card-atividade-2, .card-atividade-3, .card-atividade-4, .card-atividade-5{
+.card-atividade-1, .card-atividade-2, .card-atividade-3, .card-atividade-4, .card-atividade-5 {
     animation: card-inc-intro 1s;
 }
 
@@ -107,33 +107,37 @@ main > .atividades-desenvolvidas {
     text-align: center;
 }
 
-#atividades > .atividades > .images-atividades > .card-atividade-1:before{
+#atividades>.atividades>.images-atividades>.card-atividade-1:before {
     content: "Engenharia de Software";
 }
-#atividades > .atividades > .images-atividades > .card-atividade-2:before{
+
+#atividades>.atividades>.images-atividades>.card-atividade-2:before {
     content: "Modelagem de Sistemas Complexos";
 }
-#atividades > .atividades > .images-atividades > .card-atividade-3:before{
+
+#atividades>.atividades>.images-atividades>.card-atividade-3:before {
     content: "Interação Humano Computador";
 }
-#atividades > .atividades > .images-atividades > .card-atividade-4:before{
+
+#atividades>.atividades>.images-atividades>.card-atividade-4:before {
     content: "Sistemas de Informação";
 }
-#atividades > .atividades > .images-atividades > .card-atividade-5:before{
+
+#atividades>.atividades>.images-atividades>.card-atividade-5:before {
     content: "Ensino de Computação";
 }
 
-#atividades > .atividades > .images-atividades > .card-atividade-1:hover{
+#atividades>.atividades>.images-atividades>.card-atividade-1:hover {
     font-size: 21px;
 }
 
-#atividades > .atividades > .images-atividades > div:hover {
+#atividades>.atividades>.images-atividades>div:hover {
     height: 260px;
     width: 260px;
     font-size: 19px;
 }
 
-#atividades > .texto-area{
+#atividades>.texto-area {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,33 +147,33 @@ main > .atividades-desenvolvidas {
 }
 
 .texto {
-    width:230px;
+    width: 230px;
 }
 
-.texto > h3 {
+.texto>h3 {
     text-align: center;
 }
 
 /* MEDIA QUERIES */
 
 /*1345px*/
-@media (max-width: 1630px){
-    main > .atividades-desenvolvidas {
+@media (max-width: 1630px) {
+    main>.atividades-desenvolvidas {
         border-bottom: 2px solid rgb(124, 124, 124, 0.219);
     }
 
-    #atividades > .texto-area {
+    #atividades>.texto-area {
         width: 600px;
     }
-    
+
     #atividades {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
         height: 900px;
     }
-    
-    #atividades > .atividades > .images-atividades {
+
+    #atividades>.atividades>.images-atividades {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -177,20 +181,20 @@ main > .atividades-desenvolvidas {
         height: 850px;
         width: 540px;
     }
-    
-    #atividades > .atividades > .images-atividades > div{
+
+    #atividades>.atividades>.images-atividades>div {
         margin: 10px 10px;
     }
 
-    #atividades > .atividades > .images-atividades > div:hover {
+    #atividades>.atividades>.images-atividades>div:hover {
         height: 255px;
         width: 255px;
         font-size: 19px;
     }
 }
 
-@media (max-width: 1151px){
-    #atividades > .texto-area {
+@media (max-width: 1151px) {
+    #atividades>.texto-area {
         margin-right: 20px;
         width: 400px;
     }
@@ -199,6 +203,7 @@ main > .atividades-desenvolvidas {
         height: 300px;
         transition: 1s;
     }
+
     /*
     .fundo-banner {
         font-size: 13px;
@@ -207,12 +212,12 @@ main > .atividades-desenvolvidas {
     */
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
     #atividades {
         height: 1050px;
     }
 
-    #atividades > .atividades > .images-atividades {
+    #atividades>.atividades>.images-atividades {
         flex-direction: column;
         align-items: space-evenly;
         justify-content: center;
@@ -221,27 +226,27 @@ main > .atividades-desenvolvidas {
         width: 300px;
     }
 
-    #atividades > .atividades > .images-atividades > div {
+    #atividades>.atividades>.images-atividades>div {
         height: 200px;
     }
 
-    #atividades > .atividades > .images-atividades > div:hover {
+    #atividades>.atividades>.images-atividades>div:hover {
         height: 205px;
         width: 255px;
         font-size: 19px;
     }
 
-    #atividades > .texto-area {
+    #atividades>.texto-area {
         width: 400px;
         margin-right: 20px;
     }
 
-    .atividades-desenvolvidas > p{
+    .atividades-desenvolvidas>p {
         margin: 0 20px;
     }
 }
 
-@media (max-width: 795px){
+@media (max-width: 795px) {
     section#banner {
         height: 200px;
         transition: 1s;
@@ -249,24 +254,24 @@ main > .atividades-desenvolvidas {
 }
 
 @media (max-width: 723px) {
-    #atividades > .texto-area {
+    #atividades>.texto-area {
         justify-content: center;
         width: 85%;
         margin: 0 15px;
     }
 
-    #atividades > .atividades {
+    #atividades>.atividades {
         flex-direction: row;
     }
 
     #atividades {
         flex-direction: column;
-        justify-content:flex-start;
+        justify-content: flex-start;
         align-items: center;
         height: 900px;
     }
 
-    #atividades > .atividades > .images-atividades {
+    #atividades>.atividades>.images-atividades {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -283,11 +288,11 @@ main > .atividades-desenvolvidas {
 }*/
 
 @media (max-width: 555px) {
-    #atividades > .atividades > .images-atividades > div {
+    #atividades>.atividades>.images-atividades>div {
         width: 210px;
     }
 
-    #atividades > .atividades > .images-atividades > div:hover {
+    #atividades>.atividades>.images-atividades>div:hover {
         width: 215px;
     }
 
@@ -301,22 +306,22 @@ main > .atividades-desenvolvidas {
         background-size: cover;
     }
 
-    .fundo-banner p{
+    .fundo-banner p {
         display: none;
     }
 }
 
 @media (max-width: 481px) {
     #atividades {
-        height:500px;
+        height: 500px;
     }
 
-    #atividades > .atividades > .images-atividades > div {
+    #atividades>.atividades>.images-atividades>div {
         width: 117px;
         height: 117px;
     }
 
-    #atividades > .atividades > .images-atividades > div:hover {
+    #atividades>.atividades>.images-atividades>div:hover {
         width: 122px;
         height: 122px;
     }
@@ -325,14 +330,14 @@ main > .atividades-desenvolvidas {
         font-size: 15px;
     }
 
-    #atividades > .atividades > .images-atividades{
+    #atividades>.atividades>.images-atividades {
         align-items: center;
     }
 }
 
 @media (max-width: 410px) {
     #atividades {
-        height:700px;
+        height: 700px;
     }
 }
 
@@ -356,11 +361,12 @@ main > .atividades-desenvolvidas {
     }
 }
 
-@keyframes card-area-intro{
+@keyframes card-area-intro {
     from {
         opacity: 0;
         transform: scale(0.8);
     }
+
     to {
         opacity: 1;
         transform: scale(1);

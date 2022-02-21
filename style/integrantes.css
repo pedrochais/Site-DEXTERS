@@ -125,7 +125,7 @@ h4 {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
     .modal {
         width: 420px;
         height: 260px;
@@ -133,7 +133,7 @@ h4 {
     }
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
     .modal {
         width: 380px;
         height: 220px;
@@ -151,7 +151,7 @@ h4 {
         transition: 1s;
     }
 
-    .card-integrante > .imagem{
+    .card-integrante>.imagem {
         height: 142px;
     }
 }
@@ -159,10 +159,11 @@ h4 {
 /* ANIMAÇÕES */
 
 @keyframes modal-background {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
@@ -172,6 +173,7 @@ h4 {
         opacity: 0;
         transform: translate3d(0, -100px, 0);
     }
+
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);

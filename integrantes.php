@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="style/integrantes.css">
     <title>DEXTERS | Integrantes</title>
 </head>
+
 <body>
     <?php include('cabecalho.html'); ?>
-    
+
     <main>
         <h2 class="titulo">INTEGRANTES</h2>
         <section id="integrantes">
@@ -77,7 +79,7 @@
 
         </section>
     </main>
-    
+
     <?php include('rodape.html'); ?>
 
     <!-- MODAL -->
@@ -101,10 +103,11 @@
                     <span class="info">Contato:</span>
                     <span>pedro.pacheco@discente.ufma.br</span>
                 </p>
-            </div> 
+            </div>
         </div>
     </div>
 
     <script src="js/integrantes.js"></script>
 </body>
+
 </html>

@@ -1,16 +1,12 @@
 let body = document.querySelector('body');
 let modal = document.getElementById('modal-integrantes');
-/*
-function toggleModal(){
-    modal.classList.toggle('show')
-}
-*/
+
 function toggleModal(evento) {
     let target = evento.target;
-    if (target.className === 'btn-default'){
+    if (target.className === 'btn-default') {
         modal.classList.add('show');
     }
-    if (target.className === 'modal-background show' || target.className === 'btn-fechar'){
+    if (target.className === 'modal-background show' || target.className === 'btn-fechar') {
         modal.classList.remove('show');
     }
 }

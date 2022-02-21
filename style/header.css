@@ -16,13 +16,13 @@ header a {
 
 /* DROPDOWN */
 
-ul > .dropdown-sobre-li {
+ul>.dropdown-sobre-li {
     position: relative;
     display: inline-block;
-    color: #6FA9B3;    
+    color: #6FA9B3;
 }
 
-ul > .dropdown-sobre-li > div {
+ul>.dropdown-sobre-li>div {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -30,7 +30,7 @@ ul > .dropdown-sobre-li > div {
     margin-bottom: 5px;
 }
 
-ul > .dropdown-sobre-li > .dropdown-sobre {
+ul>.dropdown-sobre-li>.dropdown-sobre {
     display: none;
     position: absolute;
     background-color: #fff;
@@ -40,13 +40,13 @@ ul > .dropdown-sobre-li > .dropdown-sobre {
     border-radius: 5px;
 }
 
-ul > .dropdown-sobre-li > .dropdown-sobre > a {
+ul>.dropdown-sobre-li>.dropdown-sobre>a {
     text-align: center;
     line-height: 50px;
     transition: .2s;
 }
 
-ul > .dropdown-sobre-li > .dropdown-sobre > a:hover {
+ul>.dropdown-sobre-li>.dropdown-sobre>a:hover {
     background-color: rgba(124, 124, 124, 0.219);
 }
 
@@ -70,11 +70,11 @@ header .logo {
     max-width: 300px;
 }
 
-img#lg-ufma-navbar{
+img#lg-ufma-navbar {
     width: 25%;
 }
 
-img#lg-dexters-navbar{
+img#lg-dexters-navbar {
     width: 65%;
 }
 
@@ -121,7 +121,7 @@ header li:hover {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
     header {
         width: 100%;
         height: 70px;
@@ -141,7 +141,7 @@ header li:hover {
     #btn-mobile {
         display: block;
     }
-    
+
     .menu {
         z-index: 999;
         display: block;
@@ -155,8 +155,8 @@ header li:hover {
         height: 0;
         transition: .5s;
     }
-    
-    #navbar.show .menu{
+
+    #navbar.show .menu {
         height: 100vh;
         visibility: visible;
         overflow-y: auto;
@@ -177,20 +177,20 @@ header li:hover {
         margin-top: 90px;
     }
 
-    ul > .dropdown-sobre-li > div {
+    ul>.dropdown-sobre-li>div {
         width: 75px;
         justify-content: space-between;
     }
 
-    ul > .dropdown-sobre-li {
+    ul>.dropdown-sobre-li {
         display: flex;
     }
 
-    ul > .dropdown-sobre-li > .dropdown-sobre {
+    ul>.dropdown-sobre-li>.dropdown-sobre {
         top: 40px;
     }
 
-    ul > .dropdown-sobre-li > div > div {
+    ul>.dropdown-sobre-li>div>div {
         justify-content: space-evenly;
     }
 }

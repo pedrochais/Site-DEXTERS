@@ -31,23 +31,23 @@
     background-color: rgb(189, 189, 189);
 }
 
-.descricao p{
+.descricao p {
     width: 80%;
     text-indent: 50px;
     text-align: justify;
     margin: 0 20px;
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
     .imagem {
         margin-bottom: 10px;
     }
-    
-    .descricao{
+
+    .descricao {
         flex-direction: column;
     }
-    
-    .descricao p{
+
+    .descricao p {
         width: 100%;
         transition: 1s;
         margin: 0;

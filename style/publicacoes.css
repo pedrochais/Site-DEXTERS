@@ -14,7 +14,7 @@ section#buscar label {
 }
 
 section#buscar input {
-    border:rgb(185, 185, 185) solid 2px;
+    border: rgb(185, 185, 185) solid 2px;
     border-radius: 2.5px;
     padding: 10px;
     margin-bottom: 15px;
@@ -23,7 +23,7 @@ section#buscar input {
 
 button#buscar {
     margin: 0 auto;
-    border:rgb(185, 185, 185) solid 2px;
+    border: rgb(185, 185, 185) solid 2px;
     background-color: white;
     border-radius: 50%;
     width: 75px;
@@ -33,7 +33,7 @@ button#buscar {
 }
 
 button#buscar:active {
-    border:rgb(255, 255, 255);
+    border: rgb(255, 255, 255);
     background-color: rgb(185, 185, 185);
 }
 
@@ -91,8 +91,8 @@ button#buscar:active {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1280px){
-    section#buscar form{
+@media (max-width: 1280px) {
+    section#buscar form {
         width: 400px;
         transition: 1s;
     }
@@ -106,32 +106,34 @@ button#buscar:active {
         width: 100%;
         transition: 1s;
     }
+
     .compartilhar img {
         height: 20px;
         width: 5%;
     }
 }
 
-@media (max-width: 800px){
-    section#buscar form{
+@media (max-width: 800px) {
+    section#buscar form {
         width: 300px;
         transition: 1s;
     }
 
 
 
-    
+
     .compartilhar img {
         height: 20px;
         width: 7%;
     }
 }
 
-@media (max-width: 640px){
-    section#buscar form{
+@media (max-width: 640px) {
+    section#buscar form {
         width: 300px;
         transition: 1s;
     }
+
     .compartilhar img {
         height: 20px;
         width: 9%;

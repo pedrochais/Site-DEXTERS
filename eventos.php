@@ -49,3 +49,5 @@
 
     <?php include('rodape.html'); ?>
 </body>
+
+</html>

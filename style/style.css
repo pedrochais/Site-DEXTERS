@@ -9,7 +9,7 @@
     --font-size-lg: 18px;
     --font-size-md: 16px;
     --font-size-sm: 14px;
-    
+
     /*
     --width-md: 1280px;
     --width-sm: 640px;
@@ -18,7 +18,7 @@
 
 /* CONFIGURAÇÃO GERAL DO CORPO */
 
-body{
+body {
     margin: auto;
     font-family: sans-serif;
     background-color: var(--cinza);
@@ -59,7 +59,7 @@ main {
 
 /* TÍTULO */
 
-h2.titulo{
+h2.titulo {
     animation: titulo-intro .5s;
     color: rgb(34, 34, 34);
     text-align: center;
@@ -114,6 +114,7 @@ hr {
     from {
         transform: scale(0);
     }
+
     to {
         transform: scale(1);
     }
@@ -123,6 +124,7 @@ hr {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -145,6 +147,7 @@ hr {
         opacity: 0;
         transform: scale(0.8);
     }
+
     to {
         opacity: 1;
         transform: scale(1);

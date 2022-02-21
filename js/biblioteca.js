@@ -7,5 +7,5 @@ btn_detalhes.forEach(function (elemento) {
         const div_pai = elemento.parentElement.parentElement;
 
         div_pai.lastElementChild.classList.toggle('show-desc');
-    }); 
+    });
 });

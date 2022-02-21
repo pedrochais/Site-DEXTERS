@@ -4,15 +4,15 @@ function home() {
     let tituloAnterior = `Engenharia de Software`;
     let textoAnterior = `Engenharia de software é uma área da computação dedicada à concepção, especificação, desenvolvimento e manutenção de sistemas de software, aplicando tecnologias e práticas de gerências de projetos e outras disciplinas.`;
 
-    function fadeIn (elemento) {
+    function fadeIn(elemento) {
         let opacidade = 0.1;
         let timer = setInterval(function () {
             if (opacidade >= 1) {
                 clearInterval(timer);
             }
             elemento.style.opacity = opacidade;
-            elemento.style.filter = `alpha(opacity="${opacidade*100}")`;
-            opacidade += opacidade*0.1;
+            elemento.style.filter = `alpha(opacity="${opacidade * 100}")`;
+            opacidade += opacidade * 0.1;
         }, 10);
     }
 
@@ -24,8 +24,8 @@ function home() {
         texto.style.opacity = 0;
 
         const elementoAlvo = evento.target;
-        
-        switch(elementoAlvo.className){
+
+        switch (elementoAlvo.className) {
             case 'card-atividade-1':
                 tituloAnterior = `Engenharia de Software`;
                 textoAnterior = `Engenharia de software é uma área da computação dedicada à concepção, especificação, desenvolvimento e manutenção de sistemas de software, aplicando tecnologias e práticas de gerências de projetos e outras disciplinas.`;
@@ -75,7 +75,7 @@ function home() {
     }
 
     function removeTexto(evento) {
-        switch(evento.target.className){
+        switch (evento.target.className) {
             case 'card-atividade-1':
                 areaDoTexto.querySelector('.texto-explicativo').innerHTML = ``
                 break;
@@ -91,7 +91,7 @@ function home() {
             case 'card-atividade-5':
                 areaDoTexto.querySelector('.texto-explicativo').innerHTML = ``
                 break;
-            
+
         }
     }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="style/noticia.css">
     <title>DEXTERS | Notícia</title>
 </head>
+
 <body>
     <?php include('cabecalho.html'); ?>
 
@@ -25,15 +27,15 @@
         <hr>
         <section id="conteudo">
             <div class="imagem"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed semper leo, sed viverra metus. Fusce lobortis nisl vehicula mauris fermentum, nec pretium quam pellentesque. Praesent tempus lectus sed tellus ornare, et sagittis arcu condimentum. Nullam eget mi aliquam, tristique purus et, vestibulum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae nisi sem. Aenean consectetur scelerisque eros, quis semper lorem vestibulum et.</p>        
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed semper leo, sed viverra metus. Fusce lobortis nisl vehicula mauris fermentum, nec pretium quam pellentesque. Praesent tempus lectus sed tellus ornare, et sagittis arcu condimentum. Nullam eget mi aliquam, tristique purus et, vestibulum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae nisi sem. Aenean consectetur scelerisque eros, quis semper lorem vestibulum et.</p>
             <p>Morbi lacinia et est eu cursus. Integer eleifend a lectus sed consequat. Ut quam mauris, aliquet ut interdum quis, scelerisque et ipsum. Sed fringilla vitae enim ut consequat. Phasellus at diam sed ante hendrerit commodo. Aenean accumsan euismod ornare. Cras suscipit mauris nulla, ut posuere sapien maximus nec. Nulla vel tincidunt massa.</p>
             <p>Morbi lacinia et est eu cursus. Integer eleifend a lectus sed consequat. Ut quam mauris, aliquet ut interdum quis, scelerisque et ipsum. Sed fringilla vitae enim ut consequat. Phasellus at diam sed ante hendrerit commodo. Aenean accumsan euismod ornare. Cras suscipit mauris nulla, ut posuere sapien maximus nec. Nulla vel tincidunt massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed semper leo, sed viverra metus. Fusce lobortis nisl vehicula mauris fermentum, nec pretium quam pellentesque. Praesent tempus lectus sed tellus ornare, et sagittis arcu condimentum. Nullam eget mi aliquam, tristique purus et, vestibulum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae nisi sem. Aenean consectetur scelerisque eros, quis semper lorem vestibulum et.</p>
-     	</section>
+        </section>
     </main>
 
     <?php include('rodape.html'); ?>
 
 
 </body>
-</html>
 
+</html>

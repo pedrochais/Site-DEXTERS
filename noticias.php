@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="style/noticias.css">
     <title>DEXTERS | Notícias</title>
 </head>
+
 <body>
     <?php include('cabecalho.html'); ?>
-    
+
     <main>
         <h2 class="titulo">NOTÍCIAS</h2>
         <section id="buscar">
@@ -27,20 +29,9 @@
         </section>
         <hr>
         <section id="noticias">
-    		<div class="card-default">
-        		<h4>Título da notícia</h4>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
-                <div class="imagem"></div>
-                <div class="btn-novo">
-                    <a href="noticia.php">
-                        <button class="btn-default">Abrir notícia</button>
-                    </a>
-                </div>
-            </div>
-        	
             <div class="card-default">
-        		<h4>Título da notícia</h4>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
+                <h4>Título da notícia</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
                     <a href="noticia.php">
@@ -50,8 +41,8 @@
             </div>
 
             <div class="card-default">
-        		<h4>Título da notícia</h4>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
+                <h4>Título da notícia</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
                 <div class="imagem"></div>
                 <div class="btn-novo">
                     <a href="noticia.php">
@@ -59,10 +50,21 @@
                     </a>
                 </div>
             </div>
-     	</section>
+
+            <div class="card-default">
+                <h4>Título da notícia</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere pulvinar mi a placerat. Morbi mi lectus, molestie quis ligula vel, dapibus maximus urna. Proin eget enim turpis. Quisque eget pretium arcu. Donec quis massa aliquam, interdum metus sed</p>
+                <div class="imagem"></div>
+                <div class="btn-novo">
+                    <a href="noticia.php">
+                        <button class="btn-default">Abrir notícia</button>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <?php include('rodape.html'); ?>
 </body>
-</html>
 
+</html>

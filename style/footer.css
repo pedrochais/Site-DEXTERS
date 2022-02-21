@@ -34,13 +34,13 @@ footer .logos {
     margin: 10px 0;
 }
 
-footer > .redes-sociais{
+footer>.redes-sociais {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-footer .redes-sociais .rede{
+footer .redes-sociais .rede {
     line-height: 50px;
     display: flex;
 }
@@ -49,7 +49,7 @@ footer .redes-sociais img {
     width: 25px;
 }
 
-footer .redes-sociais > div {
+footer .redes-sociais>div {
     display: flex;
 }
 
@@ -81,7 +81,7 @@ footer .localizacao img {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
     footer {
         height: 300px;
         padding-bottom: 0;
@@ -95,28 +95,28 @@ footer .localizacao img {
 }
 
 @media (max-width: 831px) {
-    footer > .localizacao {
+    footer>.localizacao {
         width: 100%;
     }
 
-    footer > .redes-sociais {
+    footer>.redes-sociais {
         margin: 10px 0;
         width: 100%;
         flex-direction: row;
         justify-content: center;
     }
 
-    footer > .redes-sociais > .rede {
+    footer>.redes-sociais>.rede {
         flex-direction: row;
         margin: 0 10px;
     }
 
-    footer > .redes-sociais > .rede {
+    footer>.redes-sociais>.rede {
         flex-direction: row;
         justify-content: center;
     }
 
-    footer > .localizacao > ul > li {
+    footer>.localizacao>ul>li {
         justify-content: center;
     }
 
@@ -126,7 +126,7 @@ footer .localizacao img {
     }
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
     .logo_1 img, .logo_2 img, #logo-ufma {
         transition: 1s;
     }
@@ -134,7 +134,7 @@ footer .localizacao img {
     .logo_1 img {
         width: 235px;
     }
-    
+
     .logo_2 img {
         width: 103px;
     }
@@ -148,7 +148,7 @@ footer .localizacao img {
     .logo_1 img {
         width: 235px;
     }
-    
+
     .logo_2 img {
         width: 103px;
     }

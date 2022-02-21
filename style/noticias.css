@@ -16,7 +16,7 @@ section#buscar label {
 }
 
 section#buscar input {
-    border:rgb(185, 185, 185) solid 2px;
+    border: rgb(185, 185, 185) solid 2px;
     border-radius: 2.5px;
     padding: 10px;
     margin-bottom: 15px;
@@ -25,7 +25,7 @@ section#buscar input {
 
 button#buscar {
     margin: 0 auto;
-    border:rgb(185, 185, 185) solid 2px;
+    border: rgb(185, 185, 185) solid 2px;
     background-color: white;
     border-radius: 50%;
     width: 75px;
@@ -35,7 +35,7 @@ button#buscar {
 }
 
 button#buscar:active {
-    border:rgb(255, 255, 255);
+    border: rgb(255, 255, 255);
     background-color: rgb(185, 185, 185);
 }
 
@@ -49,7 +49,7 @@ button#buscar:active {
 
 /* CARD */
 
-.card-default{
+.card-default {
     animation: card-intro .5s;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.514);
@@ -72,22 +72,22 @@ p {
     height: 35px;
 }
 
-.btn-novo{
+.btn-novo {
     display: flex;
     justify-content: flex-end;
 }
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1280px){
-    section#buscar form{
+@media (max-width: 1280px) {
+    section#buscar form {
         width: 400px;
         transition: 1s;
     }
 }
 
-@media (max-width: 640px){
-    section#buscar form{
+@media (max-width: 640px) {
+    section#buscar form {
         width: 300px;
         transition: 1s;
     }
