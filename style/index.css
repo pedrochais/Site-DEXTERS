@@ -1,29 +1,46 @@
+/* TRANSIÇÕES */
+
+.fundo-banner img {
+    transition: 1s;
+}
+
 /* BANNER */
 
-section#banner {
+#banner {
     height: 400px;
     transition: 1.5s;
 }
 
-section#banner .banner-info {
+#banner .banner-info {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    background-image: url('../images/bg_banner_md.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    color: white;
+    overflow: hidden;
+}
+
+#banner .fundo-banner {
+    animation: banner-bg 60s infinite;
     width: 100%;
     height: 100%;
-    text-align: center;
+    min-width: 450px;
+    z-index: -5;
 }
 
-.fundo-banner {
+.fundo-banner img {
+    width: 120%;
+    margin-left: -100px;
+}
+
+.tarja-banner {
+    position: relative;
+    top: -50%;
+    width: 100%;
     animation: banner-stripe-intro 1s;
-}
-
-.fundo-banner {
+    color: white;
+    text-align: center;
     background: rgba(111, 169, 179, 0.911);
     transition: 1s;
 }
@@ -193,6 +210,18 @@ main>.atividades-desenvolvidas {
     }
 }
 
+@media (max-width: 1280px){
+    .fundo-banner img {
+        width: 140%;
+    }
+
+    /* TRANSIÇÕES */
+
+    .fundo-banner img {
+        transition: 1s;
+    }
+}
+
 @media (max-width: 1151px) {
     #atividades>.texto-area {
         margin-right: 20px;
@@ -284,6 +313,18 @@ main>.atividades-desenvolvidas {
     }
 }
 
+@media (max-width: 640px){
+    .fundo-banner img {
+        width: 180%;
+    }
+
+    /* TRANSIÇÕES */
+
+    .fundo-banner img {
+        transition: 1s;
+    }
+}
+
 @media (max-width: 555px) {
     #atividades>.atividades>.images-atividades>div {
         width: 210px;
@@ -296,19 +337,19 @@ main>.atividades-desenvolvidas {
     section#banner {
         height: 200px;
     }
-
-    section#banner .banner-info {
-        background-image: url('../images/bg_banner_sm.png');
-        background-size: cover;
+    
+    .fundo-banner img{
+        width: 200%;
+        margin-left: -200px;
     }
-
-    .fundo-banner p {
+    
+    .tarja-banner p {
         display: none;
     }
 
     /* TRANSIÇÕES */
 
-    #banner {
+    #banner, .fundo-banner img {
         transition: 1s;
     }
 }
@@ -372,5 +413,19 @@ main>.atividades-desenvolvidas {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes banner-bg {
+    0% {
+        transform: translate3d(-80px, 0, 0);
+    }
+    
+    50% {
+        transform: translate3d(80px, 0, 0);
+    }
+    
+    100% {
+        transform: translate3d(-80px, 0, 0);
     }
 }
