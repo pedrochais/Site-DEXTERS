@@ -1,7 +1,17 @@
+/*
+html {
+    scroll-snap-type: y proximity;
+}
+
+h3.titulo {
+    scroll-snap-align: start;
+}
+*/
 /* TRANSIÇÕES */
 
 #integrantes-lideres, #integrantes-mestrado, #integrantes-doutorado, 
-#integrantes-graduacao, #ex-integrantes, .card-integrante, .modal{    
+#integrantes-graduacao, #ex-integrantes, .card-integrante, .modal, 
+.imagem, .info {    
     transition: 1s;
 }
 #integrantes-lideres, #integrantes-mestrado, #integrantes-doutorado, #integrantes-graduacao, #ex-integrantes {    
@@ -33,10 +43,10 @@
     transform: scale(1.01);
 }
 
-section .imagem {
+.card-integrante .imagem {
     background-color: rgb(189, 189, 189);
-    width: 95%;
-    height: 200px;
+    width: 215px;
+    height: 215px;
     margin: auto;
     margin-top: 5px;
 }
@@ -134,9 +144,22 @@ h4 {
         height: 260px;
     }
 
+    .card-integrante {
+        width: 200px;
+    }
+
+    .card-integrante .imagem {
+        width: 185px;
+        height: 185px;
+    }
+
+    .info {
+        width: 80px;
+    }
+
     /* TRANSIÇÕES */
 
-    .modal {
+    .modal, .imagem, .info {
         transition: 1s;
     }
 }
@@ -147,9 +170,13 @@ h4 {
         height: 220px;
     }
 
+    .info {
+        width: 70px;
+    }
+
     /* TRANSIÇÕES */
 
-    .modal {
+    .modal, .info {
         transition: 1s;
     }
 }
@@ -160,17 +187,17 @@ h4 {
     }
 
     .card-integrante {
-        width: 159px;
-        
+        width: 160px;
     }
 
     .card-integrante>.imagem {
-        height: 142px;
+        width: 145px;
+        height: 145px;
     }
 
     /* TRANSIÇÕES */
 
-    .card-integrante {
+    .card-integrante, .imagem {
         transition: 1s;
     }
 }

@@ -16,7 +16,7 @@
 
     <main>
         <h2 class="titulo">INTEGRANTES</h2>
-        <h3 class="titulo">Líderes</h2>
+        <h3 class="titulo">Líderes</h3>
         <section id="integrantes-lideres">
             <div class="card-integrante">
                 <div class="imagem"></div>
@@ -31,7 +31,7 @@
             </div>
         </section>
 
-        <h3 class="titulo">Mestrado</h2>
+        <h3 class="titulo">Mestrado</h3>
         <section id="integrantes-mestrado">
             <div class="card-integrante">
                 <div class="imagem"></div>
@@ -58,7 +58,7 @@
             </div>
         </section>
 
-        <h3 class="titulo">Doutorado</h2>
+        <h3 class="titulo">Doutorado</h3>
         <section id="integrantes-doutorado">
             <div class="card-integrante">
                 <div class="imagem"></div>
@@ -85,7 +85,7 @@
             </div>
         </section>
 
-        <h3 class="titulo">Graduação</h2>
+        <h3 class="titulo">Graduação</h3>
         <section id="integrantes-graduacao">
             <div class="card-integrante">
                 <div class="imagem"></div>
