@@ -197,7 +197,7 @@ main>.atividades-desenvolvidas {
     justify-content: center;
     text-align: justify;
     width: 1000px;
-    margin-top: 15px;
+    margin-top: 55px;
 }
 
 .texto {
@@ -218,6 +218,7 @@ main>.atividades-desenvolvidas {
 
     #atividades>.texto-area {
         width: 600px;
+        margin: 0;
     }
 
     #atividades {
