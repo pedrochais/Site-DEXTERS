@@ -15,9 +15,23 @@
     <?php include('cabecalho.html'); ?>
 
     <main>
-        <section id="banner">
+        <!--<ul class="slider">
+            <li>
+                <img src="images/bg_banner_md.jpg">
+            </li>
+            <li>
+                <img src="images/bg_banner_md.jpg">
+            </li>
+            <li>
+                <img src="images/bg_banner_md.jpg">
+            </li>
+        </ul>-->
 
-            <div class="banner-info">
+        <section id="banner">
+            <i class="fa-solid fa-arrow-left seta" id="seta-anterior"></i>
+
+
+            <div class="banner-info active-slide" id="slide1">    
 
                 <div class="fundo-banner">
                     <img src="images/bg_banner_md.jpg" alt="Fundo banner DEXTERS">
@@ -30,6 +44,29 @@
                 
             </div>
 
+            <div class="banner-info" id="slide2">
+                <div class="fundo-banner">
+                    <img src="images/wp_software_engineering.png" alt="Fundo banner DEXTERS">
+                </div>
+
+                <div class="tarja-banner">
+                    <h3>DEXTERS um Espaço de Pesquisa e Inovação em Engenharia de Software</h3>
+                    <p>O nosso objetivo é ser o melhor laboratório de Engenharia de Software do Brasil</p>
+                </div>
+            </div>
+
+            <div class="banner-info" id="slide3">
+                <div class="fundo-banner">
+                    <img src="images/lg_dexters_header.png" alt="Fundo banner DEXTERS">
+                </div>
+
+                <div class="tarja-banner">
+                    <h3>DEXTERS um Espaço de Pesquisa e Inovação em Engenharia de Software</h3>
+                    <p>O nosso objetivo é ser o melhor laboratório de Engenharia de Software do Brasil</p>
+                </div>
+            </div>
+
+            <i class="fa-solid fa-arrow-right seta" id="seta-proximo"></i>
         </section>
 
         <div class="atividades-desenvolvidas">

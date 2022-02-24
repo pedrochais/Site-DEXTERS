@@ -1,4 +1,8 @@
 function home() {
+    const slides = document.querySelectorAll(".banner-info");
+    let numSlideAtual = 1;
+    const totalSlides = slides.length;
+    const seta_slider = document.querySelectorAll(".seta");
     const areaDoTexto = document.querySelector('#atividades > .texto-area');
     const areas = document.querySelector('.images-atividades');
     let tituloAnterior = `Engenharia de Software`;
@@ -95,8 +99,67 @@ function home() {
         }
     }
 
+    function passaSlide(evento) {
+        const slideAtivo = document.querySelector(".active-slide");
+        let sentidoMudanca;
+        const setaClicada = evento.target;
+
+        // Verifica qual seta foi clicada
+        switch(setaClicada.id) {
+            case 'seta-anterior':
+                if(numSlideAtual === 1) {
+                    numSlideAtual = totalSlides;
+                } else {
+                    numSlideAtual--;
+                }
+                sentidoMudanca = 'esquerda';
+                break;
+            case 'seta-proximo':
+                if(numSlideAtual === totalSlides) {
+                    numSlideAtual = 1;
+                } else {
+                    numSlideAtual++;
+                }
+                sentidoMudanca = 'direita';
+                break;
+        }
+        const elementoNovo = document.querySelector(`#slide${numSlideAtual}`);
+
+        // Animação da mudança de slide
+        //animacaoSlider(sentidoMudanca, slideAtivo, elementoNovo);
+
+        // Muda o slide atual
+        slideAtivo.classList.remove("active-slide");
+        elementoNovo.classList.add("active-slide");
+    }
+
+    /*function animacaoSlider(sentido, slideAtual, slideNovo) {
+        switch(sentido) {
+            case 'esquerda':
+                console.log(slideAtual);
+                console.log(slideNovo);
+                slideAtual.animate(
+                    [
+                        //Keyframes
+                        {transform: 'translate(0px,0px)'},
+                        {transform: 'translate(100px,0px)'}
+                    ], 
+                    {
+                        duration: 1000
+                        //iterations: 1
+                    }
+                );
+                break;
+            case 'direita':
+                break;
+        }
+    }*/
+
     areas.addEventListener('mouseover', exibeTexto);
     areas.addEventListener('click', exibeTexto);
+    seta_slider.forEach(function (elemento) {
+        elemento.addEventListener('click', passaSlide);
+    });
     //areas.addEventListener('mouseout', removeTexto);
     /*onsole.log(areas);
     console.log(areaDoTexto);

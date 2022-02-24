@@ -1,3 +1,26 @@
+/* Slider */
+
+.slider {
+    display: block;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider > li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider > li > img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    overflow-y: hidden;
+}
 /* TRANSIÇÕES */
 
 .fundo-banner img {
@@ -7,18 +30,32 @@
 /* BANNER */
 
 #banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     height: 400px;
     transition: 1.5s;
 }
 
+#banner > .seta {
+    z-index: 999;
+    cursor: pointer;
+}
+
 #banner .banner-info {
+    position: absolute;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: none;
     margin: 0;
     overflow: hidden;
+}
+
+.active-slide {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #banner .fundo-banner {
