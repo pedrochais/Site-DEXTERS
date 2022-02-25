@@ -1,0 +1,53 @@
+.titulo{
+    text-align: center;
+}
+
+section#login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#login label {
+    margin-left: 5px;
+    margin-bottom: 5px; 
+    
+}
+
+section#login input {
+    border: rgb(185, 185, 185) solid 2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    
+}
+
+button#login:active {
+    border: rgb(255, 255, 255);
+    background-color: rgb(185, 185, 185);
+}
+
+
+.card-default {
+    padding: 30px;
+    width: 25%;
+    height: 300px;
+    animation: card-intro .5s;
+     
+}
+
+
+@media (max-width: 1280px){
+    section#login input {
+        width: 100%;
+    }
+   
+}
+
+
+
+
+
+
+
