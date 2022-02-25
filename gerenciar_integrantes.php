@@ -14,23 +14,30 @@
     <?php include('cabecalho.html'); ?>
     
     <main>
-        <h2 class="titulo">Acesso restrito</h2>
-
+        <h2 class="titulo">Cadastro de Integrantes</h2>
         <section id="cadastro">
             <div class="cadastramento">
                  <form>
-                    <h2 class="name">Cadastro de Integrantes</h2>
-                    <label for="titulo">Nome</label>
+                   
+                    <label for="nome">Nome</label>
                     <input type="text" id="nome" placeholder="Digite seu nome">
-                    <label for="titulo">Sobrenome</label>
+                    <label for="sobrenome">Sobrenome</label>
                     <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
-                    <label for="titulo">Lattes</label>
+                    <label for="lattes">Lattes</label>
                     <input type="text" id="lattes" placeholder="Digite o link do seu Lattes">
-                    <label for="titulo">Email</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email" placeholder="Digite seu email">
+                    <div class="opcoes">
+                        <input type="radio" name="op" value="Orientador"> Orientador
+                        <input type="radio" name="op" value="Orientando" > Orientando
+                    </div>
+                   
                     <a href="#">
                         <button class="btn-default">Cadastrar</button>
                     </a>
+
+
+
                 </form>
             </div>
         </section>
