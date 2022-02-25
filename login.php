@@ -21,7 +21,7 @@
                  <form>
                     <h2 class="acesso">Login</h2>
                     <input type="text" id="titulo" placeholder="Digite o usuário">
-                    <input type="text" id="texto" placeholder="Digite a senha de acesso">
+                    <input type="password" id="texto" placeholder="Digite a senha de acesso">
                     <a href="#">
                         <button class="btn-default">Entrar</button>
                     </a>
