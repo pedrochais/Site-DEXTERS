@@ -85,16 +85,50 @@ hr {
 
 /* FORM */
 
+.form-default{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: auto;
+    transition: 1s;
+}
+
+.form-default label {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+input.text-box-default {
+    border: rgb(185, 185, 185) solid 2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: var(--font-size-lg);
+}
+
 /* CARD */
 
 .card-default {
-    background-color: rgba(255, 255, 255, 0.514);
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.527);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.5);
     width: 70%;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px 25px;
+}
+
+.titulo-card-default {
+    color: rgb(80, 80, 80);
+    margin-top: 0;
+    text-align: center;
+}
+
+.header-card-default {
+    width: 100%;
+    border-bottom: 2px rgb(192, 192, 192) solid;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -108,11 +142,39 @@ hr {
     h2.titulo {
         padding-top: 50px;
     }
+
+    .form-default{
+        width: 400px;
+    }
+
+    input.text-box-default {
+        font-size: var(--font-size-md);
+    }
+
+    /* TRANSIÇÕES */
+
+    .form-default{
+        transition: 1s;
+    }
 }
 
 @media (max-width: 640px) {
     body {
         font-size: var(--font-size-sm);
+        transition: 1s;
+    }
+
+    .form-default{
+        width: 300px;
+    }
+
+    input.text-box-default {
+        font-size: var(--font-size-sm);
+    }
+
+    /* TRANSIÇÕES */
+
+    .form-default{
         transition: 1s;
     }
 }

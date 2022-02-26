@@ -1,26 +1,5 @@
 /* FORMULÁRIO DE BUSCA */
 
-section#buscar form {
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    transition: 1s;
-    margin: auto;
-}
-
-section#buscar label {
-    margin-left: 5px;
-    margin-bottom: 5px;
-}
-
-section#buscar input {
-    border: rgb(185, 185, 185) solid 2px;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
 button#buscar {
     margin: 0 auto;
     border: rgb(185, 185, 185) solid 2px;
@@ -50,11 +29,6 @@ button#buscar:active {
 
 .card-default {
     animation: card-intro .5s;
-    background-color: rgba(255, 255, 255, 0.514);
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.527);
-    padding: 20px;
-    margin: 30px auto;
 }
 
 h4 {
@@ -78,15 +52,7 @@ p {
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
-    section#buscar form {
-        width: 400px;
-        transition: 1s;
-    }
 }
 
 @media (max-width: 640px) {
-    section#buscar form {
-        width: 300px;
-        transition: 1s;
-    }
 }

@@ -17,11 +17,11 @@
     <main>
         <h2 class="titulo">NOTÍCIAS</h2>
         <section id="buscar">
-            <form>
+            <form class="form-default" method="get">
                 <label for="titulo">Título</label>
-                <input type="text" id="titulo" placeholder="Digite o título da notícia">
+                <input id="titulo" class="text-box-default" type="text" placeholder="Digite o título da notícia">
                 <label for="autor">Texto</label>
-                <input type="text" id="texto" placeholder="Digite uma parte do texto">
+                <input id="texto" class="text-box-default" type="text" placeholder="Digite uma parte do texto">
                 <button type="submit" id="buscar" class="btn-default">
                     <img src="images/bt_lupa.png" alt="Botão buscar">
                 </button>

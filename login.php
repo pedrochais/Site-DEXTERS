@@ -10,29 +10,27 @@
     <link rel="stylesheet" href="style/login.css">
     <title>DEXTERS | Login</title>
 </head>
+
 <body>
     <?php include('cabecalho.html'); ?>
-    
-    <main>
-        <h2 class="titulo">Acesso restrito</h2>
 
+    <main>
+        <h2 class="titulo">Área do administrador</h2>
         <section id="login">
             <div class="card-default">
-                 <form>
-                    <h2 class="acesso">Login</h2>
-                    <input type="text" id="titulo" placeholder="Digite o usuário">
-                    <input type="password" id="texto" placeholder="Digite a senha de acesso">
-                    <a href="#">
-                        <button class="btn-default">Entrar</button>
-                    </a>
+                <h3 class="titulo-card-default">Login</h3>
+
+                <form class="form-default" method="post">
+                    <input class="text-box-default" type="text" id="usuario" placeholder="Digite o usuário">
+                    <input class="text-box-default" type="password" id="senha" placeholder="Digite a senha de acesso">
+
+                    <input class="btn-default" type="submit" value="Entrar">
                 </form>
             </div>
         </section>
     </main>
 
     <?php include('rodape.html'); ?>
-
-    
 </body>
 
 </html>

@@ -159,6 +159,7 @@ header li:hover {
         overflow-y: hidden;
         height: 0;
         transition: .5s;
+        padding-top: 20px;
     }
 
     #navbar.show .menu {

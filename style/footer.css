@@ -9,7 +9,7 @@ footer {
     padding-bottom: 40px;
     border-top: 2px solid rgba(80, 80, 80, 0.651);
     border-bottom: 2px solid rgba(44, 44, 44, 0.651);
-    height: 200px;
+    height: 250px;
 }
 
 footer ul {
@@ -121,7 +121,7 @@ footer .localizacao img {
     }
 
     footer {
-        height: 600px;
+        height: 500px;
         flex-direction: column;
     }
 }

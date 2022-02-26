@@ -17,15 +17,15 @@
     <main>
         <h2 class="titulo">TRABALHOS PUBLICADOS</h2>
         <section id="buscar">
-            <form>
+            <form class="form-default" method="get">
                 <label for="titulo">Título</label>
-                <input type="text" id="titulo" placeholder="Digite o título da publicação">
+                <input id="titulo" class="text-box-default" type="text" placeholder="Digite o título da publicação">
                 <label for="autor">Autor(es)</label>
-                <input type="text" id="autor" placeholder="Digite o nome de um ou mais autores">
+                <input id="autor" class="text-box-default" type="text" placeholder="Digite o nome de um ou mais autores">
                 <label for="palavra-chave">Palavra-chave</label>
-                <input type="text" id="palavra-chave" placeholder="Digite uma ou mais chaves">
+                <input id="palavra-chave" class="text-box-default" type="text" placeholder="Digite uma ou mais chaves">
                 <label for="ano-publicacao">Ano de publicação</label>
-                <input type="text" id="ano-publicacao" placeholder="Digite o ano da publicação">
+                <input id="ano-publicacao" class="text-box-default" type="text" placeholder="Digite o ano da publicação">
                 <button type="submit" id="buscar" class="btn-default">
                     <img src="images/bt_lupa.png" alt="Botão buscar">
                 </button>

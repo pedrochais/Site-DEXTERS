@@ -87,7 +87,7 @@
 section#conheca-dexters {
     display: inline-block;
     text-align: center;
-    padding: 5%;
+    padding: 30px 10%;
 }
 
 section#conheca-dexters p {
@@ -103,7 +103,7 @@ section#conheca-dexters p {
     flex-direction: column;
     align-items: center;
     background: #e2e2e2;
-    height: 650px;
+    height: 550px;
 }
 
 #atividades>.atividades {
