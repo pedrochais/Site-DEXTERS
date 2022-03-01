@@ -1,0 +1,143 @@
+section#cadastro form {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: auto;
+}
+
+section#cadastro label {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+section#cadastro input{
+    border: rgb(185, 185, 185) solid 2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+
+button#cadastro {
+    margin: 0 auto;
+    border: rgb(185, 185, 185) solid 2px;
+    background-color: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.25);
+}
+
+button#cadastro:active {
+    border: rgb(255, 255, 255);
+    background-color: rgb(185, 185, 185);
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 550px;
+    
+}
+
+.input-box textarea {
+    border: rgb(185, 185, 185) solid 2px;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+
+.input-box.error textarea {
+    border-color: red;
+}
+.input-box textarea::placeholder{
+    font-size: 18px;
+    font-family: sans-serif;
+    
+  }
+
+.input-box .descricao{
+    position: absolute;
+    top: 38px;
+    left: 45px;
+    color: #007bff;
+}
+.input-box.error .descricao{
+    color: red;
+}
+ .caracteres{
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    display: none;
+}
+
+
+.input-box.active .caracteres{
+    display: block;
+}
+.input-box.error .caracteres{
+    color: red;
+}
+
+.btn-upload{
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    height: 40px;
+    background-color: var(--azul);
+    color: white;
+    
+
+}
+
+.btn-default{
+    position: absolute;
+    left: 40%;
+}
+
+@media (max-width: 1280px) {
+    section#cadastro form {
+        width: 400px;
+        
+    } 
+    .input-box {
+        width: 400px;
+        transition: 1s;
+        
+    }
+    .btn-d{
+        position: absolute;
+        left: 45%;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+    section#cadastro form {
+        width: 300px;
+        transition: 1s;
+        
+    } 
+    .input-box {
+        width: 300px;
+        transition: 1s;
+        
+    }
+    .btn-d{
+        position: absolute;
+        left: 45%;
+    }
+
+}
+
+
