@@ -45,13 +45,12 @@
                         <label for="link">Link</label>
                         <input type="url" id="link" placeholder="Digite o Link">
                         <label for="arquivo">Arquivo</label>
-                        <a href="#">
-                             
-                            <button class="btn-upload">Selecione um arquivo</button>
-                        </a>
+                        <div class="file-upload">
+                            <input type="file" id="upload" style="display: none;">
+                            <label for="upload" class="btn-upload">Selecione o arquivo</label>
+                        </div>
                     </div>
                     <br>
-
                     <a href="#">
                         <button class="btn-default">Cadastrar</button>
                     </a>
