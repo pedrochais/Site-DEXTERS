@@ -51,6 +51,9 @@ button#cadastro:active {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
+    height:80px;
+    
+
 
 }
 
@@ -126,12 +129,13 @@ button#cadastro:active {
 @media (max-width: 1280px) {
     section#cadastro form {
         width: 400px;
-        transition: 1s;
+                
         
     } 
     .input-box {
         width: 400px;
         transition: 1s;
+        
         
     }
 
@@ -140,12 +144,14 @@ button#cadastro:active {
 @media (max-width: 640px) {
     section#cadastro form {
         width: 300px;
-        transition: 1s;
+
+        
         
     } 
     .input-box {
         width: 300px;
         transition: 1s;
+        
         
     }
 }

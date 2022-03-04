@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/ic_dexters.png">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/gerenciar_publicacoes.css">
-    <title>DEXTERS | Gerenciamento de Publicacoes</title>
+    <link rel="stylesheet" href="style/gerenciar_noticias.css">
+    <title>DEXTERS | Gerenciamento de Notícias</title>
 </head>
 <body>
     <?php include('cabecalho.html'); ?>
     
     <main>
-        <h2 class="titulo">Dados da Publicação</h2>
+        <h2 class="titulo">Dados da Notícia</h2>
         <section id="cadastro">
             <div class="cadastramento">
-                 <form class="form-default">
+                <form class="form-default">
                     <div class="form-default" method="get">
-                    <label for="nome">Título da Publicação/Artigo</label>
+                    <label for="nome">Título da Notícia</label>
                     <input type="text" id="nome" placeholder="Digite o título">
                     </div>
                     
@@ -31,16 +31,6 @@
                             <span class="max_num">/ 200</span>
                         </div>
                     </div>
-                    
-                    <div class="input-box" >
-                        <label for="resumo">Resumo</label>
-                        <textarea placeholder="Digite o resumo" maxlength="200"></textarea>
-                        <div class="caracteres">
-                            <span class="min_num">0</span>
-                            <span class="max_num">/ 200</span>
-                        </div>
-                    </div>
-
                     <div class="form-default" >
                         <label for="link">Link</label>
                         <input type="url" id="link" placeholder="Digite o Link">
@@ -50,6 +40,7 @@
                             <label for="upload" class="btn-upload">Selecione o arquivo</label>
                         </div>
                     </div>
+                    <br>
                     <br>
                     <a href="#">
                         <button class="btn-default">Cadastrar</button>
