@@ -47,9 +47,10 @@
                         <label for="arquivo">Arquivo</label>
                         <div class="file-upload">
                             <input type="file" id="upload" style="display: none;">
-                            <label for="upload" class="btn-upload">Selecione o arquivo</label>
+                            <label for="upload" class="btn-default">Selecione o arquivo</label>
                         </div>
                     </div>
+                    <br>
                     <br>
                     <a href="#">
                         <button class="btn-default">Cadastrar</button>

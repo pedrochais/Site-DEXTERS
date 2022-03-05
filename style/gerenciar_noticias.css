@@ -94,27 +94,12 @@ button#cadastro:active {
     color: red;
 }
 
-.btn-upload {
-    border-style: none;
-    border-radius: 5px;
-    padding: 5px 15px;
-    height: 40px;
-    background-color: var(--azul);
-    color: white;
-    transition: 0.5s;
-}
-
-.btn-upload:hover {
-    background-color: var(--btn-hover-azul);
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn-upload:active {
-    background-color: white;
-    border: 2px rgb(101, 144, 151) solid;
-    color: rgb(101, 144, 151);
-    transition: 0.1s;
+.file-upload .btn-default{
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:0%;
 }
 
 .btn-default{
