@@ -31,7 +31,7 @@
             </div>
         </section>
 
-        <h3 class="titulo">Mestrado</h3>
+        <h3 class="titulo">Doutorado</h3>
         <section id="integrantes-mestrado">
             <div class="card-integrante">
                 <div class="imagem"></div>
@@ -58,7 +58,7 @@
             </div>
         </section>
 
-        <h3 class="titulo">Doutorado</h3>
+        <h3 class="titulo">Mestrado</h3>
         <section id="integrantes-doutorado">
             <div class="card-integrante">
                 <div class="imagem"></div>
