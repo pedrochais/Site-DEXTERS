@@ -1,4 +1,10 @@
-/* Slider */
+/* TRANSIÇÕES */
+
+.fundo-banner img, .click-area.left, .click-area.right, .click-area:hover {
+    transition: 1s;
+}
+
+/* Slider
 
 .slider {
     display: block;
@@ -21,11 +27,7 @@
     vertical-align: top;
     overflow-y: hidden;
 }
-/* TRANSIÇÕES */
-
-.fundo-banner img {
-    transition: 1s;
-}
+*/
 
 /* BANNER */
 
@@ -50,9 +52,11 @@
     display: none;
     margin: 0;
     overflow: hidden;
+    align-items: center;
 }
 
 .active-slide {
+    animation: fade-in 1s;
     display: flex !important;
     flex-direction: column;
     justify-content: center;
@@ -74,12 +78,51 @@
 .tarja-banner {
     position: relative;
     top: -50%;
-    width: 100%;
-    animation: banner-stripe-intro 1s;
+    width: 1200px;
+    animation: banner-stripe-intro .5s;
     color: white;
     text-align: center;
-    background: rgba(111, 169, 179, 0.911);
     transition: 1s;
+    background-image: linear-gradient(to right,  rgba(255, 255, 255, 0), var(--azul) 20%, var(--azul) 80%,  rgba(255, 255, 255, 0) 100%);
+}
+
+.click-area {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    /*background-color: rgba(255, 255, 255, 0.25);*/
+    text-align: center;
+    align-items: center;
+}
+
+.click-area.left {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.50));
+    left: 0;
+}
+
+.click-area.right {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.50));
+    right: 0;
+}
+
+.click-area:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+.seta {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 20px);
+}
+
+.seta.left {
+    transform: rotate(180deg);
+    left: calc(50% - 20px);
+}
+
+.seta.right {
+    right: calc(50% - 20px);;
 }
 
 /* CONHEÇA O DEXTERS */
@@ -136,7 +179,7 @@ main>.atividades-desenvolvidas {
     width: 250px;
     margin: 0 10px;
     border-radius: 6px;
-    background: linear-gradient(to bottom, var(--azul), white);
+    background: linear-gradient(to bottom, var(--azul), rgba(122, 204, 218, 0.527));
     box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.14);
     transition: .2s;
 }
@@ -149,7 +192,7 @@ main>.atividades-desenvolvidas {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
     width: 100%;
     height: 50px;
     font-size: 20px;
@@ -159,6 +202,7 @@ main>.atividades-desenvolvidas {
     top: 0;
     left: 0;
     text-align: center;
+    padding: 5px 0;
 }
 
 #atividades>.atividades>.images-atividades>.card-atividade-1:before {
@@ -253,9 +297,13 @@ main>.atividades-desenvolvidas {
         width: 140%;
     }
 
+    .tarja-banner {
+        width: 800px;
+    }
+
     /* TRANSIÇÕES */
 
-    .fundo-banner img {
+    .fundo-banner img, .tarja-banner {
         transition: 1s;
     }
 }
@@ -311,6 +359,17 @@ main>.atividades-desenvolvidas {
     }
 }
 
+@media (max-width: 850px){
+    .tarja-banner {
+        width: 400px;
+    }
+
+    /* TRANSIÇÕES */
+    .tarja-banner {
+        transition: 1s;
+    }
+}
+
 @media (max-width: 795px) {
     section#banner {
         height: 200px;
@@ -356,9 +415,11 @@ main>.atividades-desenvolvidas {
         width: 180%;
     }
 
+    
+
     /* TRANSIÇÕES */
 
-    .fundo-banner img {
+    .fundo-banner img, .tarja-banner {
         transition: 1s;
     }
 }
@@ -385,9 +446,16 @@ main>.atividades-desenvolvidas {
         display: none;
     }
 
+    .tarja-banner {
+        width: 250px;
+    }
+
+    .click-area {
+        width: 50px;
+    }
     /* TRANSIÇÕES */
 
-    #banner, .fundo-banner img {
+    #banner, .fundo-banner img, .click-area {
         transition: 1s;
     }
 }
@@ -433,12 +501,12 @@ main>.atividades-desenvolvidas {
 @keyframes banner-stripe-intro {
     from {
         opacity: 0;
-        transform: translate3d(0, -25px, 0);
+        scale: .75;
     }
 
     to {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
+        scale: 1;
     }
 }
 

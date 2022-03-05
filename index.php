@@ -15,26 +15,12 @@
     <?php include('cabecalho.html'); ?>
 
     <main>
-        <!--<ul class="slider">
-            <li>
-                <img src="images/bg_banner_md.jpg">
-            </li>
-            <li>
-                <img src="images/bg_banner_md.jpg">
-            </li>
-            <li>
-                <img src="images/bg_banner_md.jpg">
-            </li>
-        </ul>-->
-
         <section id="banner">
-            <i class="fa-solid fa-arrow-left seta" id="seta-anterior"></i>
-
-
+            
             <div class="banner-info active-slide" id="slide1">    
 
                 <div class="fundo-banner">
-                    <img src="images/bg_banner_md.jpg" alt="Fundo banner DEXTERS">
+                    <img style="margin-top: -100px;" src="images/bg_banner_4.jpg" alt="Fundo banner DEXTERS">
                 </div>
 
                 <div class="tarja-banner">
@@ -44,9 +30,9 @@
                 
             </div>
 
-            <div class="banner-info" id="slide2">
+            <div class="banner-info" id="slide2" >
                 <div class="fundo-banner">
-                    <img src="images/wp_software_engineering.png" alt="Fundo banner DEXTERS">
+                    <img style="margin-top: -100px;" src="images/bg_banner_3.jpg" alt="Fundo banner DEXTERS">
                 </div>
 
                 <div class="tarja-banner">
@@ -54,10 +40,10 @@
                     <p>O nosso objetivo é ser o melhor laboratório de Engenharia de Software do Brasil</p>
                 </div>
             </div>
-
+            
             <div class="banner-info" id="slide3">
                 <div class="fundo-banner">
-                    <img src="images/lg_dexters_header.png" alt="Fundo banner DEXTERS">
+                    <img src="images/bg_banner_1.jpg" alt="Fundo banner DEXTERS">
                 </div>
 
                 <div class="tarja-banner">
@@ -65,8 +51,15 @@
                     <p>O nosso objetivo é ser o melhor laboratório de Engenharia de Software do Brasil</p>
                 </div>
             </div>
+            
 
-            <i class="fa-solid fa-arrow-right seta" id="seta-proximo"></i>
+            <div class="click-area left" id="slide-anterior">
+                <img class="seta left" id="slide-anterior" src="images/bt_seta_banner.png" alt="Seta esquerda">
+            </div>
+            
+            <div class="click-area right" id="slide-proximo">
+                <img class="seta right" id="slide-proximo" src="images/bt_seta_banner.png" alt="Seta esquerda">
+            </div>
         </section>
 
         <div class="atividades-desenvolvidas">

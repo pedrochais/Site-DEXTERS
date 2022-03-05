@@ -3,6 +3,7 @@ function home() {
     let numSlideAtual = 1;
     const totalSlides = slides.length;
     const seta_slider = document.querySelectorAll(".seta");
+    const area_click_slider = document.querySelectorAll(".click-area");
     const areaDoTexto = document.querySelector('#atividades > .texto-area');
     const areas = document.querySelector('.images-atividades');
     let tituloAnterior = `Engenharia de Software`;
@@ -106,7 +107,7 @@ function home() {
 
         // Verifica qual seta foi clicada
         switch(setaClicada.id) {
-            case 'seta-anterior':
+            case 'slide-anterior':
                 if(numSlideAtual === 1) {
                     numSlideAtual = totalSlides;
                 } else {
@@ -114,7 +115,7 @@ function home() {
                 }
                 sentidoMudanca = 'esquerda';
                 break;
-            case 'seta-proximo':
+            case 'slide-proximo':
                 if(numSlideAtual === totalSlides) {
                     numSlideAtual = 1;
                 } else {
@@ -158,6 +159,9 @@ function home() {
     areas.addEventListener('mouseover', exibeTexto);
     areas.addEventListener('click', exibeTexto);
     seta_slider.forEach(function (elemento) {
+        elemento.addEventListener('click', passaSlide);
+    });
+    area_click_slider.forEach(function (elemento) {
         elemento.addEventListener('click', passaSlide);
     });
     //areas.addEventListener('mouseout', removeTexto);
