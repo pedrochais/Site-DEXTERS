@@ -1,8 +1,3 @@
-.form-default {
-    width: 300px;
-
-}
-
 .card-default {
     width: min-content;
    
@@ -11,13 +6,7 @@
 .btn-default{
 	margin: 15px;
 	height: 50px;
+    width: 250px;
 	
-}
-
-@media (max-width: 1280px){
-    .form-default {
-        width: 250px;
-    }
-   
 }
 

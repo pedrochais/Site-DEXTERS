@@ -18,11 +18,17 @@
         <h2 class="titulo">Gerenciamento</h2>
         <section id="login">
             <div class="card-default">
-                <form class="form-default" method="post">
-                    <input class="btn-default" type="submit" value="Gerenciamento de Integrantes">
-                    <input class="btn-default" type="submit" value="Gerenciamento de Publicações">
-                    <input class="btn-default" type="submit" value="Gerenciamento de Notícias">
-                </form>
+                <div class="btn-novo">
+                    <a href="gerenciar_integrantes.php">
+                        <input class="btn-default" type="submit" value="Gerenciamento de Integrantes">
+                    </a>
+                    <a href="gerenciar_publicacoes.php">
+                        <input class="btn-default" type="submit" value="Gerenciamento de Publicações">
+                    </a>
+                    <a href="gerenciar_noticias.php">
+                        <input class="btn-default" type="submit" value="Gerenciamento de Notícias">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
