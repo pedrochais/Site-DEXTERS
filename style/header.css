@@ -73,7 +73,7 @@ ul>.dropdown-sobre-li>.dropdown-sobre>a:hover {
 
 header .logo {
     align-items: center;
-    width: 25%;
+    width: 10%;
     min-width: 220px;
     max-width: 300px;
 }
@@ -87,6 +87,11 @@ img#lg-dexters-navbar {
 }
 
 /* NAVBAR */
+
+.menu {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 #navbar {
     margin: auto;
@@ -116,8 +121,8 @@ header li:hover {
 
 #btn-mobile {
     display: none;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -130,7 +135,6 @@ header li:hover {
 @media (max-width: 1280px) {
     header {
         width: 100%;
-        height: 70px;
         position: fixed;
         top: 0;
     }
@@ -152,7 +156,7 @@ header li:hover {
         display: block;
         position: fixed;
         width: 100%;
-        top: 60px;
+        top: 65px;
         right: 0;
         background-color: #eaf0f8;
         visibility: hidden;
