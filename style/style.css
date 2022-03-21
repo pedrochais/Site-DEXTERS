@@ -131,6 +131,13 @@ input.text-box-default {
     margin-bottom: 10px;
 }
 
+/* UL */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {

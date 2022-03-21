@@ -4,6 +4,10 @@
     transition: 1s;
 }
 
+.paginacao a, .paginacao a:hover {
+    transition: .5s;
+}
+
 /* FORMULÁRIO DE BUSCA */
 
 button#buscar {
@@ -71,6 +75,42 @@ button#buscar:active {
     width: 40%;
 }
 
+/* PAINEL DE PAGINACAO */
+
+.paginacao {
+    margin-top: 40px;
+}
+
+.paginacao ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.paginacao li {
+    width: 50px;
+    height: 50px;
+    margin: 0 2.5px;
+}
+
+.paginacao a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(99, 99, 99);
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.paginacao a:hover {
+    background-color: rgb(204, 204, 204);
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
@@ -94,7 +134,7 @@ button#buscar:active {
     .descricao, .compartilhar, .autores {
         transition: 1s;
     }
-    
+
 }
 
 @media (max-width: 800px) {
