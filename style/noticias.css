@@ -40,15 +40,6 @@ p {
     text-align: justify;
 }
 
-.btn-detalhes {
-    height: 35px;
-}
-
-.btn-novo {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .noticia-ano {
     display: flex;
     flex-direction: row;
@@ -56,7 +47,12 @@ p {
 }
 
 a.right {
-    margin-left: calc(100% - 130px);
+    margin-left: calc(100% - 185px);
+}
+
+a.right .btn-default{
+    width: 120px;
+
 }
 
 .data {
