@@ -2,11 +2,14 @@
 require_once('script/conexao.php');
 
 //Verifica existência da variável 'pagina_atual'
-$current_page = $_GET['pagina_atual'];
-if (!isset($current_page)) $current_page = 1;
+if (!empty($_GET['pagina_atual'])) {
+    $current_page = $_GET['pagina_atual'];
+}else{
+    $current_page = 1;
+}
 
 //Definição da URL para paginação dos resultados da busca
-if (isset($_GET['titulo'])) $url = "titulo={$_GET['titulo']}&palavra-chave={$_GET['palavra_chave']}&";
+if (!empty($_GET['titulo'])) $url = "titulo={$_GET['titulo']}&palavra-chave={$_GET['palavra_chave']}&";
 else $url = '';
 
 //Número de itens por página
@@ -16,8 +19,12 @@ $items_per_page = 5;
 $start_item = $items_per_page * ($current_page - 1);
 
 //Obtendo valores dos inputs através do GET
-$titulo = '%' . $_GET['titulo'] . '%';
-$palavra_chave = '%' . $_GET['palavra_chave'] . '%';
+if(!empty($_GET['titulo'])){
+    $titulo = '%' . $_GET['titulo'] . '%';
+    $palavra_chave = '%' . $_GET['palavra_chave'] . '%';
+}else{
+    $titulo = $palavra_chave = '%%';
+}
 
 //Obtendo a quantidade total de linhas que é retornada com base nos parâmetros passados
 $instruction = "

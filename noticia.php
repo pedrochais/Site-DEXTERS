@@ -1,7 +1,7 @@
 <?php
 require_once('script/conexao.php');
 
-if(!isset($_GET['id_noticia']) || !isset($_GET['titulo'])){
+if(empty($_GET['id_noticia']) || empty($_GET['titulo'])){
     header('Location: noticias.php');
 }
 
@@ -18,8 +18,7 @@ $item = $statement->fetch(PDO::FETCH_ASSOC);
 
 if(empty($item)){
     header('Location: noticias.php');
-} 
-
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt">
