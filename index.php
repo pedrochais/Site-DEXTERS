@@ -16,7 +16,6 @@
 
     <main>
         <section id="banner">
-            
             <div class="banner-info active-slide" id="slide1">    
 
                 <div class="fundo-banner">
@@ -52,7 +51,6 @@
                 </div>
             </div>
             
-
             <div class="click-area left" id="slide-anterior">
                 <img class="seta left" id="slide-anterior" src="images/bt_seta_banner.png" alt="Seta esquerda">
             </div>
