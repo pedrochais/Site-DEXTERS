@@ -8,5 +8,4 @@ try{
 }catch(PDO $exception){
     echo $exception;
 }
-
 ?>

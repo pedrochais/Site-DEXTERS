@@ -1,12 +1,12 @@
-/*
-const body = document.querySelector('body')
-const publicacoes = document.getElementById('publicacoes')
-const URL = document.URL
+const breakpoint = document.getElementById('breakpoint')
+const url = document.URL
 
-function verificar(){
-    //alert(publicacoes.scrollHeight)
-    window.scroll(0, 1300)
-    
+function scroll_to_hr(){
+    if(url.includes('buscar') || (url.includes('pagina_atual'))){
+        window.scroll({
+            top: breakpoint.offsetTop,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
 }
-
-//body.addEventListener('onload', verificar);
