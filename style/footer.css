@@ -75,6 +75,10 @@ footer .localizacao img {
     width: 183px;
 }
 
+.logo_2 a {
+    text-decoration: 0;
+}
+
 #logo-ufma {
     width: 78px;
 }
