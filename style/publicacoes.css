@@ -91,44 +91,6 @@ button#buscar:active {
     font-weight: bold;
 }
 
-/* PAINEL DE PAGINACAO */
-
-.paginacao {
-    margin-top: 40px;
-}
-
-.paginacao ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-.paginacao li {
-    margin: 2.5px 2.5px;
-}
-
-.paginacao a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(99, 99, 99);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    border: 2px solid grey;
-    border-radius: 3px;
-}
-
-.active {
-    color: white;
-    background-color: rgb(176, 176, 176);
-}
-
-.paginacao a:hover {
-    background-color: rgb(204, 204, 204);
-}
-
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {

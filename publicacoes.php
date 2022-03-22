@@ -60,7 +60,6 @@ $pages = ceil($total_rows / $items_per_page);
 
 //Caso 'current_page' contiver um valor inválido o usuário será redirecionado para a última página válida
 if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=$pages");
-
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -75,7 +74,7 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
     <title>DEXTERS | Publicações</title>
 </head>
 
-<body onload="scroll_to_hr()">
+<body onload="scrollToHr()">
     <?php include('cabecalho.html'); ?>
 
     <main>
@@ -100,6 +99,7 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
         <hr id="breakpoint">
         <section id="publicacoes" tabindex="-1">
             <?php
+            
             foreach ($items as $key => $value) {
             ?>
                 <div class="card-default">
@@ -176,8 +176,7 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
     </main>
 
     <?php include('rodape.html'); ?>
-
-    <script src="js/publicacoes.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

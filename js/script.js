@@ -1,7 +1,7 @@
 const breakpoint = document.getElementById('breakpoint')
 const url = document.URL
 
-function scroll_to_hr(){
+function scrollToHr(){
     if(url.includes('buscar') || (url.includes('pagina_atual'))){
         window.scroll({
             top: breakpoint.offsetTop,

@@ -1,3 +1,26 @@
+<?php
+require_once('script/conexao.php');
+
+if(!isset($_GET['id_noticia']) || !isset($_GET['titulo'])){
+    header('Location: noticias.php');
+}
+
+$id = $_GET['id_noticia'];
+
+$instruction = "
+SELECT * FROM `tb_noticias` WHERE id = :id;
+";
+
+$statement = $database->prepare($instruction);
+$statement->bindValue(':id', $id);
+$statement->execute();
+$item = $statement->fetch(PDO::FETCH_ASSOC);
+
+if(empty($item)){
+    header('Location: noticias.php');
+} 
+
+?>
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -17,25 +40,21 @@
     <main>
         <h2 class="titulo">NOTÍCIA</h2>
         <section id="cabecalho-noticia">
-            <h3 class="titulo-noticia">Título da notícia</h3>
+            <h3 class="titulo-noticia"> <?= $item['titulo'] ?> </h3>
             <div class="infos">
-                <span id="autor"><b>Autor(es):</b> Nome Sobrenome, Nome Sobrenome, Nome Sobrenome</span>
-                <span id="data"><b>Data de publicação:</b> 01/01/2001</span>
-                <span id="categoria"><b>Categoria:</b> </span>
+                <span id="autor"><b>Autor(es):</b> <?= $item['autor'] ?> </span>
+                <span id="data"><b>Data de publicação:</b> <?= $item['data'] ?> </span>
+                <span id="categoria"><b>Categoria:</b> <?= $item['categoria'] ?> </span>
             </div>
         </section>
         <hr>
         <section id="conteudo">
             <div class="imagem"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed semper leo, sed viverra metus. Fusce lobortis nisl vehicula mauris fermentum, nec pretium quam pellentesque. Praesent tempus lectus sed tellus ornare, et sagittis arcu condimentum. Nullam eget mi aliquam, tristique purus et, vestibulum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae nisi sem. Aenean consectetur scelerisque eros, quis semper lorem vestibulum et.</p>
-            <p>Morbi lacinia et est eu cursus. Integer eleifend a lectus sed consequat. Ut quam mauris, aliquet ut interdum quis, scelerisque et ipsum. Sed fringilla vitae enim ut consequat. Phasellus at diam sed ante hendrerit commodo. Aenean accumsan euismod ornare. Cras suscipit mauris nulla, ut posuere sapien maximus nec. Nulla vel tincidunt massa.</p>
-            <p>Morbi lacinia et est eu cursus. Integer eleifend a lectus sed consequat. Ut quam mauris, aliquet ut interdum quis, scelerisque et ipsum. Sed fringilla vitae enim ut consequat. Phasellus at diam sed ante hendrerit commodo. Aenean accumsan euismod ornare. Cras suscipit mauris nulla, ut posuere sapien maximus nec. Nulla vel tincidunt massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed semper leo, sed viverra metus. Fusce lobortis nisl vehicula mauris fermentum, nec pretium quam pellentesque. Praesent tempus lectus sed tellus ornare, et sagittis arcu condimentum. Nullam eget mi aliquam, tristique purus et, vestibulum massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae nisi sem. Aenean consectetur scelerisque eros, quis semper lorem vestibulum et.</p>
+            <p><?= $item['conteudo'] ?></p>
         </section>
     </main>
 
     <?php include('rodape.html'); ?>
-
-
 </body>
 
 </html>

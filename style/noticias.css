@@ -49,6 +49,22 @@ p {
     justify-content: flex-end;
 }
 
+.noticia-ano {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a.right {
+    margin-left: calc(100% - 130px);
+}
+
+.data {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
