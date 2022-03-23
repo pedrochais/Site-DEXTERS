@@ -39,10 +39,6 @@ h3.titulo {
     margin: 20px;
 }
 
-.card-integrante:hover {
-    transform: scale(1.01);
-}
-
 .card-integrante .imagem {
     background-color: rgb(189, 189, 189);
     width: 215px;

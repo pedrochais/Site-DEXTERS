@@ -53,12 +53,17 @@ button#buscar:active {
 }
 
 .descricao {
+    display: flex;
+    align-items: center;
     margin: 0;
     width: 55%;
     text-align: justify;
 }
 
 .compartilhar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -72,6 +77,8 @@ button#buscar:active {
 }
 
 .autores {
+    display: flex;
+    align-items: center;
     width: 40%;
 }
 

@@ -4,31 +4,6 @@
     transition: 1s;
 }
 
-/* Slider
-
-.slider {
-    display: block;
-    height: 300px;
-    width: 100%;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-}
-
-.slider > li {
-    list-style: none;
-    position: absolute;
-}
-
-.slider > li > img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-    overflow-y: hidden;
-}
-*/
-
 /* BANNER */
 
 #banner {
@@ -80,7 +55,7 @@
     top: -50%;
     width: 1200px;
     animation: banner-stripe-intro .5s;
-    color: white;
+    color: rgb(250, 250, 250);
     text-align: center;
     transition: 1s;
     background-image: linear-gradient(to right,  rgba(255, 255, 255, 0), var(--azul) 20%, var(--azul) 80%,  rgba(255, 255, 255, 0) 100%);
