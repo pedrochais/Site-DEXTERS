@@ -126,35 +126,10 @@ function home() {
         }
         const elementoNovo = document.querySelector(`#slide${numSlideAtual}`);
 
-        // Animação da mudança de slide
-        //animacaoSlider(sentidoMudanca, slideAtivo, elementoNovo);
-
         // Muda o slide atual
         slideAtivo.classList.remove("active-slide");
         elementoNovo.classList.add("active-slide");
     }
-
-    /*function animacaoSlider(sentido, slideAtual, slideNovo) {
-        switch(sentido) {
-            case 'esquerda':
-                console.log(slideAtual);
-                console.log(slideNovo);
-                slideAtual.animate(
-                    [
-                        //Keyframes
-                        {transform: 'translate(0px,0px)'},
-                        {transform: 'translate(100px,0px)'}
-                    ], 
-                    {
-                        duration: 1000
-                        //iterations: 1
-                    }
-                );
-                break;
-            case 'direita':
-                break;
-        }
-    }*/
 
     areas.addEventListener('mouseover', exibeTexto);
     areas.addEventListener('click', exibeTexto);
@@ -164,11 +139,6 @@ function home() {
     area_click_slider.forEach(function (elemento) {
         elemento.addEventListener('click', passaSlide);
     });
-    //areas.addEventListener('mouseout', removeTexto);
-    /*onsole.log(areas);
-    console.log(areaDoTexto);
-    console.log(document.getElementById('atividades'));
-    console.log(areas.className);*/
 }
 
 home();

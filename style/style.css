@@ -131,6 +131,10 @@ input.text-box-default {
     margin-bottom: 10px;
 }
 
+.card-default h4 {
+    margin-bottom: 0;
+}
+
 /* PAGINAÇÃO */
 
 .paginacao {

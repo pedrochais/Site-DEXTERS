@@ -40,17 +40,6 @@
                 </div>
             </div>
             
-            <div class="banner-info" id="slide3">
-                <div class="fundo-banner">
-                    <img src="images/bg_banner_1.jpg" alt="Fundo banner DEXTERS">
-                </div>
-
-                <div class="tarja-banner">
-                    <h3>DEXTERS um Espaço de Pesquisa e Inovação em Engenharia de Software</h3>
-                    <p>O nosso objetivo é ser o melhor laboratório de Engenharia de Software do Brasil</p>
-                </div>
-            </div>
-            
             <div class="click-area left" id="slide-anterior">
                 <img class="seta left" id="slide-anterior" src="images/bt_seta_banner.png" alt="Seta esquerda">
             </div>
