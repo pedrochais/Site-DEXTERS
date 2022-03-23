@@ -1,3 +1,27 @@
+<?php
+require_once('script/conexao.php');
+
+$orientadores_ativos = $database->query("
+SELECT * FROM `tb_integrantes` WHERE orientador = 1 AND ativo = 1;
+")->fetchAll(PDO::FETCH_ASSOC);
+
+$orientandos_doutorado_ativos = $database->query("
+SELECT * FROM `tb_integrantes` WHERE orientador = 0 AND ativo = 1 AND formacao = 'Doutorado';
+")->fetchAll(PDO::FETCH_ASSOC);
+
+$orientandos_mestrado_ativos = $database->query("
+SELECT * FROM `tb_integrantes` WHERE orientador = 0 AND ativo = 1 AND formacao = 'Mestrado';
+")->fetchAll(PDO::FETCH_ASSOC);
+
+$orientandos_graduando_ativos = $database->query("
+SELECT * FROM `tb_integrantes` WHERE orientador = 0 AND ativo = 1 AND formacao = 'Graduando';
+")->fetchAll(PDO::FETCH_ASSOC);
+
+$inativos = $database->query("
+SELECT * FROM `tb_integrantes` WHERE ativo = 0;
+")->fetchAll(PDO::FETCH_ASSOC);
+
+?>
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -11,139 +35,125 @@
     <title>DEXTERS | Integrantes</title>
 </head>
 
-<body>
+<body onscroll="showButtonReturn()">
     <?php include('cabecalho.html'); ?>
 
     <main>
         <h2 class="titulo">INTEGRANTES</h2>
+        <span class="breakpoint"></span>
         <h3 class="titulo">Líderes</h3>
         <section id="integrantes-lideres">
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+            <?php
+            foreach ($orientadores_ativos as $key => $value) {
+            ?>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+                <div class="card-integrante">
+                    <div class="imagem"><img src="images/integrantes/<?= $value['foto'] ?>" alt=""></div>
+                    <h4><?= $value['primeiro_nome'] ?> <?= $value['ultimo_nome'] ?></h4>
+                    <button onclick="openModal('<?= $value['nome'] ?>', '<?= $value['formacao'] ?>', '<?= $value['lattes'] ?>', '<?= $value['contato'] ?>')" class="btn-default">Detalhes</button>
+
+                </div>
+
+            <?php
+            } // ENDFOREACH
+            ?>
         </section>
 
-        <h3 class="titulo">Doutorado</h3>
-        <section id="integrantes-mestrado">
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+        <?php
+        if (!empty($orientandos_doutorado_ativos)) {
+        ?>
+            <span class="breakpoint"></span>
+            <h3 class="titulo">Doutorado</h3>
+            <section id="integrantes-doutorado">
+                <?php
+                foreach ($orientandos_doutorado_ativos as $key => $value) {
+                ?>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+                    <div class="card-integrante">
+                        <div class="imagem"><img src="images/integrantes/<?= $value['foto'] ?>" alt=""></div>
+                        <h4><?= $value['primeiro_nome'] ?> <?= $value['ultimo_nome'] ?></h4>
+                        <button onclick="openModal('<?= $value['nome'] ?>', '<?= $value['formacao'] ?>', '<?= $value['lattes'] ?>', '<?= $value['contato'] ?>')" class="btn-default">Detalhes</button>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+                    </div>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
-        </section>
+                <?php
+                } // ENDFOREACH
+                ?>
+            </section>
 
-        <h3 class="titulo">Mestrado</h3>
-        <section id="integrantes-doutorado">
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+        <?php
+        } // ENDIF
+        ?>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+        <?php
+        if (!empty($orientandos_mestrado_ativos)) {
+        ?>
+            <span class="breakpoint"></span>
+            <h3 class="titulo">Mestrado</h3>
+            <section id="integrantes-mestrado">
+                <?php
+                foreach ($orientandos_mestrado_ativos as $key => $value) {
+                ?>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+                    <div class="card-integrante">
+                        <div class="imagem"><img src="images/integrantes/<?= $value['foto'] ?>" alt=""></div>
+                        <h4><?= $value['primeiro_nome'] ?> <?= $value['ultimo_nome'] ?></h4>
+                        <button onclick="openModal('<?= $value['nome'] ?>', '<?= $value['formacao'] ?>', '<?= $value['lattes'] ?>', '<?= $value['contato'] ?>')" class="btn-default">Detalhes</button>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
-        </section>
+                    </div>
 
-        <h3 class="titulo">Graduação</h3>
-        <section id="integrantes-graduacao">
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+                <?php
+                } // ENDFOREACH
+                ?>
+            </section>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+        <?php
+        } // ENDIF
+        ?>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+        <?php
+        if (!empty($orientandos_graduando_ativos)) {
+        ?>
+            <span class="breakpoint"></span>
+            <h3 class="titulo">Graduação</h3>
+            <section id="integrantes-graduacao">
+                <?php
+                foreach ($orientandos_graduando_ativos as $key => $value) {
+                ?>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
-        </section>
+                    <div class="card-integrante">
+                        <div class="imagem"><img src="images/integrantes/<?= $value['foto'] ?>" alt=""></div>
+                        <h4><?= $value['primeiro_nome'] ?> <?= $value['ultimo_nome'] ?></h4>
+                        <button onclick="openModal('<?= $value['nome'] ?>', '<?= $value['formacao'] ?>', '<?= $value['lattes'] ?>', '<?= $value['contato'] ?>')" class="btn-default">Detalhes</button>
+
+                    </div>
+
+                <?php
+                } // ENDFOREACH
+                ?>
+            </section>
+
+        <?php
+        } // ENDIF
+        ?>
 
         <h2 class="titulo">EX-INTEGRANTES</h2>
         <section id="ex-integrantes">
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+            <?php
+            foreach ($inativos as $key => $value) {
+            ?>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+                <div class="card-integrante">
+                    <div class="imagem"><img src="images/integrantes/<?= $value['foto'] ?>" alt=""></div>
+                    <h4><?= $value['primeiro_nome'] ?> <?= $value['ultimo_nome'] ?></h4>
+                    <button onclick="openModal('<?= $value['nome'] ?>', '<?= $value['formacao'] ?>', '<?= $value['lattes'] ?>', '<?= $value['contato'] ?>')" class="btn-default">Detalhes</button>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+                </div>
 
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
-
-            <div class="card-integrante">
-                <div class="imagem"></div>
-                <h4>Nome Sobrenome</h4>
-                <button onclick="openModal()" class="btn-default">Detalhes</button>
-            </div>
+            <?php
+            } // ENDFOREACH
+            ?>
 
         </section>
     </main>
@@ -157,22 +167,27 @@
             <div id="infos">
                 <p>
                     <span class="info">Nome:</span>
-                    <span>Pedro Rocha Boucinhas Pacheco</span>
+                    <span id="nome"></span>
                 </p>
                 <p>
-                    <span class="info">Cargo:</span>
-                    <span>Estudante</span>
+                    <span class="info">Formação:</span>
+                    <span id="formacao"></span>
                 </p>
                 <p>
                     <span class="info">Lattes:</span>
-                    <span><a href="https://lattes.cnpq.br/6144884845294658">Clique aqui para acessar</a></span>
+                    <span><a id="lattes" href="">Clique aqui para acessar</a></span>
                 </p>
                 <p>
                     <span class="info">Contato:</span>
-                    <span>pedro.pacheco@discente.ufma.br</span>
+                    <span id="contato"></span>
                 </p>
             </div>
         </div>
+    </div>
+
+    <!-- RETORNAR AO TOPO -->
+    <div onclick="returnToTop()" id="btn-return-to-top">
+        <span>➜</span>
     </div>
 
     <script src="js/integrantes.js"></script>

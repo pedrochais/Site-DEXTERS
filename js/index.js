@@ -2,7 +2,7 @@ function home() {
     const slides = document.querySelectorAll(".banner-info");
     let numSlideAtual = 1;
     const totalSlides = slides.length;
-    const seta_slider = document.querySelectorAll(".seta");
+    const seta_slider = document.querySelectorAll(".seta.right");
     const area_click_slider = document.querySelectorAll(".click-area");
     const areaDoTexto = document.querySelector('#atividades > .texto-area');
     const areas = document.querySelector('.images-atividades');
@@ -106,9 +106,9 @@ function home() {
         const setaClicada = evento.target;
 
         // Verifica qual seta foi clicada
-        switch(setaClicada.id) {
+        switch (setaClicada.id) {
             case 'slide-anterior':
-                if(numSlideAtual === 1) {
+                if (numSlideAtual === 1) {
                     numSlideAtual = totalSlides;
                 } else {
                     numSlideAtual--;
@@ -116,7 +116,7 @@ function home() {
                 sentidoMudanca = 'esquerda';
                 break;
             case 'slide-proximo':
-                if(numSlideAtual === totalSlides) {
+                if (numSlideAtual === totalSlides) {
                     numSlideAtual = 1;
                 } else {
                     numSlideAtual++;
@@ -133,9 +133,11 @@ function home() {
 
     areas.addEventListener('mouseover', exibeTexto);
     areas.addEventListener('click', exibeTexto);
+    /*
     seta_slider.forEach(function (elemento) {
-        elemento.addEventListener('click', passaSlide);
+        elemento.addEventListener('click', teste);
     });
+    */
     area_click_slider.forEach(function (elemento) {
         elemento.addEventListener('click', passaSlide);
     });
