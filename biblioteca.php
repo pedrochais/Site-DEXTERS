@@ -8,7 +8,7 @@
     <link rel="icon" href="images/ic_dexters.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/biblioteca.css">
-    <title>DEXTERS | Biblioteca</title>
+    <title>Biblioteca | DEXTERS</title>
 </head>
 
 <body>

@@ -32,7 +32,7 @@ SELECT * FROM `tb_integrantes` WHERE ativo = 0;
     <link rel="icon" href="images/ic_dexters.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/integrantes.css">
-    <title>DEXTERS | Integrantes</title>
+    <title>Integrantes | DEXTERS</title>
 </head>
 
 <body onscroll="showButtonReturn()">

@@ -8,7 +8,7 @@
     <link rel="icon" href="images/ic_dexters.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/eventos.css">
-    <title>DEXTERS | Eventos</title>
+    <title>Eventos | DEXTERS</title>
 </head>
 
 <body>

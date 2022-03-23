@@ -8,7 +8,7 @@
     <link rel="icon" href="images/ic_dexters.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/gerenciar.css">
-    <title>DEXTERS | Login</title>
+    <title>Login | DEXTERS</title>
 </head>
 
 <body>

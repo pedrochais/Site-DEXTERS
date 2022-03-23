@@ -76,7 +76,7 @@ if ($current_page > $pages) header("Location: noticias.php?$url pagina_atual=$pa
     <link rel="icon" href="images/ic_dexters.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/noticias.css">
-    <title>DEXTERS | Notícias</title>
+    <title>Notícias | DEXTERS</title>
 </head>
 
 <body onload="scrollToHr()">

@@ -8,7 +8,7 @@
     <link rel="icon" href="images/ic_dexters.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/gerenciar_noticias.css">
-    <title>DEXTERS | Gerenciamento de Notícias</title>
+    <title>Gerenciamento de Notícias | DEXTERS</title>
 </head>
 <body>
     <?php include('cabecalho.html'); ?>

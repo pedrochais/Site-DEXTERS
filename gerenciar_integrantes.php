@@ -8,7 +8,7 @@
     <link rel="icon" href="images/ic_dexters.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/gerenciar_integrantes.css">
-    <title>DEXTERS | Gerenciamento de Integrantes</title>
+    <title>Gerenciamento de Integrantes | DEXTERS</title>
 </head>
 <body>
     <?php include('cabecalho.html'); ?>
