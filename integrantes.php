@@ -21,13 +21,13 @@
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
         </section>
 
@@ -36,25 +36,25 @@
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
         </section>
 
@@ -63,25 +63,25 @@
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
         </section>
 
@@ -90,25 +90,25 @@
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
         </section>
 
@@ -118,31 +118,31 @@
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
             <div class="card-integrante">
                 <div class="imagem"></div>
                 <h4>Nome Sobrenome</h4>
-                <button onclick="toggleModal()" class="btn-default">Detalhes</button>
+                <button onclick="openModal()" class="btn-default">Detalhes</button>
             </div>
 
         </section>
@@ -153,7 +153,7 @@
     <!-- MODAL -->
     <div id="modal-integrantes" class="modal-background">
         <div class="modal">
-            <button onclick="toggleModal()" class="btn-fechar">x</button>
+            <button class="btn-fechar">x</button>
             <div id="infos">
                 <p>
                     <span class="info">Nome:</span>
