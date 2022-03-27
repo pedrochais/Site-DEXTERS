@@ -12,6 +12,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
     max-width: 900px;
+    border-radius: 10px;
 }
 
 .card-evento img {
