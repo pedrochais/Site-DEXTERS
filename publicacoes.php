@@ -19,7 +19,7 @@ $items_per_page = 5;
 $start_item = $items_per_page * ($current_page - 1);
 
 //Obtendo valores dos inputs através do GET
-if (!empty($_GET['titulo'])) {
+if (!empty($_GET['titulo']) || !empty($_GET['autores']) || !empty($_GET['palavra-chave']) || !empty($_GET['ano'])) {
     $titulo = '%' . $_GET['titulo'] . '%';
     $autores = '%' . $_GET['autores'] . '%';
     $palavra_chave = '%' . $_GET['palavra-chave'] . '%';
@@ -34,6 +34,7 @@ SELECT * FROM `tb_publicacoes` WHERE (`titulo` LIKE :titulo)
                                 AND (`autores` LIKE :autores) 
                                 AND (`ano` LIKE :ano) 
 ";
+
 $statement = $database->prepare($instruction);
 $statement->bindValue(':titulo', $titulo);
 $statement->bindValue(':autores', $autores);
@@ -92,13 +93,13 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
         <section id="buscar">
             <form class="form-default" method="get" action="publicacoes.php">
                 <label for="titulo">Título</label>
-                <input id="titulo" class="text-box-default" name="titulo" type="search" placeholder="Digite o título da publicação">
+                <input id="titulo" class="text-box-default" name="titulo" type="search" placeholder="Digite o título da publicação" value="<?= $_GET['titulo'] ?>">
                 <label for="autor">Autor(es)</label>
-                <input id="autor" class="text-box-default" name="autores" type="text" placeholder="Digite o nome de um ou mais autores">
+                <input id="autor" class="text-box-default" name="autores" type="text" placeholder="Digite o nome de um ou mais autores" value="<?= $_GET['autores'] ?>">
                 <label for="palavra-chave">Palavra-chave</label>
-                <input id="palavra-chave" class="text-box-default" name="palavra-chave" type="text" placeholder="Digite uma ou mais chaves">
+                <input id="palavra-chave" class="text-box-default" name="palavra-chave" type="text" placeholder="Digite uma ou mais chaves" value="<?= $_GET['palavra-chave'] ?>">
                 <label for="ano-publicacao">Ano de publicação</label>
-                <input id="ano-publicacao" class="text-box-default" name="ano" type="text" placeholder="Digite o ano da publicação">
+                <input id="ano-publicacao" class="text-box-default" name="ano" type="text" placeholder="Digite o ano da publicação" value="<?= $_GET['ano'] ?>">
 
                 <button name="buscar" id="buscar" class="btn-default">
                     <img src="images/bt_lupa.png" alt="Botão buscar">
