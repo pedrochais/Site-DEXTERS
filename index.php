@@ -24,7 +24,7 @@
 
                 <div class="tarja-banner">
                     <h3>DEXTERS um Espaço de Pesquisa e Inovação em Engenharia de Software</h3>
-                    <p>O nosso objetivo é ser o melhor laboratório de Engenharia de Software do Brasil</p>
+                    <p>O nosso objetivo é fazer pesquisa e desenvolvimento de qualidade na área de Engenharia de Software</p>
                 </div>
                 
             </div>
@@ -36,7 +36,7 @@
 
                 <div class="tarja-banner">
                     <h3>DEXTERS um Espaço de Pesquisa e Inovação em Engenharia de Software</h3>
-                    <p>O nosso objetivo é ser o melhor laboratório de Engenharia de Software do Brasil</p>
+                    <p>O nosso objetivo é fazer pesquisa e desenvolvimento de qualidade na área de Engenharia de Software</p>
                 </div>
             </div>
             
@@ -52,7 +52,7 @@
         <div class="atividades-desenvolvidas">
             <h1>Áreas de Atuação</h1>
             <p>
-                O nosso laboratório trabalha com as mais diversas áreas dentro da Engenharia de Software
+                O Laboratório Dexters trabalha dentro das seguintes áreas:
             </p>
         </div>
         <section id="atividades">
@@ -86,12 +86,6 @@
                     Engenharia de software é uma área da computação dedicada à concepção, especificação, desenvolvimento e manutenção de sistemas de software, aplicando tecnologias e práticas de gerências de projetos e outras disciplinas.
                 </p>
             </div>
-        </section>
-
-        <section id="conheca-dexters">
-            <h2>Quem somos?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit elit ligula, et gravida massa eleifend non. Vestibulum tempus feugiat justo, ornare ornare ex auctor vel. Curabitur interdum nisi ut augue tempus consequat. Phasellus nec tempus tortor. Nullam erat risus, consectetur accumsan orci sit amet, hendrerit egestas ante. Pellentesque est lectus, rutrum sit amet tincidunt a, dictum in enim. Sed commodo risus neque, sed commodo mi ultricies ultrices. Sed vitae elementum est. Duis nec lectus mauris. Nam sed orci neque.</p>
-            <a href="integrantes.php"><button class="btn-default">Integrantes</button></a>
         </section>
     </main>
 
