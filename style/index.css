@@ -100,20 +100,6 @@
     right: calc(50% - 20px);;
 }
 
-/* CONHEÇA O DEXTERS */
-
-section#conheca-dexters {
-    display: inline-block;
-    text-align: center;
-    padding: 30px 10%;
-}
-
-section#conheca-dexters p {
-    padding: 0 2%;
-    text-justify: inter-word;
-    text-align: justify;
-}
-
 /* ATIVIDADES */
 
 #atividades {
@@ -129,6 +115,10 @@ section#conheca-dexters p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+main{
+    margin-bottom: 0px;
 }
 
 main>.atividades-desenvolvidas {
