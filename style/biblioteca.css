@@ -1,34 +1,32 @@
+#biblioteca {
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .sumario h4 {
     margin: 0;
     margin-bottom: 10px;
 }
 
+/* CARD */
+
 .card-default {
-    height: auto;
-    animation: card-intro .5s;
-
-}
-
-.descricao {
-    display: none;
-    margin-top: 15px;
-    transition: .2s;
-    animation: descricao 1s;
-}
-
-
-.show-desc {
     display: flex;
-    visibility: visible;
-    overflow-y: auto;
+    flex-direction: column;
     height: auto;
-    transition: .2s;
+    animation: card-intro .5s;    
+}
+
+.botoes a {
+    text-decoration: none;
 }
 
 .imagem {
-    margin: auto;
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    float: left;
+    margin: auto 10px;
 }
 
 #img {
@@ -37,36 +35,40 @@
     background-color: rgb(189, 189, 189);
 }
 
-.descricao p {
-    width: 80%;
-    text-indent: 50px;
-    text-align: justify;
-    margin: 0 20px;
-}
-
 @media (max-width: 1280px) {
+    #biblioteca {
+        width: 90%;
+    }
+
     .imagem {
         margin-bottom: 10px;
     }
+}
 
-    .descricao {
-        flex-direction: column;
+@media (max-width: 750px) {
+    #biblioteca {
+        grid-template-columns: 1fr;
     }
 
-    .descricao p {
-        width: 100%;
-        transition: 1s;
-        margin: 0;
+    .card-default {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .imagem img {
+        margin: auto;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-
-@keyframes descricao {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
+@media (max-width: 550px) {
+    #biblioteca {
+        grid-template-columns: 1fr;
     }
 }

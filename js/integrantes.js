@@ -11,6 +11,7 @@ let contato = document.getElementById('contato')
 // Títulos e breakpoints
 let titulos = document.querySelectorAll('h3.titulo')
 let breakpoints = document.querySelectorAll('span.breakpoint')
+let tt_ex_integrantes = document.querySelector('h2#tt-ex-integrantes')
 
 // Fecha o modal e reseta as informações do modal após clicar no X ou em qualquer outra área além do modal
 window.onclick = function (event) {

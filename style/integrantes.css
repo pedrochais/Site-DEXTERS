@@ -111,7 +111,14 @@ h4 {
     z-index: 1002;
 }
 
+.botoes {
+    float: left;
+}
+
 #infos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 90%;
     margin: auto;
 }
@@ -142,6 +149,10 @@ h4 {
 /* MEDIA QUERIES */
 
 @media (max-width: 1280px) {
+    .titulo.fixed {
+        top: 75px;
+    }
+
     .modal {
         width: 420px;
         height: 260px;

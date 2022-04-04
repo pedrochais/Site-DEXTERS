@@ -69,13 +69,9 @@ main {
     position: fixed;
     right: 50px;
     bottom: 50px;
-    transform: rotate(-90deg);
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #e0e0e0;
-    box-shadow: -5px 2.5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #btn-return-to-top:hover {
@@ -89,6 +85,13 @@ main {
     display: block;
     animation: btn-return-to-top-intro .75s;
 }
+
+#btn-arrow-to-up {
+    width: 30px;
+    opacity: .5;
+}
+
+#btn-arrow-to-up:hover {}
 
 /* LINK */
 
@@ -165,6 +168,7 @@ input.text-box-default {
 }
 
 .card-default h4 {
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -330,6 +334,5 @@ h1.no-results {
 
     to {
         transform: translate3d(0, 0, 0);
-        transform: rotate(-90deg);
     }
 }

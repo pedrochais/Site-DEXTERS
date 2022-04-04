@@ -1,3 +1,20 @@
+<?php
+require_once('script/conexao.php');
+
+$instruction = "
+SELECT * FROM `tb_tecnologias`
+";
+
+$statement = $database->query($instruction);
+
+//Itens por página
+$items = $statement->fetchAll(PDO::FETCH_ASSOC);
+/*
+echo "<pre>";
+print_r($items);
+echo "</pre>";
+*/
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -16,66 +33,43 @@
     <main>
         <h2 class="titulo">BIBLIOTECA</h2>
         <section id="biblioteca">
+            <?php
+            foreach ($items as $key => $value) {
+                if (strlen($value['descricao']) > 150) {
+                    $value['descricao'] = substr($value['descricao'], 0, 150) . '...';
+                }
+            ?>
 
-            <div class="card-default">
-                <div class="sumario">
-                    <h4>Projeto 1</h4>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias, explicabo itaque quia minus expedita quam qui fuga doloremque veniam necessitatibus sint repellendus vero, adipisci placeat ratione, aut recusandae beatae.
-                    </p>
-                    <button class="btn-default">Detalhes</button>
-                </div>
-                <div class="descricao">
-                    <div class="imagem">
-                        <div id="img"></div>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
-                    </p>
-                </div>
-            </div>
+                <div class="card-default">
+                    <div class="infos">
+                        <div class="imagem">
+                            <a href="images/biblioteca/<?= $value['foto'] ?>" target="_blank">
+                                <img src="images/biblioteca/<?= $value['foto'] ?>" width="100%" alt="">
+                            </a>
+                        </div>
 
-            <div class="card-default">
-                <div class="sumario">
-                    <h4>Projeto 2</h4>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias, explicabo itaque quia minus expedita quam qui fuga doloremque veniam necessitatibus sint repellendus vero, adipisci placeat ratione, aut recusandae beatae.
-                    </p>
-                    <button class="btn-default">Detalhes</button>
-                </div>
-                <div class="descricao">
-                    <div class="imagem">
-                        <div id="img"></div>
+                        <h4> <?= $value['nome'] ?> </h4>
+                        <p>
+                            <?= $value['descricao'] ?>
+                        </p>
                     </div>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
-                    </p>
+                    <div class="botoes">
+                        <a href="<?= $value['artigo'] ?>">
+                            <button class="btn-default">Artigo</button>
+                        </a>
+                        <a href="<?= $value['arquivo'] ?>">
+                            <button class="btn-default">Arquivo/Link</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card-default">
-                <div class="sumario">
-                    <h4>Projeto 3</h4>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias, explicabo itaque quia minus expedita quam qui fuga doloremque veniam necessitatibus sint repellendus vero, adipisci placeat ratione, aut recusandae beatae.
-                    </p>
-                    <button class="btn-default">Detalhes</button>
-                </div>
-                <div class="descricao">
-                    <div class="imagem">
-                        <div id="img"></div>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, soluta voluptates repellat dicta, corrupti aliquid at minima tempore fugiat voluptatibus fugit, pariatur eum illo dignissimos molestiae perferendis ex reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt deleniti eos maiores, pariatur quia doloribus molestias laborum quis alias nihil voluptates tempore impedit cupiditate, cum dicta, quisquam sapiente eveniet.
-                    </p>
-                </div>
-            </div>
+            <?php
+            } //ENDFOREACH
+            ?>
         </section>
     </main>
 
     <?php include('rodape.html'); ?>
-
-    <script src="js/biblioteca.js"></script>
 </body>
 
 </html>
