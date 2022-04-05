@@ -93,13 +93,13 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
         <section id="buscar">
             <form class="form-default" method="get" action="publicacoes.php">
                 <label for="titulo">Título</label>
-                <input id="titulo" class="text-box-default" name="titulo" type="search" placeholder="Digite o título da publicação" value="<?= $_GET['titulo'] ?>">
+                <input id="titulo" class="text-box-default" name="titulo" type="search" placeholder="Digite o título da publicação" value="<?= (!empty($_GET['titulo'])) ? $_GET['titulo'] : ''?>">
                 <label for="autor">Autor(es)</label>
-                <input id="autor" class="text-box-default" name="autores" type="text" placeholder="Digite o nome de um ou mais autores" value="<?= $_GET['autores'] ?>">
+                <input id="autor" class="text-box-default" name="autores" type="text" placeholder="Digite o nome de um ou mais autores" value="<?= (!empty($_GET['autores'])) ? $_GET['autores'] : '' ?>">
                 <label for="palavra-chave">Palavra-chave</label>
-                <input id="palavra-chave" class="text-box-default" name="palavra-chave" type="text" placeholder="Digite uma ou mais chaves" value="<?= $_GET['palavra-chave'] ?>">
+                <input id="palavra-chave" class="text-box-default" name="palavra-chave" type="text" placeholder="Digite uma ou mais chaves" value="<?= (!empty($_GET['palavra-chave'])) ? $_GET['palavra-chave'] : '' ?>">
                 <label for="ano-publicacao">Ano de publicação</label>
-                <input id="ano-publicacao" class="text-box-default" name="ano" type="text" placeholder="Digite o ano da publicação" value="<?= $_GET['ano'] ?>">
+                <input id="ano-publicacao" class="text-box-default" name="ano" type="text" placeholder="Digite o ano da publicação" value="<?= (!empty($_GET['ano'])) ? $_GET['ano'] : '' ?>">
 
                 <button name="buscar" id="buscar" class="btn-default">
                     <img src="images/bt_lupa.png" alt="Botão buscar">
