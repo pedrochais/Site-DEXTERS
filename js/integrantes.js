@@ -1,6 +1,3 @@
-let body = document.querySelector('body');
-let btn_return = document.getElementById('btn-return-to-top')
-
 // Modal
 let modal = document.getElementById('modal-integrantes');
 let nome = document.getElementById('nome')
@@ -51,24 +48,6 @@ function fixTitle(scroll_position) {
             titulos[i].classList.remove('fixed')
         }
     }
-}
-
-// Mostra botão para retornar ao após descer o scroll mais de 200 pixels 
-function showButtonReturn(scroll_position) {
-    if (scroll_position > 200) {
-        btn_return.classList.add('show')
-    } else {
-        btn_return.classList.remove('show')
-    }
-}
-
-// Retornar ao topo
-function returnToTop() {
-    window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
 }
 
 // Quando o evento onscroll for acionado serão chamadas 2 funções

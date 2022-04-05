@@ -35,7 +35,7 @@ SELECT * FROM `tb_integrantes` WHERE ativo = 0;
     <title>Integrantes | DEXTERS</title>
 </head>
 
-<body onscroll="showButtonReturn()">
+<body>
     <?php include('cabecalho.html'); ?>
 
     <main>
@@ -190,8 +190,8 @@ SELECT * FROM `tb_integrantes` WHERE ativo = 0;
         <i class="fa fa-angle-up"></i>
     </div>
 
-    <script src="js/integrantes.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/integrantes.js"></script>
 </body>
 
 </html>

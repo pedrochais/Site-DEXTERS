@@ -13,7 +13,7 @@ if (!empty($_GET['titulo'])) $url = "titulo={$_GET['titulo']}&autores={$_GET['au
 else $url = '';
 
 //Número de itens por página
-$items_per_page = 5;
+$items_per_page = 10;
 
 //Índice do item inicial de cada página
 $start_item = $items_per_page * ($current_page - 1);
@@ -49,8 +49,10 @@ $instruction = "
 SELECT * FROM `tb_publicacoes` WHERE (`titulo` LIKE :titulo) 
                                 AND (`autores` LIKE :autores) 
                                 AND (`ano` LIKE :ano)
+                                ORDER BY `titulo` ASC
                                 LIMIT $start_item, $items_per_page;
 ";
+
 $statement = $database->prepare($instruction);
 $statement->bindValue(':titulo', $titulo);
 $statement->bindValue(':autores', $autores);
@@ -85,7 +87,7 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
     <title>Publicações | DEXTERS</title>
 </head>
 
-<body onload="scrollToHr()">
+<body>
     <?php include('cabecalho.html'); ?>
 
     <main>
@@ -142,8 +144,8 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
                         </div>
 
                         <div class="download-ano">
-                            <a href="<?= $value['link'] ?>">
-                                <button class="btn-default">Download/Link</button>
+                            <a href="<?= $value['link'] ?>" target="_blank">
+                                <button class="btn-default">Acesse</button>
                             </a>
 
                             <p class="ano-publicacao">Ano de publicação: <?= $value['ano'] ?></p>
@@ -194,7 +196,14 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
     </main>
 
     <?php include('rodape.html'); ?>
+
+    <!-- RETORNAR AO TOPO -->
+    <div onclick="returnToTop()" id="btn-return-to-top">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
     <script src="js/script.js"></script>
+    <script src="js/publicacoes.js"></script>
 </body>
 
 </html>
