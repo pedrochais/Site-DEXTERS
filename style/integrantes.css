@@ -1,10 +1,10 @@
-#integrantes-lideres, #integrantes-mestrado, #integrantes-doutorado,
+#integrantes-lideres, #colaboradores, #integrantes-mestrado, #integrantes-doutorado,
 #integrantes-graduacao, #ex-integrantes, .card-integrante, .modal,
 .imagem, .info {
     transition: 1s;
 }
 
-#integrantes-lideres, #integrantes-mestrado, #integrantes-doutorado, #integrantes-graduacao, #ex-integrantes {
+#integrantes-lideres, #colaboradores, #integrantes-mestrado, #integrantes-doutorado, #integrantes-graduacao, #ex-integrantes {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -48,10 +48,13 @@
     height: 215px;
     margin: auto;
     margin-top: 5px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
 }
 
 .card-integrante .imagem img {
-    width: 100%;
+    height: 100%;
 }
 
 h4 {

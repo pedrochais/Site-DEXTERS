@@ -4,6 +4,7 @@
     --azul: #6FA9B3;
     --amarelo: rgba(243, 210, 72, 0.94);
     --cinza: #eeeeee70;
+    --c4: black;
     --btn-hover-azul: rgb(101, 144, 151);
 
     --font-size-lg: 18px;
@@ -201,6 +202,17 @@ input.text-box-default {
 
 .paginacao a:hover {
     background-color: rgb(204, 204, 204);
+}
+
+/* A */
+
+a {
+    /*color: var(--c4);*/
+    text-decoration: none;
+}
+
+a:visited {
+    /*color: #0e2d33;*/
 }
 
 /* UL */

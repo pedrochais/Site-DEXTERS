@@ -3,6 +3,7 @@ let modal = document.getElementById('modal-integrantes');
 let nome = document.getElementById('nome')
 let formacao = document.getElementById('formacao')
 let lattes = document.getElementById('lattes')
+let lattes_href = document.getElementById('lattes-href')
 let contato = document.getElementById('contato')
 
 // Títulos e breakpoints
@@ -27,7 +28,8 @@ window.onclick = function (event) {
 function openModal(novo_nome, novo_formacao, novo_lattes, novo_contato) {
     nome.innerText = novo_nome
     formacao.innerText = novo_formacao
-    lattes.href = novo_lattes
+    lattes.innerText = novo_lattes
+    lattes_href.href = novo_lattes
     contato.innerText = novo_contato
     modal.classList.add('show')
 }

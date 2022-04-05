@@ -2,19 +2,23 @@
 require_once('script/conexao.php');
 
 $orientadores_ativos = $database->query("
-SELECT * FROM `tb_integrantes` WHERE orientador = 1 AND ativo = 1;
+SELECT * FROM `tb_integrantes` WHERE orientador = 1 AND ativo = 1 ORDER BY `nome` ASC;
+")->fetchAll(PDO::FETCH_ASSOC);
+
+$colaboradores = $database->query("
+SELECT * FROM `tb_integrantes` WHERE colaborador = 1 AND ativo = 1 ORDER BY `nome` ASC;
 ")->fetchAll(PDO::FETCH_ASSOC);
 
 $orientandos_doutorado_ativos = $database->query("
-SELECT * FROM `tb_integrantes` WHERE orientador = 0 AND ativo = 1 AND formacao = 'Doutorado';
+SELECT * FROM `tb_integrantes` WHERE orientador = 0 AND colaborador = 0 AND ativo = 1 AND formacao = 'Doutorado' ORDER BY `nome` ASC;
 ")->fetchAll(PDO::FETCH_ASSOC);
 
 $orientandos_mestrado_ativos = $database->query("
-SELECT * FROM `tb_integrantes` WHERE orientador = 0 AND ativo = 1 AND formacao = 'Mestrado';
+SELECT * FROM `tb_integrantes` WHERE orientador = 0 AND ativo = 1 AND formacao = 'Mestrado' ORDER BY `nome` ASC;
 ")->fetchAll(PDO::FETCH_ASSOC);
 
 $orientandos_graduando_ativos = $database->query("
-SELECT * FROM `tb_integrantes` WHERE orientador = 0 AND ativo = 1 AND formacao = 'Graduando';
+SELECT * FROM `tb_integrantes` WHERE orientador = 0 AND ativo = 1 AND formacao = 'Graduação' ORDER BY `nome` ASC;
 ")->fetchAll(PDO::FETCH_ASSOC);
 
 $inativos = $database->query("
@@ -58,6 +62,32 @@ SELECT * FROM `tb_integrantes` WHERE ativo = 0;
             } // ENDFOREACH
             ?>
         </section>
+
+        <?php
+        if (!empty($colaboradores)) {
+        ?>
+            <span class="breakpoint"></span>
+            <h3 class="titulo">Colaboradores</h3>
+            <section id="colaboradores">
+                <?php
+                foreach ($colaboradores as $key => $value) {
+                ?>
+
+                    <div class="card-integrante">
+                        <div class="imagem"><img src="images/integrantes/<?= $value['foto'] ?>" alt=""></div>
+                        <h4><?= $value['primeiro_nome'] ?> <?= $value['ultimo_nome'] ?></h4>
+                        <button onclick="openModal('<?= $value['nome'] ?>', '<?= $value['formacao'] ?>', '<?= $value['lattes'] ?>', '<?= $value['contato'] ?>')" class="btn-default">Detalhes</button>
+
+                    </div>
+
+                <?php
+                } // ENDFOREACH
+                ?>
+            </section>
+
+        <?php
+        } // ENDIF
+        ?>
 
         <?php
         if (!empty($orientandos_doutorado_ativos)) {
@@ -137,25 +167,34 @@ SELECT * FROM `tb_integrantes` WHERE ativo = 0;
         } // ENDIF
         ?>
 
-        <h2 class="titulo">EX-INTEGRANTES</h2>
-        <section id="ex-integrantes">
+        <?php
+        if (!empty($inativos)) {
+        ?>
 
-            <?php
-            foreach ($inativos as $key => $value) {
-            ?>
+            <h2 class="titulo">EX-INTEGRANTES</h2>
+            <section id="ex-integrantes">
 
-                <div class="card-integrante">
-                    <div class="imagem"><img src="images/integrantes/<?= $value['foto'] ?>" alt=""></div>
-                    <h4><?= $value['primeiro_nome'] ?> <?= $value['ultimo_nome'] ?></h4>
-                    <button onclick="openModal('<?= $value['nome'] ?>', '<?= $value['formacao'] ?>', '<?= $value['lattes'] ?>', '<?= $value['contato'] ?>')" class="btn-default">Detalhes</button>
+                <?php
+                foreach ($inativos as $key => $value) {
+                ?>
 
-                </div>
+                    <div class="card-integrante">
+                        <div class="imagem"><img src="images/integrantes/<?= $value['foto'] ?>" alt=""></div>
+                        <h4><?= $value['primeiro_nome'] ?> <?= $value['ultimo_nome'] ?></h4>
+                        <button onclick="openModal('<?= $value['nome'] ?>', '<?= $value['formacao'] ?>', '<?= $value['lattes'] ?>', '<?= $value['contato'] ?>')" class="btn-default">Detalhes</button>
 
-            <?php
-            } // ENDFOREACH
-            ?>
+                    </div>
 
-        </section>
+                <?php
+                } // ENDFOREACH
+                ?>
+
+            </section>
+
+        <?php
+        } // ENDIF
+        ?>
+
     </main>
 
     <?php include('rodape.html'); ?>
@@ -175,7 +214,7 @@ SELECT * FROM `tb_integrantes` WHERE ativo = 0;
                 </p>
                 <p>
                     <span class="info">Lattes:</span>
-                    <span><a id="lattes" href="">Clique aqui para acessar</a></span>
+                    <a id="lattes-href" href="" target="_blank"><span id="lattes"></span></a>
                 </p>
                 <p>
                     <span class="info">Contato:</span>
