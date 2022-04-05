@@ -187,10 +187,11 @@ SELECT * FROM `tb_integrantes` WHERE ativo = 0;
 
     <!-- RETORNAR AO TOPO -->
     <div onclick="returnToTop()" id="btn-return-to-top">
-        <img id="btn-arrow-to-up" src="images/bt_seta_up.png" alt="Seta para cima">
+        <i class="fa fa-angle-up"></i>
     </div>
 
     <script src="js/integrantes.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
