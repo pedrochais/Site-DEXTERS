@@ -34,6 +34,7 @@ echo "</pre>";
         <h2 class="titulo">BIBLIOTECA</h2>
         <section id="biblioteca">
             <?php
+            $slider = 0;
             foreach ($items as $key => $value) {
                 if (strlen($value['descricao']) > 150) {
                     $value['descricao'] = substr($value['descricao'], 0, 150) . '...';
@@ -41,23 +42,28 @@ echo "</pre>";
             ?>
 
                 <div class="card-default">
-                    <div class="infos">
-                        <div class="imagem">
-                            <a href="images/biblioteca/<?= $value['foto'] ?>" target="_blank">
-                                <img src="images/biblioteca/<?= $value['foto'] ?>" width="100%" alt="">
-                            </a>
-                        </div>
+                    <h3 class="titulo"> <?= $value['nome'] ?> </h3>
 
-                        <h4> <?= $value['nome'] ?> </h4>
+
+                    <div class="imagem">
+                        
+                        <a href="images/biblioteca/<?= $value['foto'] ?>" target="_blank">
+                            <img src="images/biblioteca/<?= $value['foto'] ?>" width="100%" alt="">
+                        </a>
+                        
+                    </div>
+
+                    <div class="infos">
                         <p>
                             <?= $value['descricao'] ?>
                         </p>
                     </div>
+
                     <div class="botoes">
-                        <a href="<?= $value['artigo'] ?>">
+                        <a href="<?= $value['artigo'] ?>" target="_blank">
                             <button class="btn-default">Artigo</button>
                         </a>
-                        <a href="<?= $value['arquivo'] ?>">
+                        <a href="<?= $value['arquivo'] ?>" target="_blank">
                             <button class="btn-default">Arquivo/Link</button>
                         </a>
                     </div>

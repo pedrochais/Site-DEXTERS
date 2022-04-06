@@ -141,8 +141,8 @@ input.text-box-default {
 
 .card-default {
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     width: 70%;
     margin: auto;
     margin-bottom: 30px;
