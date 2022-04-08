@@ -88,13 +88,29 @@ button#buscar:active {
 }
 
 .ano-publicacao {
-    /*
-    position: absolute;
-    right: 0;
-    */
     margin: 15px;
     font-size: 12px;
     font-weight: bold;
+}
+
+#ver-mais {
+    font-weight: bold;
+    color: rgb(67, 67, 67);
+}
+
+#ver-mais:hover {
+    cursor: pointer;
+    color: rgb(87, 87, 87);
+}
+
+/* MODAL */
+
+.modal {
+    overflow: auto;
+}
+
+.modal p {
+    text-align: justify;
 }
 
 /* MEDIA QUERIES */

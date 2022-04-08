@@ -101,7 +101,7 @@ if ($current_page > $pages) header("Location: noticias.php?$url pagina_atual=$pa
             <?php
             if ($current_page == 0) {
             ?>
-                <h1 class="no-results">Sem resultados!</h1>
+                <h1 class="no-results">Não foram encontrados resultados para a consulta.</h1>
                 <?php
             } else {
                 foreach ($items as $key => $value) {

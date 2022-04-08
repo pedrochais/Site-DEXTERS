@@ -32,12 +32,14 @@ if (!empty($_GET['titulo']) || !empty($_GET['autores']) || !empty($_GET['palavra
 $instruction = "
 SELECT * FROM `tb_publicacoes` WHERE (`titulo` LIKE :titulo) 
                                 AND (`autores` LIKE :autores) 
+                                AND (`palavra-chave` LIKE :palavra_chave)
                                 AND (`ano` LIKE :ano) 
 ";
 
 $statement = $database->prepare($instruction);
 $statement->bindValue(':titulo', $titulo);
 $statement->bindValue(':autores', $autores);
+$statement->bindValue(':palavra_chave', $palavra_chave);
 $statement->bindValue(':ano', $ano);
 $statement->execute();
 
@@ -47,7 +49,8 @@ $total_rows = $statement->rowCount();
 //Obtendo a quantidade de linhas limitadas por página com base nos parâmetros passados
 $instruction = "
 SELECT * FROM `tb_publicacoes` WHERE (`titulo` LIKE :titulo) 
-                                AND (`autores` LIKE :autores) 
+                                AND (`autores` LIKE :autores)
+                                AND (`palavra-chave` LIKE :palavra_chave)
                                 AND (`ano` LIKE :ano)
                                 ORDER BY `titulo` ASC
                                 LIMIT $start_item, $items_per_page;
@@ -56,6 +59,7 @@ SELECT * FROM `tb_publicacoes` WHERE (`titulo` LIKE :titulo)
 $statement = $database->prepare($instruction);
 $statement->bindValue(':titulo', $titulo);
 $statement->bindValue(':autores', $autores);
+$statement->bindValue(':palavra_chave', $palavra_chave);
 $statement->bindValue(':ano', $ano);
 $statement->execute();
 
@@ -73,6 +77,7 @@ if ($pages == 0) $current_page = 0;
 
 //Caso 'current_page' contiver um valor inválido o usuário será redirecionado para a última página válida
 if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=$pages");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -95,7 +100,7 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
         <section id="buscar">
             <form class="form-default" method="get" action="publicacoes.php">
                 <label for="titulo">Título</label>
-                <input id="titulo" class="text-box-default" name="titulo" type="search" placeholder="Digite o título da publicação" value="<?= (!empty($_GET['titulo'])) ? $_GET['titulo'] : ''?>">
+                <input id="titulo" class="text-box-default" name="titulo" type="search" placeholder="Digite o título da publicação" value="<?= (!empty($_GET['titulo'])) ? $_GET['titulo'] : '' ?>">
                 <label for="autor">Autor(es)</label>
                 <input id="autor" class="text-box-default" name="autores" type="text" placeholder="Digite o nome de um ou mais autores" value="<?= (!empty($_GET['autores'])) ? $_GET['autores'] : '' ?>">
                 <label for="palavra-chave">Palavra-chave</label>
@@ -114,11 +119,14 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
             <?php
             if ($current_page == 0) {
             ?>
-                <h1 class="no-results">Sem resultados!</h1>
-            <?php
+                <h1 class="no-results">Não foram encontrados resultados para a consulta.</h1>
+                <?php
             } else {
                 foreach ($items as $key => $value) {
-            ?>
+                    if (strlen($value['resumo']) == 0) {
+                        $value['resumo'] = 'Resumo indisponível.';
+                    }
+                ?>
                     <div class="card-default">
                         <h4>
                             <?= $value['titulo']; ?>
@@ -126,7 +134,18 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
 
                         <div class="infos">
                             <div class="descricao">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+                                <?php
+                                if (strlen($value['resumo']) > 250) {
+                                    $resumo = substr($value['resumo'], 0, 250) . '[...]';
+                                ?>
+                                    <p><?= $resumo ?> <span id="ver-mais" onclick="openModal('<?= $value['resumo'] ?>')">(Ver mais)</span></p>
+                                <?php
+                                } else {
+                                ?>
+                                    <p><?= $value['resumo'] ?></p>
+                                <?php
+                                } //ENDELSE
+                                ?>
                             </div>
                             <div class="compartilhar">
                                 <p>Compartilhe</p>
@@ -196,6 +215,16 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
     </main>
 
     <?php include('rodape.html'); ?>
+
+    <!-- MODAL -->
+    <div id="modal-publicacoes" class="modal-background">
+        <div class="modal">
+            <button class="btn-fechar">x</button>
+            <div id="infos">
+                <p id="descricao"></p>
+            </div>
+        </div>
+    </div>
 
     <!-- RETORNAR AO TOPO -->
     <div onclick="returnToTop()" id="btn-return-to-top">

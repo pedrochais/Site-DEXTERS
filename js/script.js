@@ -17,11 +17,15 @@ function scrollToHr() {
 // Mostra botão para retornar ao após descer o scroll mais de 200 pixels 
 function showButtonReturn(scroll_position) {
     if (scroll_position > 200) {
+        btn_return.classList.remove('reverse')
         btn_return.classList.add('show')
+        
     } else {
-        btn_return.classList.remove('show')
+        //btn_return.classList.remove('show')
+        btn_return.classList.add('reverse')
     }
 }
+
 
 // Retornar ao topo
 function returnToTop() {
