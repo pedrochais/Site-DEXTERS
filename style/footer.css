@@ -61,6 +61,10 @@ footer .localizacao img {
     width: 25px;
 }
 
+footer .contato img {
+    width: 25px;
+}
+
 .logo_1 img, .logo_2 img, #logo-ufma {
     transition: 1s;
 }
