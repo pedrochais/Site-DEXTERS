@@ -137,8 +137,8 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
                                 <?php
                                 if (strlen($value['resumo']) > 250) {
                                     $resumo = substr($value['resumo'], 0, 250) . '[...]';
-                                ?>
-                                    <p><?= $resumo ?> <span id="ver-mais" onclick="openModal('<?= $value['resumo'] ?>')">(Ver mais)</span></p>
+                                ?>  
+                                    <p><?= $resumo ?> <span id="ver-mais" onclick="openModal(`<?= $value['resumo'] ?>`)">(Ver mais)</span></p>
                                 <?php
                                 } else {
                                 ?>
