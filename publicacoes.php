@@ -9,7 +9,7 @@ if (!empty($_GET['pagina_atual'])) {
 }
 
 //Definição da URL para paginação dos resultados da busca
-if (!empty($_GET['titulo'])) $url = "titulo={$_GET['titulo']}&autores={$_GET['autores']}&palavra-chave={$_GET['palavra-chave']}&ano={$_GET['ano']}&";
+if (!empty($_GET['titulo']) || !empty($_GET['autores']) || !empty($_GET['palavra-chave']) || !empty($_GET['ano'])) $url = "titulo={$_GET['titulo']}&autores={$_GET['autores']}&palavra-chave={$_GET['palavra-chave']}&ano={$_GET['ano']}&";
 else $url = '';
 
 //Número de itens por página
@@ -23,7 +23,13 @@ if (!empty($_GET['titulo']) || !empty($_GET['autores']) || !empty($_GET['palavra
     $titulo = '%' . $_GET['titulo'] . '%';
     $autores = '%' . $_GET['autores'] . '%';
     $palavra_chave = '%' . $_GET['palavra-chave'] . '%';
-    $ano = '%' . $_GET['ano'] . '%';
+    
+    if(empty($_GET['ano'])){
+        $ano = '%%';
+    }else{
+        $ano = $_GET['ano'];
+    }
+    
 } else {
     $titulo = $autores = $palavra_chave = $ano = '%%';
 }
