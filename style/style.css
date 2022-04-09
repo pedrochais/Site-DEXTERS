@@ -319,6 +319,17 @@ h1.no-results {
     text-align: center;
 }
 
+/* INPUT TIPO NUMERO */
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
 /* BARRA DE ROLAGEM */
 
 * {
