@@ -107,6 +107,7 @@ button#buscar:active {
 
 .modal {
     overflow: auto;
+    padding: 20px 0;
 }
 
 .modal p {

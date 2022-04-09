@@ -173,7 +173,7 @@ if ($current_page > $pages) header("Location: publicacoes.php?$url pagina_atual=
                                 <button class="btn-default">Acesse</button>
                             </a>
 
-                            <p class="ano-publicacao">Ano de publicação: <?= $value['ano'] ?></p>
+                            <p class="ano-publicacao">Ano de publicação: <?= $value['ano'] == '0000' ? 'Indisponível' : $value['ano'] ?></p>
                         </div>
                     </div>
                 <?php
