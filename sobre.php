@@ -24,10 +24,10 @@
             
         </section>
         <section id="galeria">
-            <div class="imagem img-1"></div>
-            <div class="imagem img-2"></div>
-            <div class="imagem img-3"></div>
-            <div class="imagem img-4"></div>
+            <div class="imagem img-1"><img src="images/sobre/photo-1.jpg" alt=""></div>
+            <div class="imagem img-2"><img src="images/sobre/photo-2.jpg" alt=""></div>
+            <div class="imagem img-3"><img src="images/sobre/photo-3.jpg" alt=""></div>
+            <div class="imagem img-4"><img src="images/sobre/photo-4.jpg" alt=""></div>
         </section>
     </main>
 
