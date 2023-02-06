@@ -1,4 +1,2 @@
 # Dexters
-
-Repositório do site do Dexters
-Link do site: https://petcompufma.org/dexters/
+Link de acesso ao site: https://petcompufma.org/dexters/
